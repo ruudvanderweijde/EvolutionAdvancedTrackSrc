@@ -1,0 +1,82 @@
+8->9 many changed methods (only 35 normally)
+
+RETURN TYPE CHANGE OF 
+|java+method:///android/graphics/BitmapFactory/decodeFileDescriptor(java.io.FileDescriptor)|: 
+class(|java+class:///com/android/unit_tests/Bitmap|,[]) is now 
+class(|java+class:///com/android/internal/telephony/gsm/stk/Bitmap|,[])
+
+There are many false positives on the return type changes.
+It seems like the return types did not actually change, but they are located in different folders.
+
+
+More examples...
+
+
+RETURN TYPE CHANGE OF 
+|java+method:///android/graphics/drawable/LevelListDrawable/mutate()|: 
+class(|java+class:///android/graphics/drawable/Drawable|,[]) is now 
+class(|java+class:///android/widget/Drawable|,[])
+
+RETURN TYPE CHANGE OF 
+|java+method:///android/graphics/drawable/NinePatchDrawable/getPaint()|: 
+class(|java+class:///com/android/unit_tests/Paint|,[]) is now 
+class(|java+class:///android/graphics/drawable/shapes/Paint|,[])
+
+RETURN TYPE CHANGE OF 
+|java+method:///android/graphics/drawable/NinePatchDrawable/getTransparentRegion()|: 
+class(|java+class:///android/graphics/drawable/Region|,[]) is now 
+class(|java+class:///android/graphics/Region|,[])
+
+RETURN TYPE CHANGE OF 
+|java+method:///android/graphics/drawable/NinePatchDrawable/mutate()|: 
+class(|java+class:///android/graphics/drawable/Drawable|,[]) is now 
+class(|java+class:///android/widget/Drawable|,[])
+
+
+
+Same here with SIGNATURE CHANGES
+
+SIGNATURE CHANGE: 
+|java+constructor:///android/bluetooth/BluetoothPbap/BluetoothPbap(com.android.unit_tests.Context,android.bluetooth.BluetoothPbap.ServiceListener)| IS NOW: 
+|java+constructor:///android/bluetooth/BluetoothPbap/BluetoothPbap
+
+SIGNATURE CHANGE: 
+|java+constructor:///android/bluetooth/HeadsetBase/HeadsetBase(com.android.server.PowerManager,android.bluetooth.BluetoothAdapter,android.app.BluetoothDevice,int)| IS NOW: 
+|java+constructor:///android/bluetooth/HeadsetBase/HeadsetBase
+
+
+
+
+
+
+
+Deprecated in 8 (according to android ref guide && jdiff)
+    DEPRECATED: |java+constructor:///android/net/SSLCertificateSocketFactory/SSLCertificateSocketFactory(int)|
+Deprecated in 8 (according to android ref guide && jdiff)
+    DEPRECATED: |java+constructor:///android/net/http/SslCertificate/SslCertificate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|
+Deprecated in 8 (according to android ref guide && jdiff) 
+    DEPRECATED: |java+method:///android/net/http/SslCertificate/getValidNotAfter()|
+Deprecated in 8 (according to android ref guide && jdiff)
+    DEPRECATED: |java+method:///android/net/http/SslCertificate/getValidNotBefore()|
+Not marked as deprecated
+    DEPRECATED: |java+method:///android/view/MotionEvent/obtain(long,long,int,int,float,float,float,float,int,float,float,int,int)|
+Deprecated in 8 (according to android ref guide && jdiff)
+    DEPRECATED: |java+method:///android/webkit/WebSettings/getPluginsEnabled()|
+Correct:
+    DEPRECATED: |java+method:///android/webkit/WebSettings/getPluginsPath()|
+Deprecated in 8 (according to android ref guide && jdiff)
+    DEPRECATED: |java+method:///android/webkit/WebSettings/setPluginsEnabled(boolean)|
+correct:
+    DEPRECATED: |java+method:///android/webkit/WebSettings/setPluginsPath(java.lang.String)|
+DEP IN LEVEL 8 (according to jdiff):
+    DEPRECATED: |java+method:///android/widget/ListView/getCheckItemIds()|    
+
+
+
+
+
+DIT IS EEN TEST CLASS!!!!
+
+    SIGNATURE CHANGE: 
+|java+method:///android/widget/scroll/RequestRectangleVisibleTest/assertOnTopEdgeOfScreen(com.android.frameworktest.view.View,com.android.frameworktest.view.View)| IS NOW: 
+|java+method:///android/widget/scroll/RequestRectangleVisibleTest/assertOnTopEdgeOfScreen(android.widget.View,android.widget.View)|

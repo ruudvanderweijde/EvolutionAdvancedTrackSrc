@@ -1,0 +1,40 @@
+Field changes:
+
+6 -> 7:
+SET_PREFERRED_APPLICATIONS ontbreekt.
+Nested class permission in android.Manifest.
+Generated klasse, niet beschikbaar in de source jar.
+
+7 -> 8:
+In JDiff all field changes are deprecations, in our analysis all method modifier changes.
+
+14 -> 15:
+BIND_ADJUST_WITH_ACTIVITY : change in value. we don't measure this atm. PUT IN DOCUMENT.
+
+
+
+Class changes:
+- We found a difference in the Interface android/view/WindowManagerPolicy but this interface cannot be found in the 'normal' android documentation or jdiff
+- We found a change in class android/graphics/Shader (DUE TO MODIFIER(S). OLD MODIFIERS: {public()}, NEW MODIFIERS: {public(),abstract()}), but this is no change in jdiff.
+
+- Volgens jdiff is de class 'android/webkit/WebView' gechanged door added method 'void freeMemory()', volgens ons door setDragTracker en getDragTracker
+- volgens jdiff is de class '' gechanged doordat er 9 methods zijn toegevoegd.
+
+
+CHANGED: |java+class:///android/view/VelocityTracker| DUE TO:
+            |java+method:///android/view/VelocityTracker/getXVelocity(int)|
+            |java+method:///android/view/VelocityTracker/getYVelocity(int)|
+-- According to http://developer.android.com/reference/android/view/VelocityTracker.html#getXVelocity(int) it is added in version 8.
+
+    CHANGED: |java+class:///android/server/BluetoothA2dpService| DUE TO:
+            |java+method:///android/server/BluetoothA2dpService/getNonDisconnectedSinks()|
+    CHANGED: |java+class:///android/server/BluetoothService| DUE TO:
+            |java+method:///android/server/BluetoothService/readDockBluetoothAddress()|
+            |java+method:///android/server/BluetoothService/isBluetoothDock(java.lang.String)|
+            |java+method:///android/server/BluetoothService/updateDeviceServiceChannelCache(java.lang.String)|
+-- package android/server zit niet in de api-reference guide en komt niet voor in jdiff
+
+    CHANGED: |java+class:///android/renderscript/RenderScript| DUE TO:
+            |java+method:///android/renderscript/RenderScript/contextSetPriority(android.renderscript.RenderScript.Priority)|
+            |java+method:///android/renderscript/RenderScript/contextDump(int)|
+-- package android.renderscript is added in api level 11 (according to http://developer.android.com/reference/android/renderscript/package-summary.html)

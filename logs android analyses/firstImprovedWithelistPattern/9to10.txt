@@ -1,0 +1,374 @@
+rascal>import diff::Core;
+ok
+
+rascal>rascal>runSRC(9,10,".*:///(?:android|org|java|dalvik)/.*")
+|stdin:///|(0,6,<1,0>,<1,6>): Undeclared variable: rascal
+☞ Advice
+
+rascal>runSRC(9,10,".*:///(?:android|org|java|dalvik)/.*")
+2014-01-05 17:49:00 :: Getting m3 models...
+2014-01-05 17:49:00 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/1.m3
+2014-01-05 17:49:00 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/2.m3
+2014-01-05 17:49:00 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/3.m3
+2014-01-05 17:49:00 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/5.m3
+2014-01-05 17:49:00 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/11.m3
+2014-01-05 17:49:00 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/12.m3
+2014-01-05 17:49:00 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/13.m3
+|project://android-2.3_r1|: #annotations    96 class        48 interfaces       6991 methods    694 fields
+|project://android-2.3.3_r1|:   #annotations    96 class        48 interfaces       7017 methods    696 fields
+2014-01-05 17:49:24 :: Comparing m3 models... 
+2014-01-05 17:49:25 :: Get method changes...
+2014-01-05 17:49:25 :: Method change: getModelHierarchy
+2014-01-05 17:49:25 ::  Hierarchy: get classes and interfaces
+2014-01-05 17:49:27 ::  Hierarchy: to map
+2014-01-05 17:49:27 ::  Hierarchy: looping (2464)
+2014-01-05 17:50:20 ::  Hierarchy: get classes and interfaces
+2014-01-05 17:50:27 ::  Hierarchy: to map
+2014-01-05 17:50:27 ::  Hierarchy: looping (2478)
+2014-01-05 17:51:25 :: Method change: findDeprecations
+2014-01-05 17:51:38 :: Get field changes...
+2014-01-05 17:51:38 :: Start getFieldChanges() 
+2014-01-05 17:51:38 :: Step 1: Start: getAddedAndRemovedFields
+2014-01-05 17:52:13 :: Step 2: getAddedAndRemovedFields
+2014-01-05 17:52:13 :: Step 3: getAddedAndRemovedFields
+2014-01-05 17:52:13 :: Step 4: getAddedAndRemovedFields
+2014-01-05 17:52:13 :: Step 5: Finished getAddedAndRemovedFields
+2014-01-05 17:52:13 :: getAddedAndRemovedFields is finished
+2014-01-05 17:52:13 :: Step 1: Start: getAllChangedFields
+2014-01-05 17:52:54 :: Get class changes...
+2014-01-05 17:52:54 :: Started getClassChanges()
+2014-01-05 17:52:54 :: Started getChangedAddedRemovedClasses()
+2014-01-05 17:53:12 :: Started getClassesWithContentChanges()
+2014-01-05 18:03:25 :: Started sanitizeClassChanges()
+2014-01-05 18:03:25 :: Print compare results... 
+2014-01-05 18:03:25 :: Writing to cache
+2014-01-05 18:03:26 :: Writing to cache one by one
+2014-01-05 18:03:29 :: Display results
+-------[ Transition from |project://android-2.3_r1| to |project://android-2.3.3_r1| ]-------
+---[FIELDS]---
+    ADDED: |java+field:///android/content/Context/NFC_SERVICE|
+    ADDED: |java+field:///android/graphics/BitmapFactory/Options/inPreferQualityOverSpeed|
+    ADDED: |java+field:///android/media/AudioManager/MODE_IN_COMMUNICATION|
+    ADDED: |java+field:///android/media/AudioSystem/MODE_IN_COMMUNICATION|
+    ADDED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_COMPILATION|
+    ADDED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_DISC_NUMBER|
+    ADDED: |java+field:///android/media/MediaMetadataRetriever/OPTION_CLOSEST|
+    ADDED: |java+field:///android/media/MediaMetadataRetriever/OPTION_CLOSEST_SYNC|
+    ADDED: |java+field:///android/media/MediaMetadataRetriever/OPTION_NEXT_SYNC|
+    ADDED: |java+field:///android/media/MediaMetadataRetriever/OPTION_PREVIOUS_SYNC|
+    ADDED: |java+field:///android/media/MediaRecorder/AudioSource/VOICE_COMMUNICATION|
+    ADDED: |java+field:///android/net/ConnectivityManager/TYPE_BLUETOOTH|
+    ADDED: |java+field:///android/net/ConnectivityManager/TYPE_DUMMY|
+    ADDED: |java+field:///android/net/ConnectivityManager/TYPE_ETHERNET|
+    ADDED: |java+field:///android/nfc/NfcAdapter/ACTION_NDEF_DISCOVERED|
+    ADDED: |java+field:///android/nfc/NfcAdapter/ACTION_RF_FIELD_OFF_DETECTED|
+    ADDED: |java+field:///android/nfc/NfcAdapter/ACTION_RF_FIELD_ON_DETECTED|
+    ADDED: |java+field:///android/nfc/NfcAdapter/ACTION_TAG_LEFT_FIELD|
+    ADDED: |java+field:///android/nfc/NfcAdapter/ACTION_TECH_DISCOVERED|
+    ADDED: |java+field:///android/nfc/TechListParcel/CREATOR|
+    ADDED: |java+field:///android/nfc/tech/IsoDep/EXTRA_HIST_BYTES|
+    ADDED: |java+field:///android/nfc/tech/IsoDep/EXTRA_HI_LAYER_RESP|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/BLOCK_SIZE|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/KEY_DEFAULT|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/KEY_MIFARE_APPLICATION_DIRECTORY|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/KEY_NFC_FORUM|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/SIZE_1K|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/SIZE_2K|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/SIZE_4K|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/SIZE_MINI|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/TYPE_CLASSIC|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/TYPE_PLUS|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/TYPE_PRO|
+    ADDED: |java+field:///android/nfc/tech/MifareClassic/TYPE_UNKNOWN|
+    ADDED: |java+field:///android/nfc/tech/MifareUltralight/PAGE_SIZE|
+    ADDED: |java+field:///android/nfc/tech/MifareUltralight/TYPE_ULTRALIGHT|
+    ADDED: |java+field:///android/nfc/tech/MifareUltralight/TYPE_ULTRALIGHT_C|
+    ADDED: |java+field:///android/nfc/tech/MifareUltralight/TYPE_UNKNOWN|
+    ADDED: |java+field:///android/nfc/tech/Ndef/EXTRA_NDEF_CARDSTATE|
+    ADDED: |java+field:///android/nfc/tech/Ndef/EXTRA_NDEF_MAXLENGTH|
+    ADDED: |java+field:///android/nfc/tech/Ndef/EXTRA_NDEF_MSG|
+    ADDED: |java+field:///android/nfc/tech/Ndef/EXTRA_NDEF_TYPE|
+    ADDED: |java+field:///android/nfc/tech/Ndef/MIFARE_CLASSIC|
+    ADDED: |java+field:///android/nfc/tech/Ndef/NDEF_MODE_READ_ONLY|
+    ADDED: |java+field:///android/nfc/tech/Ndef/NDEF_MODE_READ_WRITE|
+    ADDED: |java+field:///android/nfc/tech/Ndef/NDEF_MODE_UNKNOWN|
+    ADDED: |java+field:///android/nfc/tech/Ndef/NFC_FORUM_TYPE_1|
+    ADDED: |java+field:///android/nfc/tech/Ndef/NFC_FORUM_TYPE_2|
+    ADDED: |java+field:///android/nfc/tech/Ndef/NFC_FORUM_TYPE_3|
+    ADDED: |java+field:///android/nfc/tech/Ndef/NFC_FORUM_TYPE_4|
+    ADDED: |java+field:///android/nfc/tech/Ndef/TYPE_1|
+    ADDED: |java+field:///android/nfc/tech/Ndef/TYPE_2|
+    ADDED: |java+field:///android/nfc/tech/Ndef/TYPE_3|
+    ADDED: |java+field:///android/nfc/tech/Ndef/TYPE_4|
+    ADDED: |java+field:///android/nfc/tech/Ndef/TYPE_MIFARE_CLASSIC|
+    ADDED: |java+field:///android/nfc/tech/Ndef/TYPE_OTHER|
+    ADDED: |java+field:///android/nfc/tech/Ndef/UNKNOWN|
+    ADDED: |java+field:///android/nfc/tech/NfcA/EXTRA_ATQA|
+    ADDED: |java+field:///android/nfc/tech/NfcA/EXTRA_SAK|
+    ADDED: |java+field:///android/nfc/tech/NfcB/EXTRA_APPDATA|
+    ADDED: |java+field:///android/nfc/tech/NfcB/EXTRA_PROTINFO|
+    ADDED: |java+field:///android/nfc/tech/NfcF/EXTRA_PMM|
+    ADDED: |java+field:///android/nfc/tech/NfcF/EXTRA_SC|
+    ADDED: |java+field:///android/nfc/tech/NfcV/EXTRA_DSFID|
+    ADDED: |java+field:///android/nfc/tech/NfcV/EXTRA_RESP_FLAGS|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/ISO_DEP|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/MIFARE_CLASSIC|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/MIFARE_ULTRALIGHT|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/NDEF|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/NDEF_FORMATABLE|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/NFC_A|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/NFC_B|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/NFC_F|
+    ADDED: |java+field:///android/nfc/tech/TagTechnology/NFC_V|
+    ADDED: |java+field:///android/os/Build/VERSION_CODES/GINGERBREAD_MR1|
+    ADDED: |java+field:///android/provider/Downloads/Impl/PERMISSION_ACCESS_ALL|
+    ADDED: |java+field:///android/provider/MediaStore/Audio/AudioColumns/COMPILATION|
+    ADDED: |java+field:///android/telephony/TelephonyManager/NETWORK_TYPE_EHRPD|
+    ADDED: |java+field:///android/telephony/TelephonyManager/NETWORK_TYPE_LTE|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_BIT_RATE|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_CODEC|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_COMMENT|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_COPYRIGHT|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_DISCNUMBER|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_FRAME_RATE|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_IS_DRM_CRIPPLED|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_RATING|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_VIDEO_FORMAT|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_VIDEO_HEIGHT|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_VIDEO_WIDTH|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/MODE_CAPTURE_FRAME_ONLY|
+    DELETED: |java+field:///android/media/MediaMetadataRetriever/MODE_GET_METADATA_ONLY|
+    DELETED: |java+field:///android/nfc/NdefTag/TARGET_MIFARE_CLASSIC|
+    DELETED: |java+field:///android/nfc/NdefTag/TARGET_OTHER|
+    DELETED: |java+field:///android/nfc/NdefTag/TARGET_TYPE_1|
+    DELETED: |java+field:///android/nfc/NdefTag/TARGET_TYPE_2|
+    DELETED: |java+field:///android/nfc/NdefTag/TARGET_TYPE_3|
+    DELETED: |java+field:///android/nfc/NdefTag/TARGET_TYPE_4|
+    DELETED: |java+field:///android/nfc/NdefTagConnection/NDEF_MODE_READ_ONCE|
+    DELETED: |java+field:///android/nfc/NdefTagConnection/NDEF_MODE_READ_ONLY|
+    DELETED: |java+field:///android/nfc/NdefTagConnection/NDEF_MODE_UNKNOWN|
+    DELETED: |java+field:///android/nfc/NdefTagConnection/NDEF_MODE_WRITE_MANY|
+    DELETED: |java+field:///android/nfc/NdefTagConnection/NDEF_MODE_WRITE_ONCE|
+    DELETED: |java+field:///android/nfc/Tag/TARGET_ISO_14443_3A|
+    DELETED: |java+field:///android/nfc/Tag/TARGET_ISO_14443_3B|
+    DELETED: |java+field:///android/nfc/Tag/TARGET_ISO_14443_4|
+    DELETED: |java+field:///android/nfc/Tag/TARGET_ISO_15693|
+    DELETED: |java+field:///android/nfc/Tag/TARGET_JIS_X_6319_4|
+    DELETED: |java+field:///android/nfc/Tag/TARGET_OTHER|
+-------In total 0 fields have changed somehow, 79 fields have been added and 30 fields have been deleted.-------
+
+---[METHODS]---
+    ADDED: |java+constructor:///android/nfc/Tag/Tag(byte%5B%5D,int%5B%5D,android.nfc.Bundle%5B%5D,int,android.nfc.INfcTag)|
+    ADDED: |java+method:///android/app/Activity/isResumed()|
+    ADDED: |java+method:///android/app/ActivityThread/registerOnActivityPausedListener(android.app.Activity,android.nfc.OnActivityPausedListener)|
+    ADDED: |java+method:///android/app/ActivityThread/unregisterOnActivityPausedListener(android.app.Activity,android.nfc.OnActivityPausedListener)|
+    ADDED: |java+method:///android/bluetooth/BluetoothAdapter/listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)|
+    ADDED: |java+method:///android/bluetooth/BluetoothDevice/createInsecureRfcommSocketToServiceRecord(java.util.UUID)|
+    ADDED: |java+method:///android/content/SyncQueueTest/testExpeditedVsBackoff()|
+    ADDED: |java+method:///android/content/pm/PackageManagerTests/testUsesFeatureUnknownFeature()|
+    ADDED: |java+method:///android/media/MediaMetadataRetriever/getEmbeddedPicture()|
+    ADDED: |java+method:///android/media/MediaMetadataRetriever/getFrameAtTime()|
+    ADDED: |java+method:///android/media/MediaMetadataRetriever/getFrameAtTime(long)|
+    ADDED: |java+method:///android/media/MediaMetadataRetriever/getFrameAtTime(long,int)|
+    ADDED: |java+method:///android/net/sip/SipProfile/Builder/setAuthUserName(java.lang.String)|
+    ADDED: |java+method:///android/net/sip/SipProfile/getAuthUserName()|
+    ADDED: |java+method:///android/nfc/NfcAdapter/attemptDeadServiceRecovery(java.lang.Exception)|
+    ADDED: |java+method:///android/nfc/NfcAdapter/createNfcSecureElementConnection()|
+    ADDED: |java+method:///android/nfc/NfcAdapter/disableForegroundDispatch(android.app.Activity)|
+    ADDED: |java+method:///android/nfc/NfcAdapter/disableForegroundNdefPush(android.app.Activity)|
+    ADDED: |java+method:///android/nfc/NfcAdapter/enableForegroundDispatch(android.app.Activity,com.android.server.location.PendingIntent,android.nfc.IntentFilter%5B%5D,java.lang.String%5B%5D%5B%5D)|
+    ADDED: |java+method:///android/nfc/NfcAdapter/enableForegroundNdefPush(android.app.Activity,android.nfc.NdefMessage)|
+    ADDED: |java+method:///android/nfc/NfcAdapter/getDefaultAdapter(android.widget.Context)|
+    ADDED: |java+method:///android/nfc/NfcAdapter/getLocalNdefMessage()|
+    ADDED: |java+method:///android/nfc/NfcAdapter/getService()|
+    ADDED: |java+method:///android/nfc/NfcAdapter/getTagService()|
+    ADDED: |java+method:///android/nfc/NfcAdapter/setLocalNdefMessage(android.nfc.NdefMessage)|
+    ADDED: |java+method:///android/nfc/Tag/createMockTag(byte%5B%5D,int%5B%5D,android.nfc.Bundle%5B%5D)|
+    ADDED: |java+method:///android/nfc/Tag/getConnectedTechnology()|
+    ADDED: |java+method:///android/nfc/Tag/getTagService()|
+    ADDED: |java+method:///android/nfc/Tag/getTechExtras(int)|
+    ADDED: |java+method:///android/nfc/Tag/getTechList()|
+    ADDED: |java+method:///android/nfc/Tag/hasTech(int)|
+    ADDED: |java+method:///android/nfc/Tag/setConnectedTechnology(int)|
+    ADDED: |java+method:///android/nfc/Tag/setTechnologyDisconnected()|
+    ADDED: |java+method:///android/os/BatteryStats/dumpCheckinLocked(java.io.PrintWriter,java.lang.String%5B%5D,java.util.List)|
+    ADDED: |java+method:///android/util/TimeUtilsTest/testFormatDuration()|
+    ADDED: |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeDispatching(android.view.WindowManagerPolicy.WindowState,int,int,int,int,int,int,int)|
+    ADDED: |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeQueueing(long,int,int,int,int,int,boolean)|
+    DELETED: |java+method:///android/content/pm/PackageManager/setPackageObbPath(java.lang.String,java.lang.String)|
+    DELETED: |java+method:///android/media/MediaMetadataRetriever/captureFrame()|
+    DELETED: |java+method:///android/media/MediaMetadataRetriever/extractAlbumArt()|
+    DELETED: |java+method:///android/media/MediaMetadataRetriever/getMode()|
+    DELETED: |java+method:///android/media/MediaMetadataRetriever/setMode(int)|
+    DELETED: |java+method:///android/nfc/NfcAdapter/createNdefTagConnection(android.nfc.NdefTag)|
+    DELETED: |java+method:///android/nfc/NfcAdapter/createNdefTagConnection(android.nfc.NdefTag,java.lang.String)|
+    DELETED: |java+method:///android/nfc/NfcAdapter/createRawTagConnection(android.nfc.Tag)|
+    DELETED: |java+method:///android/nfc/NfcAdapter/createRawTagConnection(android.nfc.Tag,java.lang.String)|
+    DELETED: |java+method:///android/nfc/Tag/getActivationBytes()|
+    DELETED: |java+method:///android/nfc/Tag/getPollBytes()|
+    DELETED: |java+method:///android/nfc/Tag/getRawTargets()|
+    DELETED: |java+method:///android/test/mock/MockPackageManager/setPackageObbPath(java.lang.String,java.lang.String)|
+    DEPRECATED: |java+method:///android/nfc/NfcAdapter/getDefaultAdapter()|
+    SIGNATURE CHANGE: |java+constructor:///android/nfc/Tag/Tag(byte%5B%5D,boolean,java.lang.String%5B%5D,byte%5B%5D,byte%5B%5D,int)| IS NOW: |java+constructor:///android/nfc/Tag/Tag(byte%5B%5D,int%5B%5D,android.nfc.Bundle%5B%5D,int,android.nfc.INfcTag)|
+    SIGNATURE CHANGE: |java+method:///android/nfc/Tag/createMockTag(byte%5B%5D,java.lang.String%5B%5D,byte%5B%5D,byte%5B%5D)| IS NOW: |java+method:///android/nfc/Tag/createMockTag(byte%5B%5D,int%5B%5D,android.nfc.Bundle%5B%5D)|
+    SIGNATURE CHANGE: |java+method:///android/os/BatteryStats/dumpCheckinLocked(java.io.PrintWriter,java.lang.String%5B%5D)| IS NOW: |java+method:///android/os/BatteryStats/dumpCheckinLocked(java.io.PrintWriter,java.lang.String%5B%5D,java.util.List)|
+    SIGNATURE CHANGE: |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeDispatching(android.view.WindowManagerPolicy.WindowState,int,int,int,int,int,int)| IS NOW: |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeDispatching(android.view.WindowManagerPolicy.WindowState,int,int,int,int,int,int,int)|
+    SIGNATURE CHANGE: |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeQueueing(long,int,boolean,int,boolean)| IS NOW: |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeQueueing(long,int,int,int,int,int,boolean)|
+-------In total 17412 methods are unchanged, 6 methods have changed somehow, 37 methods have been added and 13 methods have been deleted.-------
+-------Changes in methods: 1 deprecated, 0 undeprecated, 5 signature change, 0 return type changes and 0 method modifier changes. -------
+
+---[CLASSES]---
+    ADDED: |java+class:///android/graphics/BitmapRegionDecoder|
+    ADDED: |java+class:///android/nfc/NfcManager|
+    ADDED: |java+class:///android/nfc/NfcSecureElement|
+    ADDED: |java+class:///android/nfc/TagLostException|
+    ADDED: |java+class:///android/nfc/TechListParcel|
+    ADDED: |java+class:///android/nfc/TransceiveResult|
+    ADDED: |java+class:///android/nfc/tech/IsoDep|
+    ADDED: |java+class:///android/nfc/tech/MifareClassic|
+    ADDED: |java+class:///android/nfc/tech/MifareUltralight|
+    ADDED: |java+class:///android/nfc/tech/Ndef|
+    ADDED: |java+class:///android/nfc/tech/NdefFormatable|
+    ADDED: |java+class:///android/nfc/tech/NfcA|
+    ADDED: |java+class:///android/nfc/tech/NfcB|
+    ADDED: |java+class:///android/nfc/tech/NfcF|
+    ADDED: |java+class:///android/nfc/tech/NfcV|
+    ADDED: |java+interface:///android/app/OnActivityPausedListener|
+    ADDED: |java+interface:///android/nfc/tech/TagTechnology|
+    CHANGED: |java+class:///android/app/Activity| DUE TO:
+            |java+method:///android/app/Activity/isResumed()|
+    CHANGED: |java+class:///android/app/ActivityThread| DUE TO:
+            |java+method:///android/app/ActivityThread/registerOnActivityPausedListener(android.app.Activity,android.nfc.OnActivityPausedListener)|
+            |java+method:///android/app/ActivityThread/unregisterOnActivityPausedListener(android.app.Activity,android.nfc.OnActivityPausedListener)|
+    CHANGED: |java+class:///android/bluetooth/BluetoothAdapter| DUE TO:
+            |java+method:///android/bluetooth/BluetoothAdapter/listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)|
+    CHANGED: |java+class:///android/bluetooth/BluetoothDevice| DUE TO:
+            |java+method:///android/bluetooth/BluetoothDevice/createInsecureRfcommSocketToServiceRecord(java.util.UUID)|
+    CHANGED: |java+class:///android/content/Context| DUE TO:
+            |java+field:///android/content/Context/NFC_SERVICE|
+    CHANGED: |java+class:///android/content/SyncQueueTest| DUE TO:
+            |java+method:///android/content/SyncQueueTest/testExpeditedVsBackoff()|
+    CHANGED: |java+class:///android/content/pm/PackageManager| DUE TO:
+            |java+method:///android/content/pm/PackageManager/setPackageObbPath(java.lang.String,java.lang.String)|
+    CHANGED: |java+class:///android/content/pm/PackageManagerTests| DUE TO:
+            |java+method:///android/content/pm/PackageManagerTests/testUsesFeatureUnknownFeature()|
+    CHANGED: |java+class:///android/graphics/BitmapFactory/Options| DUE TO:
+            |java+field:///android/graphics/BitmapFactory/Options/inPreferQualityOverSpeed|
+    CHANGED: |java+class:///android/media/AudioManager| DUE TO:
+            |java+field:///android/media/AudioManager/MODE_IN_COMMUNICATION|
+    CHANGED: |java+class:///android/media/AudioSystem| DUE TO:
+            |java+field:///android/media/AudioSystem/MODE_IN_COMMUNICATION|
+    CHANGED: |java+class:///android/media/MediaMetadataRetriever| DUE TO:
+            |java+field:///android/media/MediaMetadataRetriever/OPTION_PREVIOUS_SYNC|
+            |java+method:///android/media/MediaMetadataRetriever/getEmbeddedPicture()|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_COPYRIGHT|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_VIDEO_HEIGHT|
+            |java+field:///android/media/MediaMetadataRetriever/MODE_GET_METADATA_ONLY|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_IS_DRM_CRIPPLED|
+            |java+method:///android/media/MediaMetadataRetriever/setMode(int)|
+            |java+method:///android/media/MediaMetadataRetriever/getFrameAtTime(long)|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_COMPILATION|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_VIDEO_WIDTH|
+            |java+method:///android/media/MediaMetadataRetriever/getFrameAtTime(long,int)|
+            |java+method:///android/media/MediaMetadataRetriever/getFrameAtTime()|
+            |java+field:///android/media/MediaMetadataRetriever/OPTION_CLOSEST|
+            |java+field:///android/media/MediaMetadataRetriever/MODE_CAPTURE_FRAME_ONLY|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_COMMENT|
+            |java+method:///android/media/MediaMetadataRetriever/getMode()|
+            |java+method:///android/media/MediaMetadataRetriever/extractAlbumArt()|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_DISCNUMBER|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_RATING|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_VIDEO_FORMAT|
+            |java+field:///android/media/MediaMetadataRetriever/OPTION_CLOSEST_SYNC|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_CODEC|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_DISC_NUMBER|
+            |java+method:///android/media/MediaMetadataRetriever/captureFrame()|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_FRAME_RATE|
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_BIT_RATE|
+            |java+field:///android/media/MediaMetadataRetriever/OPTION_NEXT_SYNC|
+    CHANGED: |java+class:///android/media/MediaRecorder/AudioSource| DUE TO:
+            |java+field:///android/media/MediaRecorder/AudioSource/VOICE_COMMUNICATION|
+    CHANGED: |java+class:///android/net/ConnectivityManager| DUE TO:
+            |java+field:///android/net/ConnectivityManager/TYPE_DUMMY|
+            |java+field:///android/net/ConnectivityManager/TYPE_BLUETOOTH|
+            |java+field:///android/net/ConnectivityManager/TYPE_ETHERNET|
+    CHANGED: |java+class:///android/net/sip/SipProfile| DUE TO:
+            |java+method:///android/net/sip/SipProfile/getAuthUserName()|
+    CHANGED: |java+class:///android/net/sip/SipProfile/Builder| DUE TO:
+            |java+method:///android/net/sip/SipProfile/Builder/setAuthUserName(java.lang.String)|
+    CHANGED: |java+class:///android/nfc/NfcAdapter| DUE TO:
+            |java+method:///android/nfc/NfcAdapter/createRawTagConnection(android.nfc.Tag)|
+            |java+method:///android/nfc/NfcAdapter/setLocalNdefMessage(android.nfc.NdefMessage)|
+            |java+method:///android/nfc/NfcAdapter/disableForegroundDispatch(android.app.Activity)|
+            |java+method:///android/nfc/NfcAdapter/enableForegroundNdefPush(android.app.Activity,android.nfc.NdefMessage)|
+            |java+method:///android/nfc/NfcAdapter/createNfcSecureElementConnection()|
+            |java+method:///android/nfc/NfcAdapter/getDefaultAdapter()|
+            |java+method:///android/nfc/NfcAdapter/createRawTagConnection(android.nfc.Tag,java.lang.String)|
+            |java+field:///android/nfc/NfcAdapter/ACTION_RF_FIELD_ON_DETECTED|
+            |java+method:///android/nfc/NfcAdapter/disableForegroundNdefPush(android.app.Activity)|
+            |java+method:///android/nfc/NfcAdapter/getDefaultAdapter(android.widget.Context)|
+            |java+field:///android/nfc/NfcAdapter/ACTION_TECH_DISCOVERED|
+            |java+field:///android/nfc/NfcAdapter/ACTION_NDEF_DISCOVERED|
+            |java+method:///android/nfc/NfcAdapter/attemptDeadServiceRecovery(java.lang.Exception)|
+            |java+method:///android/nfc/NfcAdapter/getLocalNdefMessage()|
+            |java+method:///android/nfc/NfcAdapter/createNdefTagConnection(android.nfc.NdefTag)|
+            |java+method:///android/nfc/NfcAdapter/enableForegroundDispatch(android.app.Activity,com.android.server.location.PendingIntent,android.nfc.IntentFilter%5B%5D,java.lang.String%5B%5D%5B%5D)|
+            |java+field:///android/nfc/NfcAdapter/ACTION_TAG_LEFT_FIELD|
+            |java+method:///android/nfc/NfcAdapter/createNdefTagConnection(android.nfc.NdefTag,java.lang.String)|
+            |java+method:///android/nfc/NfcAdapter/getTagService()|
+            |java+field:///android/nfc/NfcAdapter/ACTION_RF_FIELD_OFF_DETECTED|
+            |java+method:///android/nfc/NfcAdapter/getService()|
+    CHANGED: |java+class:///android/nfc/Tag| DUE TO:
+            |java+field:///android/nfc/Tag/TARGET_ISO_15693|
+            |java+field:///android/nfc/Tag/TARGET_OTHER|
+            |java+field:///android/nfc/Tag/TARGET_ISO_14443_4|
+            |java+method:///android/nfc/Tag/getTagService()|
+            |java+method:///android/nfc/Tag/getRawTargets()|
+            |java+method:///android/nfc/Tag/getConnectedTechnology()|
+            |java+method:///android/nfc/Tag/getActivationBytes()|
+            |java+method:///android/nfc/Tag/setConnectedTechnology(int)|
+            |java+field:///android/nfc/Tag/TARGET_ISO_14443_3B|
+            |java+field:///android/nfc/Tag/TARGET_ISO_14443_3A|
+            |java+method:///android/nfc/Tag/getTechList()|
+            |java+method:///android/nfc/Tag/createMockTag(byte%5B%5D,int%5B%5D,android.nfc.Bundle%5B%5D)|
+            |java+method:///android/nfc/Tag/setTechnologyDisconnected()|
+            |java+method:///android/nfc/Tag/getPollBytes()|
+            |java+method:///android/nfc/Tag/createMockTag(byte%5B%5D,java.lang.String%5B%5D,byte%5B%5D,byte%5B%5D)|
+            |java+method:///android/nfc/Tag/getTechExtras(int)|
+            |java+method:///android/nfc/Tag/hasTech(int)|
+            |java+field:///android/nfc/Tag/TARGET_JIS_X_6319_4|
+            |java+constructor:///android/nfc/Tag/Tag(byte%5B%5D,boolean,java.lang.String%5B%5D,byte%5B%5D,byte%5B%5D,int)|
+            |java+constructor:///android/nfc/Tag/Tag(byte%5B%5D,int%5B%5D,android.nfc.Bundle%5B%5D,int,android.nfc.INfcTag)|
+    CHANGED: |java+class:///android/os/BatteryStats| DUE TO:
+            |java+method:///android/os/BatteryStats/dumpCheckinLocked(java.io.PrintWriter,java.lang.String%5B%5D,java.util.List)|
+            |java+method:///android/os/BatteryStats/dumpCheckinLocked(java.io.PrintWriter,java.lang.String%5B%5D)|
+    CHANGED: |java+class:///android/os/Build/VERSION_CODES| DUE TO:
+            |java+field:///android/os/Build/VERSION_CODES/GINGERBREAD_MR1|
+    CHANGED: |java+class:///android/provider/Downloads/Impl| DUE TO:
+            |java+field:///android/provider/Downloads/Impl/PERMISSION_ACCESS_ALL|
+    CHANGED: |java+class:///android/telephony/TelephonyManager| DUE TO:
+            |java+field:///android/telephony/TelephonyManager/NETWORK_TYPE_LTE|
+            |java+field:///android/telephony/TelephonyManager/NETWORK_TYPE_EHRPD|
+    CHANGED: |java+class:///android/test/mock/MockPackageManager| DUE TO:
+            |java+method:///android/test/mock/MockPackageManager/setPackageObbPath(java.lang.String,java.lang.String)|
+    CHANGED: |java+class:///android/util/TimeUtilsTest| DUE TO:
+            |java+method:///android/util/TimeUtilsTest/testFormatDuration()|
+    CHANGED: |java+interface:///android/provider/MediaStore/Audio/AudioColumns| DUE TO:
+            |java+field:///android/provider/MediaStore/Audio/AudioColumns/COMPILATION|
+    CHANGED: |java+interface:///android/view/WindowManagerPolicy| DUE TO:
+            |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeDispatching(android.view.WindowManagerPolicy.WindowState,int,int,int,int,int,int,int)|
+            |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeQueueing(long,int,int,int,int,int,boolean)|
+            |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeQueueing(long,int,boolean,int,boolean)|
+            |java+method:///android/view/WindowManagerPolicy/interceptKeyBeforeDispatching(android.view.WindowManagerPolicy.WindowState,int,int,int,int,int,int)|
+    CHANGED: |java+class:///android/nfc/Tag| DUE TO MODIFIER(S). OLD MODIFIERS: {public()}, NEW MODIFIERS: {final(),public()}
+    DELETED: |java+class:///android/nfc/NdefTag|
+    DELETED: |java+class:///android/nfc/NdefTagConnection|
+    DELETED: |java+class:///android/nfc/RawTagConnection|
+-------In total 26 classes have changed somehow, 17 classes have been added and 3 classes have been deleted.-------
+2014-01-05 18:03:33 :: Showing changes in table format
+                                classes         methods         fields
+from                to              ^   +   -   ^   +   -   ^   +   -   
+android-2.3_r1          android-2.3.3_r1        26  17  3   6   37  13  0   79  30  
+ok
+
+rascal>

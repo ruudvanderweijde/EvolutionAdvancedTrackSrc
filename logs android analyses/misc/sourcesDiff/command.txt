@@ -1,0 +1,1 @@
+compareSources([<"android-2.2_r1-android-2.3_r1","Android1-Android">]);

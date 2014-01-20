@@ -1,0 +1,615 @@
+rascal>import diff::Core;
+ok
+
+rascal>runSRC(14,15)
+2014-12-30 23:00:07 :: Getting m3 models...
+2014-12-30 23:00:07 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/1.m3
+2014-12-30 23:00:07 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/2.m3
+2014-12-30 23:00:07 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/3.m3
+2014-12-30 23:00:07 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/5.m3
+2014-12-30 23:00:07 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/11.m3
+2014-12-30 23:00:07 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/12.m3
+2014-12-30 23:00:07 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/13.m3
+|project://android4sdk|:    #annotations    234 class       88 interfaces       15376 methods   910 fields
+|project://android4sdk|:    #annotations    236 class       89 interfaces       15745 methods   923 fields
+2014-12-30 23:00:39 :: Comparing m3 models... 
+2014-12-30 23:00:40 :: Get method changes...
+2014-12-30 23:00:40 :: Method change: getModelHierarchy
+2014-12-30 23:00:40 ::  Hierarchy: get classes and interfaces
+2014-12-30 23:00:47 ::  Hierarchy: to map
+2014-12-30 23:00:47 ::  Hierarchy: looping (6982)
+2014-12-30 23:01:15 ::  Hierarchy: get classes and interfaces
+2014-12-30 23:01:17 ::  Hierarchy: to map
+2014-12-30 23:01:18 ::  Hierarchy: looping (7064)
+2014-12-30 23:01:39 :: Method change: findDeprecations
+2014-12-30 23:01:48 :: Get field changes...
+2014-12-30 23:01:48 :: Start getFieldChanges() 
+2014-12-30 23:01:48 :: Step 1: Start: getAddedAndRemovedFields
+2014-12-30 23:02:04 :: Step 2: getAddedAndRemovedFields
+2014-12-30 23:02:04 :: Step 3: getAddedAndRemovedFields
+2014-12-30 23:02:04 :: Step 4: getAddedAndRemovedFields
+2014-12-30 23:02:04 :: Step 5: Finished getAddedAndRemovedFields
+2014-12-30 23:02:04 :: getAddedAndRemovedFields is finished
+2014-12-30 23:02:04 :: Step 1: Start: getAllChangedFields
+2014-12-30 23:02:26 :: Get class changes...
+2014-12-30 23:02:26 :: Started getClassChanges()
+2014-12-30 23:02:26 :: Started getChangedAddedRemovedClasses()
+2014-12-30 23:02:33 :: Started getClassesWithContentChanges()
+2014-12-30 23:05:39 :: Started sanitizeClassChanges()
+2014-12-30 23:05:39 :: Print compare results... 
+2014-12-30 23:05:39 :: Writing to cache
+2014-12-30 23:05:44 :: Writing to cache one by one
+2014-12-30 23:05:49 :: Display results
+-------[ Transition from |project://android4sdk| to |project://android4sdk| ]-------
+---[FIELDS]---
+    ADDED: |java+field:///android/bluetooth/BluetoothDeviceProfileState/CONNECT_OTHER_PROFILES_DELAY|
+    ADDED: |java+field:///android/content/Context/BIND_NOT_VISIBLE|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_BROWSER|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_CALCULATOR|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_CALENDAR|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_CONTACTS|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_EMAIL|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_GALLERY|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_MAPS|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_MESSAGING|
+    ADDED: |java+field:///android/content/Intent/CATEGORY_APP_MUSIC|
+    ADDED: |java+field:///android/content/Intent/FILL_IN_SELECTOR|
+    ADDED: |java+field:///android/hardware/CameraSound/FOCUS_COMPLETE|
+    ADDED: |java+field:///android/hardware/CameraSound/SHUTTER_CLICK|
+    ADDED: |java+field:///android/hardware/CameraSound/START_VIDEO_RECORDING|
+    ADDED: |java+field:///android/hardware/CameraSound/STOP_VIDEO_RECORDING|
+    ADDED: |java+field:///android/media/MediaFile/FILE_TYPE_MP2PS|
+    ADDED: |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_LOCATION|
+    ADDED: |java+field:///android/net/NetworkStats/NonMonotonicException/left|
+    ADDED: |java+field:///android/net/NetworkStats/NonMonotonicException/leftIndex|
+    ADDED: |java+field:///android/net/NetworkStats/NonMonotonicException/right|
+    ADDED: |java+field:///android/net/NetworkStats/NonMonotonicException/rightIndex|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/EXTRA_4G_STATE|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/EXTRA_NEW_SIGNAL_LEVEL|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/EXTRA_WIMAX_STATE|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/EXTRA_WIMAX_STATE_DETAIL|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/EXTRA_WIMAX_STATE_INT|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/EXTRA_WIMAX_STATUS|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/NET_4G_STATE_CHANGED_ACTION|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/NET_4G_STATE_DISABLED|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/NET_4G_STATE_ENABLED|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/NET_4G_STATE_UNKNOWN|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/SIGNAL_LEVEL_CHANGED_ACTION|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/WIMAX_DEREGISTRATION|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/WIMAX_IDLE|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/WIMAX_NETWORK_STATE_CHANGED_ACTION|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/WIMAX_SERVICE|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/WIMAX_STATE_CONNECTED|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/WIMAX_STATE_DISCONNECTED|
+    ADDED: |java+field:///android/net/wimax/WimaxManagerConstants/WIMAX_STATE_UNKNOWN|
+    ADDED: |java+field:///android/opengl/GLES11Ext/GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES|
+    ADDED: |java+field:///android/opengl/GLES11Ext/GL_SAMPLER_EXTERNAL_OES|
+    ADDED: |java+field:///android/opengl/GLES11Ext/GL_TEXTURE_BINDING_EXTERNAL_OES|
+    ADDED: |java+field:///android/opengl/GLES11Ext/GL_TEXTURE_EXTERNAL_OES|
+    ADDED: |java+field:///android/os/Build/VERSION_CODES/ICE_CREAM_SANDWICH_MR1|
+    ADDED: |java+field:///android/os/StrictMode/DISABLE_PROPERTY|
+    ADDED: |java+field:///android/provider/CalendarContract/Colors/CONTENT_URI|
+    ADDED: |java+field:///android/provider/CalendarContract/Colors/TABLE_NAME|
+    ADDED: |java+field:///android/provider/ContactsContract/PhoneLookup/QUERY_PARAMETER_SIP_ADDRESS|
+    ADDED: |java+field:///android/provider/ContactsContract/REMOVE_DUPLICATE_ENTRIES|
+    ADDED: |java+field:///android/provider/Settings/Secure/ACCESSIBILITY_SPEAK_PASSWORD|
+    ADDED: |java+field:///android/provider/Settings/Secure/DATA_STALL_ALARM_AGGRESSIVE_DELAY_IN_MS|
+    ADDED: |java+field:///android/provider/Settings/Secure/DATA_STALL_ALARM_NON_AGGRESSIVE_DELAY_IN_MS|
+    ADDED: |java+field:///android/provider/Settings/Secure/WIFI_WATCHDOG_POOR_NETWORK_TEST_ENABLED|
+    ADDED: |java+field:///android/provider/Settings/Secure/WIMAX_NETWORKS_AVAILABLE_NOTIFICATION_ON|
+    ADDED: |java+field:///android/provider/Settings/System/RADIO_WIMAX|
+    ADDED: |java+field:///android/speech/tts/TextToSpeech/Engine/KEY_FEATURE_EMBEDDED_SYNTHESIS|
+    ADDED: |java+field:///android/speech/tts/TextToSpeech/Engine/KEY_FEATURE_NETWORK_SYNTHESIS|
+    ADDED: |java+field:///android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat/FEEDBACK_ALL_MASK|
+    ADDED: |java+field:///android/support/v4/app/NavUtils/PARENT_ACTIVITY|
+    ADDED: |java+field:///android/support/v4/app/NotificationCompat/FLAG_HIGH_PRIORITY|
+    ADDED: |java+field:///android/support/v4/app/ServiceCompat/START_STICKY|
+    ADDED: |java+field:///android/support/v4/app/ShareCompat/EXTRA_CALLING_ACTIVITY|
+    ADDED: |java+field:///android/support/v4/app/ShareCompat/EXTRA_CALLING_PACKAGE|
+    ADDED: |java+field:///android/support/v4/content/IntentCompat/ACTION_EXTERNAL_APPLICATIONS_AVAILABLE|
+    ADDED: |java+field:///android/support/v4/content/IntentCompat/ACTION_EXTERNAL_APPLICATIONS_UNAVAILABLE|
+    ADDED: |java+field:///android/support/v4/content/IntentCompat/EXTRA_CHANGED_PACKAGE_LIST|
+    ADDED: |java+field:///android/support/v4/content/IntentCompat/EXTRA_CHANGED_UID_LIST|
+    ADDED: |java+field:///android/support/v4/content/IntentCompat/FLAG_ACTIVITY_CLEAR_TASK|
+    ADDED: |java+field:///android/support/v4/content/IntentCompat/FLAG_ACTIVITY_TASK_ON_HOME|
+    ADDED: |java+field:///android/support/v4/content/pm/ActivityInfoCompat/CONFIG_UI_MODE|
+    ADDED: |java+field:///android/support/v4/view/MenuItemCompat/SHOW_AS_ACTION_ALWAYS|
+    ADDED: |java+field:///android/support/v4/view/MenuItemCompat/SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW|
+    ADDED: |java+field:///android/support/v4/view/MenuItemCompat/SHOW_AS_ACTION_IF_ROOM|
+    ADDED: |java+field:///android/support/v4/view/MenuItemCompat/SHOW_AS_ACTION_NEVER|
+    ADDED: |java+field:///android/support/v4/view/MenuItemCompat/SHOW_AS_ACTION_WITH_TEXT|
+    ADDED: |java+field:///android/support/v4/view/ViewPager/LayoutParams/gravity|
+    ADDED: |java+field:///android/support/v4/view/ViewPager/LayoutParams/isDecor|
+    ADDED: |java+field:///android/telephony/SignalStrength/INVALID_SNR|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_CALCULATOR|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_CALENDAR|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_CONTACTS|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_MUSIC|
+    ADDED: |java+field:///android/view/ViewRootImpl/PROCESS_INPUT_EVENTS|
+    ADDED: |java+field:///android/view/WindowManager/LayoutParams/PRIVATE_FLAG_SET_NEEDS_MENU_KEY|
+    ADDED: |java+field:///android/view/WindowManager/LayoutParams/PRIVATE_FLAG_WANTS_OFFSET_NOTIFICATIONS|
+    ADDED: |java+field:///android/view/WindowManagerImpl/RELAYOUT_DEFER_SURFACE_DESTROY|
+    ADDED: |java+field:///android/view/WindowManagerImpl/RELAYOUT_INSETS_PENDING|
+    ADDED: |java+field:///android/view/WindowManagerImpl/RELAYOUT_RES_FIRST_TIME|
+    ADDED: |java+field:///android/view/WindowManagerImpl/RELAYOUT_RES_IN_TOUCH_MODE|
+    ADDED: |java+field:///android/view/WindowManagerImpl/RELAYOUT_RES_SURFACE_CHANGED|
+    ADDED: |java+field:///android/view/accessibility/AccessibilityInteractionClient/NO_ID|
+    ADDED: |java+field:///android/view/accessibility/AccessibilityManager/STATE_FLAG_ACCESSIBILITY_ENABLED|
+    ADDED: |java+field:///android/view/accessibility/AccessibilityManager/STATE_FLAG_TOUCH_EXPLORATION_ENABLED|
+    ADDED: |java+field:///android/view/inputmethod/InputMethodManager/CONTROL_START_INITIAL|
+    ADDED: |java+field:///android/view/inputmethod/InputMethodManager/CONTROL_WINDOW_FIRST|
+    ADDED: |java+field:///android/view/inputmethod/InputMethodManager/CONTROL_WINDOW_IS_TEXT_EDITOR|
+    ADDED: |java+field:///android/view/inputmethod/InputMethodManager/CONTROL_WINDOW_VIEW_HAS_FOCUS|
+    ADDED: |java+field:///android/view/textservice/SuggestionsInfo/RESULT_ATTR_HAS_RECOMMENDED_SUGGESTIONS|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/ANCHOR_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/EDIT_TEXT_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/EMAIL_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/GEO_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/IMAGE_ANCHOR_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/IMAGE_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/PHONE_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/SRC_ANCHOR_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/SRC_IMAGE_ANCHOR_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/HitTestResult/UNKNOWN_TYPE|
+    ADDED: |java+field:///android/webkit/WebView/SCHEME_GEO|
+    ADDED: |java+field:///android/webkit/WebView/SCHEME_MAILTO|
+    ADDED: |java+field:///android/webkit/WebView/SCHEME_TEL|
+    ADDED: |java+field:///android/widget/SpellChecker/AVERAGE_WORD_LENGTH|
+    ADDED: |java+field:///android/widget/SpellChecker/MAX_NUMBER_OF_WORDS|
+    ADDED: |java+field:///android/widget/SpellChecker/WORD_ITERATOR_INTERVAL|
+    ADDED: |java+field:///com/android/frameworkperf/RunResult/CREATOR|
+    ADDED: |java+field:///com/android/frameworkperf/TestArgs/CREATOR|
+    ADDED: |java+field:///com/android/frameworks/downloadmanagertests/DownloadManagerTestRunner/externalDownloadUriValue|
+    ADDED: |java+field:///com/android/internal/telephony/IccIoResult/sw1|
+    ADDED: |java+field:///com/android/internal/telephony/IccIoResult/sw2|
+    ADDED: |java+field:///com/android/internal/widget/LockPatternUtils/LOCKSCREEN_POWER_BUTTON_INSTANTLY_LOCKS|
+    ADDED: |java+field:///com/android/layoutlib/bridge/BridgeConstants/NS_APP_RES_AUTO|
+    ADDED: |java+field:///com/android/mediaframeworktest/MediaFrameworkTestRunner/mMinCameraFps|
+    ADDED: |java+field:///com/android/mediaframeworktest/MediaRecorderStressTestRunner/mCaptureRate|
+    ADDED: |java+field:///com/android/mediaframeworktest/MediaRecorderStressTestRunner/mTimeLapseDuration|
+    ADDED: |java+field:///com/android/nfc_extras/BasicNfcEeTest/SELECT_CARD_MANAGER_COMMAND|
+    ADDED: |java+field:///com/android/nfc_extras/BasicNfcEeTest/SELECT_CARD_MANAGER_RESPONSE|
+    DELETED: |java+field:///android/provider/Settings/Secure/DATA_STALL_ALARM_DELAY_IN_MS|
+    DELETED: |java+field:///android/provider/Settings/Secure/DREAM_COMPONENT|
+    DELETED: |java+field:///android/provider/Settings/Secure/DREAM_TIMEOUT|
+    DELETED: |java+field:///android/support/v4/android/accessibilityservice/AccessibilityServiceInfoCompat/FEEDBACK_ALL_MASK|
+    DELETED: |java+field:///android/support/v4/content/ModernAsyncTask/THREAD_POOL_EXECUTOR|
+    DELETED: |java+field:///android/view/WindowManagerImpl/RELAYOUT_FIRST_TIME|
+    DELETED: |java+field:///android/view/WindowManagerImpl/RELAYOUT_IN_TOUCH_MODE|
+    DEPRECATED: |java+field:///android/provider/MediaStore/INTENT_ACTION_MUSIC_PLAYER|
+-------In total 1 fields have changed somehow, 127 fields have been added and 7 fields have been deleted.-------
+
+---[METHODS]---
+    ADDED: |java+method:///android/renderscript/Element/getSizeBytes()|
+    ADDED: |java+method:///android/support/v4/app/FragmentActivity/supportInvalidateOptionsMenu()|
+    DELETED: |java+constructor:///android/database/CursorWindow/CursorWindow(java.lang.String,boolean)|
+    DELETED: |java+constructor:///android/mtp/MtpDatabase/MtpDatabase(android.content.Context,java.lang.String,java.lang.String)|
+    DELETED: |java+method:///android/app/ActivityThread/removeProviderLocked(android.content.IContentProvider)|
+    DELETED: |java+method:///android/database/CursorWindowTest/testEmptyString()|
+    DELETED: |java+method:///android/database/CursorWindowTest/testNull()|
+    DELETED: |java+method:///android/database/CursorWindowTest/testWriteCursorToWindow()|
+    DELETED: |java+method:///android/net/NetworkStats/subtractClamped(android.net.NetworkStats)|
+    DELETED: |java+method:///android/net/wifi/WifiStateMachine/requestCmWakeLock()|
+    DELETED: |java+method:///android/net/wifi/WifiStateMachine/setDriverStart(boolean)|
+    DELETED: |java+method:///android/net/wifi/WifiStateMachine/syncGetWifiApConfiguration(com.android.internal.util.AsyncChannel)|
+    DELETED: |java+method:///android/net/wifi/WifiWatchdogStateMachine/cancelNetworkNotification()|
+    DELETED: |java+method:///android/os/SystemPropertiesTest/testStressMemoryPropertyConsistency()|
+    DELETED: |java+method:///android/os/SystemPropertiesTest/testStressPersistPropertyConsistency()|
+    DELETED: |java+method:///android/server/BluetoothService/notifyIncomingConnection(java.lang.String)|
+    DELETED: |java+method:///android/support/v13/app/FragmentPagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+    DELETED: |java+method:///android/support/v13/app/FragmentPagerAdapter/finishUpdate(android.view.View)|
+    DELETED: |java+method:///android/support/v13/app/FragmentPagerAdapter/instantiateItem(android.view.View,int)|
+    DELETED: |java+method:///android/support/v13/app/FragmentPagerAdapter/setPrimaryItem(android.view.View,int,java.lang.Object)|
+    DELETED: |java+method:///android/support/v13/app/FragmentPagerAdapter/startUpdate(android.view.View)|
+    DELETED: |java+method:///android/support/v13/app/FragmentStatePagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+    DELETED: |java+method:///android/support/v13/app/FragmentStatePagerAdapter/finishUpdate(android.view.View)|
+    DELETED: |java+method:///android/support/v13/app/FragmentStatePagerAdapter/instantiateItem(android.view.View,int)|
+    DELETED: |java+method:///android/support/v13/app/FragmentStatePagerAdapter/setPrimaryItem(android.view.View,int,java.lang.Object)|
+    DELETED: |java+method:///android/support/v13/app/FragmentStatePagerAdapter/startUpdate(android.view.View)|
+    DELETED: |java+method:///android/support/v4/app/FragmentPagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+    DELETED: |java+method:///android/support/v4/app/FragmentPagerAdapter/finishUpdate(android.view.View)|
+    DELETED: |java+method:///android/support/v4/app/FragmentPagerAdapter/instantiateItem(android.view.View,int)|
+    DELETED: |java+method:///android/support/v4/app/FragmentPagerAdapter/setPrimaryItem(android.view.View,int,java.lang.Object)|
+    DELETED: |java+method:///android/support/v4/app/FragmentPagerAdapter/startUpdate(android.view.View)|
+    DELETED: |java+method:///android/support/v4/app/FragmentStatePagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+    DELETED: |java+method:///android/support/v4/app/FragmentStatePagerAdapter/finishUpdate(android.view.View)|
+    DELETED: |java+method:///android/support/v4/app/FragmentStatePagerAdapter/instantiateItem(android.view.View,int)|
+    DELETED: |java+method:///android/support/v4/app/FragmentStatePagerAdapter/setPrimaryItem(android.view.View,int,java.lang.Object)|
+    DELETED: |java+method:///android/support/v4/app/FragmentStatePagerAdapter/startUpdate(android.view.View)|
+    DELETED: |java+method:///android/view/accessibility/AccessibilityEvent/setConnection(android.accessibilityservice.IAccessibilityServiceConnection)|
+    DELETED: |java+method:///android/view/accessibility/AccessibilityInteractionClient/findAccessibilityNodeInfoByAccessibilityId(android.accessibilityservice.IAccessibilityServiceConnection,int,int)|
+    DELETED: |java+method:///android/view/accessibility/AccessibilityInteractionClient/findAccessibilityNodeInfoByViewIdInActiveWindow(android.accessibilityservice.IAccessibilityServiceConnection,int)|
+    DELETED: |java+method:///android/view/accessibility/AccessibilityInteractionClient/findAccessibilityNodeInfosByViewText(android.accessibilityservice.IAccessibilityServiceConnection,java.lang.String,int,int)|
+    DELETED: |java+method:///android/view/accessibility/AccessibilityInteractionClient/findAccessibilityNodeInfosByViewTextInActiveWindow(android.accessibilityservice.IAccessibilityServiceConnection,java.lang.String)|
+    DELETED: |java+method:///android/view/accessibility/AccessibilityInteractionClient/performAccessibilityAction(android.accessibilityservice.IAccessibilityServiceConnection,int,int,int)|
+    DELETED: |java+method:///android/view/accessibility/AccessibilityNodeInfo/setConnection(android.accessibilityservice.IAccessibilityServiceConnection)|
+    DELETED: |java+method:///android/view/accessibility/AccessibilityRecord/setConnection(android.accessibilityservice.IAccessibilityServiceConnection)|
+    DELETED: |java+method:///android/webkit/WebView/clearCache()|
+    DELETED: |java+method:///com/android/calendarcommon/RecurrenceProcessorTest/failingTestWeekly9()|
+    DELETED: |java+method:///com/android/ex/chips/ChipsTest/testMatchesChip()|
+    DELETED: |java+method:///com/android/ex/chips/RecipientEditTextView/constructChipSpan(com.android.ex.chips.RecipientEntry,int,boolean)|
+    DELETED: |java+method:///com/android/ex/chips/RecipientEditTextView/getChipBackground(com.android.ex.chips.RecipientEntry)|
+    DELETED: |java+method:///com/android/ex/chips/RecipientEditTextView/matchesChip(com.android.ex.chips.RecipientChip,int)|
+    DELETED: |java+method:///com/android/ex/chips/RecipientEditTextView/replaceChip(com.android.ex.chips.RecipientChip,com.android.ex.chips.RecipientEntry)|
+    DELETED: |java+method:///com/android/ex/chips/RecipientEditTextView/selectChip(com.android.ex.chips.RecipientChip)|
+    DELETED: |java+method:///com/android/ex/chips/RecipientEditTextView/setAdapter(T)|
+    DELETED: |java+method:///com/android/ex/chips/RecipientEditTextView/unselectChip(com.android.ex.chips.RecipientChip)|
+    DELETED: |java+method:///com/android/internal/net/NetworkStatsFactoryTest/testNetworkStatsDetailExtended()|
+    DELETED: |java+method:///com/android/internal/policy/impl/KeyguardViewMediator/onWakeKeyWhenKeyguardShowingTq(int)|
+    DELETED: |java+method:///com/android/internal/policy/impl/RecentApplicationsDialog/onKeyUp(int,android.view.KeyEvent)|
+    DELETED: |java+method:///com/android/internal/policy/impl/RecentApplicationsDialog/setHeldModifiers(int)|
+    DELETED: |java+method:///com/android/layoutlib/bridge/android/BridgeIInputMethodManager/startInput(com.android.layoutlib.bridge.android.IInputMethodClient,com.android.layoutlib.bridge.android.IInputContext,android.view.inputmethod.EditorInfo,boolean,boolean)|
+    DELETED: |java+method:///com/android/layoutlib/bridge/android/BridgeIInputMethodManager/windowGainedFocus(com.android.layoutlib.bridge.android.IInputMethodClient,android.os.IBinder,boolean,boolean,int,boolean,int)|
+    DELETED: |java+method:///com/android/layoutlib/bridge/android/BridgeWindowSession/relayout(com.android.layoutlib.bridge.android.IWindow,int,android.view.WindowManager.LayoutParams,int,int,int,boolean,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.content.res.Configuration,android.view.Surface)|
+    DELETED: |java+method:///com/android/mediaframeworktest/functional/audio/MediaBassBoostTest/test2_0SoundModification()|
+    DELETED: |java+method:///com/android/mediaframeworktest/functional/audio/MediaEqualizerTest/test2_0SoundModification()|
+    DELETED: |java+method:///com/android/mediaframeworktest/functional/audio/MediaVirtualizerTest/test2_0SoundModification()|
+    DELETED: |java+method:///com/android/mediaframeworktest/performance/MediaPlayerPerformance/getMemoryWriteToLog(java.io.Writer,int)|
+    DELETED: |java+method:///com/android/mediaframeworktest/performance/MediaPlayerPerformance/validateMemoryResult(int,int,java.io.Writer,int)|
+    DELETED: |java+method:///com/android/mediaframeworktest/stress/MediaRecorderStressTest/removeRecodedVideo(java.lang.String)|
+    DELETED: |java+method:///com/android/server/InputMethodManagerService/startInput(com.android.layoutlib.bridge.android.IInputMethodClient,com.android.layoutlib.bridge.android.IInputContext,android.view.inputmethod.EditorInfo,boolean,boolean)|
+    DELETED: |java+method:///com/android/server/InputMethodManagerService/windowGainedFocus(com.android.layoutlib.bridge.android.IInputMethodClient,android.os.IBinder,boolean,boolean,int,boolean,int)|
+    DELETED: |java+method:///com/android/server/am/ActivityManagerService/addErrorToDropBox(java.lang.String,com.android.server.am.ProcessRecord,com.android.server.am.ActivityRecord,com.android.server.am.ActivityRecord,java.lang.String,java.lang.String,java.io.File,android.app.ApplicationErrorReport.CrashInfo)|
+    DELETED: |java+method:///com/android/server/am/ActivityManagerService/updateConfigurationLocked(android.content.res.Configuration,com.android.server.am.ActivityRecord,boolean)|
+    DELETED: |java+method:///com/android/server/wm/WindowManagerService/relayoutWindow(com.android.server.wm.Session,com.android.layoutlib.bridge.android.IWindow,int,android.view.WindowManager.LayoutParams,int,int,int,boolean,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.content.res.Configuration,android.view.Surface)|
+    DELETED: |java+method:///com/android/systemui/statusbar/phone/IconMerger/addView(com.android.systemui.statusbar.StatusBarIconView,int)|
+    DELETED: |java+method:///com/android/systemui/statusbar/phone/IconMerger/addView(com.android.systemui.statusbar.StatusBarIconView,int,android.widget.LinearLayout.LayoutParams)|
+    DELETED: |java+method:///com/android/systemui/statusbar/policy/NetworkController/addLabelView(android.widget.TextView)|
+    DEPRECATED: |java+constructor:///android/database/CursorWindow/CursorWindow(boolean)|
+    DEPRECATED: |java+method:///android/speech/tts/TextToSpeech/setOnUtteranceCompletedListener(android.speech.tts.TextToSpeech.OnUtteranceCompletedListener)|
+    DEPRECATED: |java+method:///android/view/accessibility/AccessibilityManager/getAccessibilityServiceList()|
+    DEPRECATED: |java+method:///android/webkit/WebView/disablePlatformNotifications()|
+    DEPRECATED: |java+method:///android/webkit/WebView/enablePlatformNotifications()|
+    DEPRECATED: |java+method:///android/webkit/WebView/getZoomControls()|
+    METHOD MODIFIER CHANGE OF |java+method:///android/support/v4/view/PagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|. OLD: {public(),abstract()}. NEW: {public()}
+    METHOD MODIFIER CHANGE OF |java+method:///android/support/v4/view/PagerAdapter/finishUpdate(android.view.View)|. OLD: {public(),abstract()}. NEW: {public()}
+    METHOD MODIFIER CHANGE OF |java+method:///android/support/v4/view/PagerAdapter/instantiateItem(android.view.View,int)|. OLD: {public(),abstract()}. NEW: {public()}
+    METHOD MODIFIER CHANGE OF |java+method:///android/support/v4/view/PagerAdapter/restoreState(android.os.Parcelable,java.lang.ClassLoader)|. OLD: {public(),abstract()}. NEW: {public()}
+    METHOD MODIFIER CHANGE OF |java+method:///android/support/v4/view/PagerAdapter/saveState()|. OLD: {public(),abstract()}. NEW: {public()}
+    METHOD MODIFIER CHANGE OF |java+method:///android/support/v4/view/PagerAdapter/startUpdate(android.view.View)|. OLD: {public(),abstract()}. NEW: {public()}
+    METHOD MODIFIER CHANGE OF |java+method:///com/android/systemui/statusbar/phone/PhoneStatusBar/viewInfo(android.view.View)|. OLD: {public()}. NEW: {public(),static()}
+    RETURN TYPE CHANGE OF |java+method:///com/android/server/accessibility/AccessibilityManagerService/registerEventListener(android.accessibilityservice.IEventListener)|: class(|java+class:///android/accessibilityservice/IAccessibilityServiceConnection|,[]) is now void()
+    UNDEPRECATED: |java+method:///android/webkit/WebSettings/getLayoutAlgorithm()|
+    UNDEPRECATED: |java+method:///android/webkit/WebSettings/setLayoutAlgorithm(android.webkit.WebSettings.LayoutAlgorithm)|
+-------In total 49862 methods are unchanged, 16 methods have changed somehow, 2 methods have been added and 73 methods have been deleted.-------
+-------Changes in methods: 6 deprecated, 2 undeprecated, 0 signature change, 1 return type changes and 7 method modifier changes. -------
+
+---[CLASSES]---
+    ADDED: |java+class:///android/content/pm/PackageManagerHostTestUtils|
+    ADDED: |java+class:///android/content/pm/PackageManagerHostTestUtils/CollectingTestRunListener|
+    ADDED: |java+class:///android/content/pm/PackageManagerHostTests|
+    ADDED: |java+class:///android/content/pm/PackageManagerStressHostTests|
+    ADDED: |java+class:///android/database/CrossProcessCursorWrapper|
+    ADDED: |java+class:///android/hardware/CameraSound|
+    ADDED: |java+class:///android/media/MediaInserter|
+    ADDED: |java+class:///android/net/DownloadManagerHostTests|
+    ADDED: |java+class:///android/net/NetworkStats/NonMonotonicException|
+    ADDED: |java+class:///android/net/wimax/WimaxManagerConstants|
+    ADDED: |java+class:///android/opengl/ManagedEGLContext|
+    ADDED: |java+class:///android/os/TransactionTooLargeException|
+    ADDED: |java+class:///android/provider/CalendarContract/Colors|
+    ADDED: |java+class:///android/speech/tts/UtteranceProgressListener|
+    ADDED: |java+class:///android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat|
+    ADDED: |java+class:///android/support/v4/app/ActivityCompat|
+    ADDED: |java+class:///android/support/v4/app/NavUtils|
+    ADDED: |java+class:///android/support/v4/app/NotificationCompat|
+    ADDED: |java+class:///android/support/v4/app/NotificationCompat/Builder|
+    ADDED: |java+class:///android/support/v4/app/ServiceCompat|
+    ADDED: |java+class:///android/support/v4/app/ShareCompat|
+    ADDED: |java+class:///android/support/v4/app/ShareCompat/IntentBuilder|
+    ADDED: |java+class:///android/support/v4/app/ShareCompat/IntentReader|
+    ADDED: |java+class:///android/support/v4/app/TaskStackBuilder|
+    ADDED: |java+class:///android/support/v4/app/TaskStackBuilderHoneycomb|
+    ADDED: |java+class:///android/support/v4/content/IntentCompat|
+    ADDED: |java+class:///android/support/v4/content/pm/ActivityInfoCompat|
+    ADDED: |java+class:///android/support/v4/database/DatabaseUtilsCompat|
+    ADDED: |java+class:///android/support/v4/view/MenuItemCompat|
+    ADDED: |java+class:///android/support/v4/view/PagerTitleStrip|
+    ADDED: |java+class:///android/support/v4/view/ViewPager/LayoutParams|
+    ADDED: |java+class:///android/support/v4/widget/SearchViewCompat|
+    ADDED: |java+class:///android/support/v4/widget/SearchViewCompat/OnQueryTextListenerCompat|
+    ADDED: |java+class:///android/webkit/WebView/HitTestResult|
+    ADDED: |java+class:///android/webkit/WebView/WebViewTransport|
+    ADDED: |java+class:///android/widget/NumberPicker/CustomEditText|
+    ADDED: |java+class:///com/android/framework/autoloctestapp/AutoLocTestAppActivity|
+    ADDED: |java+class:///com/android/framework/autolocversionedtestapp/AutoLocVersionedTestAppActivity|
+    ADDED: |java+class:///com/android/framework/externallocallpermstestapp/ExternalLocAllPermsTest|
+    ADDED: |java+class:///com/android/framework/externallocpermsfltestapp/ExternalLocPermsFLTestAppActivity|
+    ADDED: |java+class:///com/android/framework/externalloctestapp/ExternalLocTestAppActivity|
+    ADDED: |java+class:///com/android/framework/externallocversionedtestapp/ExternalLocVersionedTestAppActivity|
+    ADDED: |java+class:///com/android/framework/externalsharedpermsbttestapp/ExternalSharedPermsBTTest|
+    ADDED: |java+class:///com/android/framework/externalsharedpermsdiffkeytestapp/ExternalSharedPermsDiffKeyTest|
+    ADDED: |java+class:///com/android/framework/externalsharedpermsfltestapp/ExternalSharedPermsFLTest|
+    ADDED: |java+class:///com/android/framework/externalsharedpermstestapp/ExternalSharedPermsTest|
+    ADDED: |java+class:///com/android/framework/internalloctestapp/InternalLocTestAppActivity|
+    ADDED: |java+class:///com/android/framework/noloctestapp/NoLocTestAppActivity|
+    ADDED: |java+class:///com/android/framework/nolocversionedtestapp/NoLocVersionedTestAppActivity|
+    ADDED: |java+class:///com/android/framework/simpletestapp/SimpleAppActivity|
+    ADDED: |java+class:///com/android/framework/updateexternalloctestapp/UpdateExternalLocTestAppActivity|
+    ADDED: |java+class:///com/android/framework/updateexttointloctestapp/UpdateExtToIntLocTestAppActivity|
+    ADDED: |java+class:///com/android/framework/versatiletestapp/VersatileTestAppActivity|
+    ADDED: |java+class:///com/android/frameworkperf/FrameworkPerfActivity|
+    ADDED: |java+class:///com/android/frameworkperf/FrameworkPerfTest|
+    ADDED: |java+class:///com/android/frameworkperf/LocalTestService|
+    ADDED: |java+class:///com/android/frameworkperf/Receiver|
+    ADDED: |java+class:///com/android/frameworkperf/RunResult|
+    ADDED: |java+class:///com/android/frameworkperf/SchedulerService|
+    ADDED: |java+class:///com/android/frameworkperf/SimpleInflater|
+    ADDED: |java+class:///com/android/frameworkperf/TestArgs|
+    ADDED: |java+class:///com/android/frameworkperf/TestService|
+    ADDED: |java+class:///com/android/frameworkperf/TestService/Op|
+    ADDED: |java+class:///com/android/frameworkperf/TestService/TestRunner|
+    ADDED: |java+class:///com/android/frameworks/downloadmanagertests/DownloadManagerBaseTest|
+    ADDED: |java+class:///com/android/frameworks/downloadmanagertests/DownloadManagerBaseTest/LoggingRng|
+    ADDED: |java+class:///com/android/frameworks/downloadmanagertests/DownloadManagerBaseTest/MultipleDownloadsCompletedReceiver|
+    ADDED: |java+class:///com/android/frameworks/downloadmanagertests/DownloadManagerBaseTest/WiFiChangedReceiver|
+    ADDED: |java+class:///com/android/frameworks/downloadmanagertests/DownloadManagerTestApp|
+    ADDED: |java+class:///com/android/frameworks/downloadmanagertests/DownloadManagerTestRunner|
+    ADDED: |java+class:///com/android/internal/telephony/IccServiceTable|
+    ADDED: |java+class:///com/android/internal/telephony/IccServiceTableTest|
+    ADDED: |java+class:///com/android/internal/telephony/gsm/UsimDataDownloadHandler|
+    ADDED: |java+class:///com/android/internal/telephony/gsm/UsimDataDownloadTest|
+    ADDED: |java+class:///com/android/internal/telephony/gsm/UsimServiceTable|
+    ADDED: |java+class:///com/android/internal/telephony/gsm/UsimServiceTableTest|
+    ADDED: |java+class:///com/android/internal/util/ProcFileReader|
+    ADDED: |java+class:///com/android/internal/util/ProcFileReaderTest|
+    ADDED: |java+class:///com/android/mailcommon/WebViewContextMenu|
+    ADDED: |java+class:///com/android/mediaframeworktest/unit/MediaInserterTest|
+    ADDED: |java+class:///com/android/nfc_extras/BasicNfcEeTest|
+    ADDED: |java+class:///com/example/android/rs/computeperf/ComputePerf|
+    ADDED: |java+class:///com/example/android/rs/computeperf/LaunchTest|
+    ADDED: |java+class:///com/example/android/rs/computeperf/Mandelbrot|
+    ADDED: |java+enum:///android/content/pm/PackageManagerHostTestUtils/InstallLocPreference|
+    ADDED: |java+enum:///android/content/pm/PackageManagerHostTestUtils/InstallLocation|
+    ADDED: |java+enum:///com/android/internal/telephony/IccServiceTableTest/TestIccServiceTable/TestIccService|
+    ADDED: |java+enum:///com/android/internal/telephony/cat/ComprehensionTlvTag|
+    ADDED: |java+enum:///com/android/internal/telephony/gsm/UsimServiceTable/UsimService|
+    ADDED: |java+interface:///android/webkit/WebView/PictureListener|
+    CHANGED: |java+class:///android/app/ActivityThread| DUE TO:
+            |java+method:///android/app/ActivityThread/removeProviderLocked(android.content.IContentProvider)|
+    CHANGED: |java+class:///android/bluetooth/BluetoothDeviceProfileState| DUE TO:
+            |java+field:///android/bluetooth/BluetoothDeviceProfileState/CONNECT_OTHER_PROFILES_DELAY|
+    CHANGED: |java+class:///android/content/Context| DUE TO:
+            |java+field:///android/content/Context/BIND_NOT_VISIBLE|
+    CHANGED: |java+class:///android/content/Intent| DUE TO:
+            |java+field:///android/content/Intent/FILL_IN_SELECTOR|
+            |java+field:///android/content/Intent/CATEGORY_APP_EMAIL|
+            |java+field:///android/content/Intent/CATEGORY_APP_MAPS|
+            |java+field:///android/content/Intent/CATEGORY_APP_BROWSER|
+            |java+field:///android/content/Intent/CATEGORY_APP_CONTACTS|
+            |java+field:///android/content/Intent/CATEGORY_APP_MUSIC|
+            |java+field:///android/content/Intent/CATEGORY_APP_MESSAGING|
+            |java+field:///android/content/Intent/CATEGORY_APP_CALCULATOR|
+            |java+field:///android/content/Intent/CATEGORY_APP_GALLERY|
+            |java+field:///android/content/Intent/CATEGORY_APP_CALENDAR|
+    CHANGED: |java+class:///android/database/CursorWindow| DUE TO:
+            |java+constructor:///android/database/CursorWindow/CursorWindow(java.lang.String,boolean)|
+            |java+constructor:///android/database/CursorWindow/CursorWindow(boolean)|
+    CHANGED: |java+class:///android/database/CursorWindowTest| DUE TO:
+            |java+method:///android/database/CursorWindowTest/testWriteCursorToWindow()|
+            |java+method:///android/database/CursorWindowTest/testNull()|
+            |java+method:///android/database/CursorWindowTest/testEmptyString()|
+    CHANGED: |java+class:///android/media/MediaFile| DUE TO:
+            |java+field:///android/media/MediaFile/FILE_TYPE_MP2PS|
+    CHANGED: |java+class:///android/media/MediaMetadataRetriever| DUE TO:
+            |java+field:///android/media/MediaMetadataRetriever/METADATA_KEY_LOCATION|
+    CHANGED: |java+class:///android/mtp/MtpDatabase| DUE TO:
+            |java+constructor:///android/mtp/MtpDatabase/MtpDatabase(android.content.Context,java.lang.String,java.lang.String)|
+    CHANGED: |java+class:///android/net/NetworkStats| DUE TO:
+            |java+method:///android/net/NetworkStats/subtractClamped(android.net.NetworkStats)|
+    CHANGED: |java+class:///android/net/wifi/WifiStateMachine| DUE TO:
+            |java+method:///android/net/wifi/WifiStateMachine/syncGetWifiApConfiguration(com.android.internal.util.AsyncChannel)|
+            |java+method:///android/net/wifi/WifiStateMachine/requestCmWakeLock()|
+            |java+method:///android/net/wifi/WifiStateMachine/setDriverStart(boolean)|
+    CHANGED: |java+class:///android/net/wifi/WifiWatchdogStateMachine| DUE TO:
+            |java+method:///android/net/wifi/WifiWatchdogStateMachine/cancelNetworkNotification()|
+    CHANGED: |java+class:///android/opengl/GLES11Ext| DUE TO:
+            |java+field:///android/opengl/GLES11Ext/GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES|
+            |java+field:///android/opengl/GLES11Ext/GL_SAMPLER_EXTERNAL_OES|
+            |java+field:///android/opengl/GLES11Ext/GL_TEXTURE_EXTERNAL_OES|
+            |java+field:///android/opengl/GLES11Ext/GL_TEXTURE_BINDING_EXTERNAL_OES|
+    CHANGED: |java+class:///android/os/Build/VERSION_CODES| DUE TO:
+            |java+field:///android/os/Build/VERSION_CODES/ICE_CREAM_SANDWICH_MR1|
+    CHANGED: |java+class:///android/os/StrictMode| DUE TO:
+            |java+field:///android/os/StrictMode/DISABLE_PROPERTY|
+    CHANGED: |java+class:///android/os/SystemPropertiesTest| DUE TO:
+            |java+method:///android/os/SystemPropertiesTest/testStressPersistPropertyConsistency()|
+            |java+method:///android/os/SystemPropertiesTest/testStressMemoryPropertyConsistency()|
+    CHANGED: |java+class:///android/provider/ContactsContract| DUE TO:
+            |java+field:///android/provider/ContactsContract/REMOVE_DUPLICATE_ENTRIES|
+    CHANGED: |java+class:///android/provider/ContactsContract/PhoneLookup| DUE TO:
+            |java+field:///android/provider/ContactsContract/PhoneLookup/QUERY_PARAMETER_SIP_ADDRESS|
+    CHANGED: |java+class:///android/provider/MediaStore| DUE TO:
+            |java+field:///android/provider/MediaStore/INTENT_ACTION_MUSIC_PLAYER|
+    CHANGED: |java+class:///android/provider/Settings/Secure| DUE TO:
+            |java+field:///android/provider/Settings/Secure/DATA_STALL_ALARM_DELAY_IN_MS|
+            |java+field:///android/provider/Settings/Secure/WIMAX_NETWORKS_AVAILABLE_NOTIFICATION_ON|
+            |java+field:///android/provider/Settings/Secure/DREAM_TIMEOUT|
+            |java+field:///android/provider/Settings/Secure/DREAM_COMPONENT|
+            |java+field:///android/provider/Settings/Secure/ACCESSIBILITY_SPEAK_PASSWORD|
+            |java+field:///android/provider/Settings/Secure/DATA_STALL_ALARM_NON_AGGRESSIVE_DELAY_IN_MS|
+            |java+field:///android/provider/Settings/Secure/DATA_STALL_ALARM_AGGRESSIVE_DELAY_IN_MS|
+            |java+field:///android/provider/Settings/Secure/WIFI_WATCHDOG_POOR_NETWORK_TEST_ENABLED|
+    CHANGED: |java+class:///android/provider/Settings/System| DUE TO:
+            |java+field:///android/provider/Settings/System/RADIO_WIMAX|
+    CHANGED: |java+class:///android/renderscript/Element| DUE TO:
+            |java+method:///android/renderscript/Element/getSizeBytes()|
+    CHANGED: |java+class:///android/server/BluetoothService| DUE TO:
+            |java+method:///android/server/BluetoothService/notifyIncomingConnection(java.lang.String)|
+    CHANGED: |java+class:///android/speech/tts/TextToSpeech| DUE TO:
+            |java+method:///android/speech/tts/TextToSpeech/setOnUtteranceCompletedListener(android.speech.tts.TextToSpeech.OnUtteranceCompletedListener)|
+    CHANGED: |java+class:///android/speech/tts/TextToSpeech/Engine| DUE TO:
+            |java+field:///android/speech/tts/TextToSpeech/Engine/KEY_FEATURE_EMBEDDED_SYNTHESIS|
+            |java+field:///android/speech/tts/TextToSpeech/Engine/KEY_FEATURE_NETWORK_SYNTHESIS|
+    CHANGED: |java+class:///android/support/v13/app/FragmentPagerAdapter| DUE TO:
+            |java+method:///android/support/v13/app/FragmentPagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+            |java+method:///android/support/v13/app/FragmentPagerAdapter/instantiateItem(android.view.View,int)|
+            |java+method:///android/support/v13/app/FragmentPagerAdapter/finishUpdate(android.view.View)|
+            |java+method:///android/support/v13/app/FragmentPagerAdapter/startUpdate(android.view.View)|
+            |java+method:///android/support/v13/app/FragmentPagerAdapter/setPrimaryItem(android.view.View,int,java.lang.Object)|
+    CHANGED: |java+class:///android/support/v13/app/FragmentStatePagerAdapter| DUE TO:
+            |java+method:///android/support/v13/app/FragmentStatePagerAdapter/finishUpdate(android.view.View)|
+            |java+method:///android/support/v13/app/FragmentStatePagerAdapter/setPrimaryItem(android.view.View,int,java.lang.Object)|
+            |java+method:///android/support/v13/app/FragmentStatePagerAdapter/startUpdate(android.view.View)|
+            |java+method:///android/support/v13/app/FragmentStatePagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+            |java+method:///android/support/v13/app/FragmentStatePagerAdapter/instantiateItem(android.view.View,int)|
+    CHANGED: |java+class:///android/support/v4/app/FragmentActivity| DUE TO:
+            |java+method:///android/support/v4/app/FragmentActivity/supportInvalidateOptionsMenu()|
+    CHANGED: |java+class:///android/support/v4/app/FragmentPagerAdapter| DUE TO:
+            |java+method:///android/support/v4/app/FragmentPagerAdapter/instantiateItem(android.view.View,int)|
+            |java+method:///android/support/v4/app/FragmentPagerAdapter/finishUpdate(android.view.View)|
+            |java+method:///android/support/v4/app/FragmentPagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+            |java+method:///android/support/v4/app/FragmentPagerAdapter/setPrimaryItem(android.view.View,int,java.lang.Object)|
+            |java+method:///android/support/v4/app/FragmentPagerAdapter/startUpdate(android.view.View)|
+    CHANGED: |java+class:///android/support/v4/app/FragmentStatePagerAdapter| DUE TO:
+            |java+method:///android/support/v4/app/FragmentStatePagerAdapter/finishUpdate(android.view.View)|
+            |java+method:///android/support/v4/app/FragmentStatePagerAdapter/instantiateItem(android.view.View,int)|
+            |java+method:///android/support/v4/app/FragmentStatePagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+            |java+method:///android/support/v4/app/FragmentStatePagerAdapter/startUpdate(android.view.View)|
+            |java+method:///android/support/v4/app/FragmentStatePagerAdapter/setPrimaryItem(android.view.View,int,java.lang.Object)|
+    CHANGED: |java+class:///android/support/v4/view/PagerAdapter| DUE TO:
+            |java+method:///android/support/v4/view/PagerAdapter/startUpdate(android.view.View)|
+            |java+method:///android/support/v4/view/PagerAdapter/instantiateItem(android.view.View,int)|
+            |java+method:///android/support/v4/view/PagerAdapter/finishUpdate(android.view.View)|
+            |java+method:///android/support/v4/view/PagerAdapter/restoreState(android.os.Parcelable,java.lang.ClassLoader)|
+            |java+method:///android/support/v4/view/PagerAdapter/saveState()|
+            |java+method:///android/support/v4/view/PagerAdapter/destroyItem(android.view.View,int,java.lang.Object)|
+    CHANGED: |java+class:///android/telephony/SignalStrength| DUE TO:
+            |java+field:///android/telephony/SignalStrength/INVALID_SNR|
+    CHANGED: |java+class:///android/view/KeyEvent| DUE TO:
+            |java+field:///android/view/KeyEvent/KEYCODE_CALCULATOR|
+            |java+field:///android/view/KeyEvent/KEYCODE_CALENDAR|
+            |java+field:///android/view/KeyEvent/KEYCODE_MUSIC|
+            |java+field:///android/view/KeyEvent/KEYCODE_CONTACTS|
+    CHANGED: |java+class:///android/view/ViewRootImpl| DUE TO:
+            |java+field:///android/view/ViewRootImpl/PROCESS_INPUT_EVENTS|
+    CHANGED: |java+class:///android/view/WindowManager/LayoutParams| DUE TO:
+            |java+field:///android/view/WindowManager/LayoutParams/PRIVATE_FLAG_WANTS_OFFSET_NOTIFICATIONS|
+            |java+field:///android/view/WindowManager/LayoutParams/PRIVATE_FLAG_SET_NEEDS_MENU_KEY|
+    CHANGED: |java+class:///android/view/WindowManagerImpl| DUE TO:
+            |java+field:///android/view/WindowManagerImpl/RELAYOUT_RES_SURFACE_CHANGED|
+            |java+field:///android/view/WindowManagerImpl/RELAYOUT_RES_IN_TOUCH_MODE|
+            |java+field:///android/view/WindowManagerImpl/RELAYOUT_IN_TOUCH_MODE|
+            |java+field:///android/view/WindowManagerImpl/RELAYOUT_DEFER_SURFACE_DESTROY|
+            |java+field:///android/view/WindowManagerImpl/RELAYOUT_INSETS_PENDING|
+            |java+field:///android/view/WindowManagerImpl/RELAYOUT_FIRST_TIME|
+            |java+field:///android/view/WindowManagerImpl/RELAYOUT_RES_FIRST_TIME|
+    CHANGED: |java+class:///android/view/accessibility/AccessibilityEvent| DUE TO:
+            |java+method:///android/view/accessibility/AccessibilityEvent/setConnection(android.accessibilityservice.IAccessibilityServiceConnection)|
+    CHANGED: |java+class:///android/view/accessibility/AccessibilityInteractionClient| DUE TO:
+            |java+method:///android/view/accessibility/AccessibilityInteractionClient/findAccessibilityNodeInfosByViewText(android.accessibilityservice.IAccessibilityServiceConnection,java.lang.String,int,int)|
+            |java+method:///android/view/accessibility/AccessibilityInteractionClient/findAccessibilityNodeInfosByViewTextInActiveWindow(android.accessibilityservice.IAccessibilityServiceConnection,java.lang.String)|
+            |java+field:///android/view/accessibility/AccessibilityInteractionClient/NO_ID|
+            |java+method:///android/view/accessibility/AccessibilityInteractionClient/findAccessibilityNodeInfoByViewIdInActiveWindow(android.accessibilityservice.IAccessibilityServiceConnection,int)|
+            |java+method:///android/view/accessibility/AccessibilityInteractionClient/performAccessibilityAction(android.accessibilityservice.IAccessibilityServiceConnection,int,int,int)|
+            |java+method:///android/view/accessibility/AccessibilityInteractionClient/findAccessibilityNodeInfoByAccessibilityId(android.accessibilityservice.IAccessibilityServiceConnection,int,int)|
+    CHANGED: |java+class:///android/view/accessibility/AccessibilityManager| DUE TO:
+            |java+field:///android/view/accessibility/AccessibilityManager/STATE_FLAG_TOUCH_EXPLORATION_ENABLED|
+            |java+method:///android/view/accessibility/AccessibilityManager/getAccessibilityServiceList()|
+            |java+field:///android/view/accessibility/AccessibilityManager/STATE_FLAG_ACCESSIBILITY_ENABLED|
+    CHANGED: |java+class:///android/view/accessibility/AccessibilityNodeInfo| DUE TO:
+            |java+method:///android/view/accessibility/AccessibilityNodeInfo/setConnection(android.accessibilityservice.IAccessibilityServiceConnection)|
+    CHANGED: |java+class:///android/view/accessibility/AccessibilityRecord| DUE TO:
+            |java+method:///android/view/accessibility/AccessibilityRecord/setConnection(android.accessibilityservice.IAccessibilityServiceConnection)|
+    CHANGED: |java+class:///android/view/inputmethod/InputMethodManager| DUE TO:
+            |java+field:///android/view/inputmethod/InputMethodManager/CONTROL_WINDOW_IS_TEXT_EDITOR|
+            |java+field:///android/view/inputmethod/InputMethodManager/CONTROL_WINDOW_VIEW_HAS_FOCUS|
+            |java+field:///android/view/inputmethod/InputMethodManager/CONTROL_START_INITIAL|
+            |java+field:///android/view/inputmethod/InputMethodManager/CONTROL_WINDOW_FIRST|
+    CHANGED: |java+class:///android/view/textservice/SuggestionsInfo| DUE TO:
+            |java+field:///android/view/textservice/SuggestionsInfo/RESULT_ATTR_HAS_RECOMMENDED_SUGGESTIONS|
+    CHANGED: |java+class:///android/webkit/WebSettings| DUE TO:
+            |java+method:///android/webkit/WebSettings/setLayoutAlgorithm(android.webkit.WebSettings.LayoutAlgorithm)|
+            |java+method:///android/webkit/WebSettings/getLayoutAlgorithm()|
+    CHANGED: |java+class:///android/webkit/WebView| DUE TO:
+            |java+field:///android/webkit/WebView/SCHEME_GEO|
+            |java+method:///android/webkit/WebView/disablePlatformNotifications()|
+            |java+field:///android/webkit/WebView/SCHEME_MAILTO|
+            |java+method:///android/webkit/WebView/enablePlatformNotifications()|
+            |java+field:///android/webkit/WebView/SCHEME_TEL|
+            |java+method:///android/webkit/WebView/getZoomControls()|
+            |java+method:///android/webkit/WebView/clearCache()|
+    CHANGED: |java+class:///android/widget/SpellChecker| DUE TO:
+            |java+field:///android/widget/SpellChecker/WORD_ITERATOR_INTERVAL|
+            |java+field:///android/widget/SpellChecker/MAX_NUMBER_OF_WORDS|
+            |java+field:///android/widget/SpellChecker/AVERAGE_WORD_LENGTH|
+    CHANGED: |java+class:///com/android/calendarcommon/RecurrenceProcessorTest| DUE TO:
+            |java+method:///com/android/calendarcommon/RecurrenceProcessorTest/failingTestWeekly9()|
+    CHANGED: |java+class:///com/android/ex/chips/ChipsTest| DUE TO:
+            |java+method:///com/android/ex/chips/ChipsTest/testMatchesChip()|
+    CHANGED: |java+class:///com/android/ex/chips/RecipientEditTextView| DUE TO:
+            |java+method:///com/android/ex/chips/RecipientEditTextView/unselectChip(com.android.ex.chips.RecipientChip)|
+            |java+method:///com/android/ex/chips/RecipientEditTextView/getChipBackground(com.android.ex.chips.RecipientEntry)|
+            |java+method:///com/android/ex/chips/RecipientEditTextView/setAdapter(T)|
+            |java+method:///com/android/ex/chips/RecipientEditTextView/replaceChip(com.android.ex.chips.RecipientChip,com.android.ex.chips.RecipientEntry)|
+            |java+method:///com/android/ex/chips/RecipientEditTextView/matchesChip(com.android.ex.chips.RecipientChip,int)|
+            |java+method:///com/android/ex/chips/RecipientEditTextView/selectChip(com.android.ex.chips.RecipientChip)|
+            |java+method:///com/android/ex/chips/RecipientEditTextView/constructChipSpan(com.android.ex.chips.RecipientEntry,int,boolean)|
+    CHANGED: |java+class:///com/android/internal/net/NetworkStatsFactoryTest| DUE TO:
+            |java+method:///com/android/internal/net/NetworkStatsFactoryTest/testNetworkStatsDetailExtended()|
+    CHANGED: |java+class:///com/android/internal/policy/impl/KeyguardViewMediator| DUE TO:
+            |java+method:///com/android/internal/policy/impl/KeyguardViewMediator/onWakeKeyWhenKeyguardShowingTq(int)|
+    CHANGED: |java+class:///com/android/internal/policy/impl/RecentApplicationsDialog| DUE TO:
+            |java+method:///com/android/internal/policy/impl/RecentApplicationsDialog/onKeyUp(int,android.view.KeyEvent)|
+            |java+method:///com/android/internal/policy/impl/RecentApplicationsDialog/setHeldModifiers(int)|
+    CHANGED: |java+class:///com/android/internal/telephony/IccIoResult| DUE TO:
+            |java+field:///com/android/internal/telephony/IccIoResult/sw1|
+            |java+field:///com/android/internal/telephony/IccIoResult/sw2|
+    CHANGED: |java+class:///com/android/internal/widget/LockPatternUtils| DUE TO:
+            |java+field:///com/android/internal/widget/LockPatternUtils/LOCKSCREEN_POWER_BUTTON_INSTANTLY_LOCKS|
+    CHANGED: |java+class:///com/android/layoutlib/bridge/BridgeConstants| DUE TO:
+            |java+field:///com/android/layoutlib/bridge/BridgeConstants/NS_APP_RES_AUTO|
+    CHANGED: |java+class:///com/android/layoutlib/bridge/android/BridgeIInputMethodManager| DUE TO:
+            |java+method:///com/android/layoutlib/bridge/android/BridgeIInputMethodManager/startInput(com.android.layoutlib.bridge.android.IInputMethodClient,com.android.layoutlib.bridge.android.IInputContext,android.view.inputmethod.EditorInfo,boolean,boolean)|
+            |java+method:///com/android/layoutlib/bridge/android/BridgeIInputMethodManager/windowGainedFocus(com.android.layoutlib.bridge.android.IInputMethodClient,android.os.IBinder,boolean,boolean,int,boolean,int)|
+    CHANGED: |java+class:///com/android/layoutlib/bridge/android/BridgeWindowSession| DUE TO:
+            |java+method:///com/android/layoutlib/bridge/android/BridgeWindowSession/relayout(com.android.layoutlib.bridge.android.IWindow,int,android.view.WindowManager.LayoutParams,int,int,int,boolean,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.content.res.Configuration,android.view.Surface)|
+    CHANGED: |java+class:///com/android/mediaframeworktest/MediaFrameworkTestRunner| DUE TO:
+            |java+field:///com/android/mediaframeworktest/MediaFrameworkTestRunner/mMinCameraFps|
+    CHANGED: |java+class:///com/android/mediaframeworktest/MediaRecorderStressTestRunner| DUE TO:
+            |java+field:///com/android/mediaframeworktest/MediaRecorderStressTestRunner/mCaptureRate|
+            |java+field:///com/android/mediaframeworktest/MediaRecorderStressTestRunner/mTimeLapseDuration|
+    CHANGED: |java+class:///com/android/mediaframeworktest/functional/audio/MediaBassBoostTest| DUE TO:
+            |java+method:///com/android/mediaframeworktest/functional/audio/MediaBassBoostTest/test2_0SoundModification()|
+    CHANGED: |java+class:///com/android/mediaframeworktest/functional/audio/MediaEqualizerTest| DUE TO:
+            |java+method:///com/android/mediaframeworktest/functional/audio/MediaEqualizerTest/test2_0SoundModification()|
+    CHANGED: |java+class:///com/android/mediaframeworktest/functional/audio/MediaVirtualizerTest| DUE TO:
+            |java+method:///com/android/mediaframeworktest/functional/audio/MediaVirtualizerTest/test2_0SoundModification()|
+    CHANGED: |java+class:///com/android/mediaframeworktest/performance/MediaPlayerPerformance| DUE TO:
+            |java+method:///com/android/mediaframeworktest/performance/MediaPlayerPerformance/getMemoryWriteToLog(java.io.Writer,int)|
+            |java+method:///com/android/mediaframeworktest/performance/MediaPlayerPerformance/validateMemoryResult(int,int,java.io.Writer,int)|
+    CHANGED: |java+class:///com/android/mediaframeworktest/stress/MediaRecorderStressTest| DUE TO:
+            |java+method:///com/android/mediaframeworktest/stress/MediaRecorderStressTest/removeRecodedVideo(java.lang.String)|
+    CHANGED: |java+class:///com/android/server/InputMethodManagerService| DUE TO:
+            |java+method:///com/android/server/InputMethodManagerService/windowGainedFocus(com.android.layoutlib.bridge.android.IInputMethodClient,android.os.IBinder,boolean,boolean,int,boolean,int)|
+            |java+method:///com/android/server/InputMethodManagerService/startInput(com.android.layoutlib.bridge.android.IInputMethodClient,com.android.layoutlib.bridge.android.IInputContext,android.view.inputmethod.EditorInfo,boolean,boolean)|
+    CHANGED: |java+class:///com/android/server/accessibility/AccessibilityManagerService| DUE TO:
+            |java+method:///com/android/server/accessibility/AccessibilityManagerService/registerEventListener(android.accessibilityservice.IEventListener)|
+    CHANGED: |java+class:///com/android/server/am/ActivityManagerService| DUE TO:
+            |java+method:///com/android/server/am/ActivityManagerService/updateConfigurationLocked(android.content.res.Configuration,com.android.server.am.ActivityRecord,boolean)|
+            |java+method:///com/android/server/am/ActivityManagerService/addErrorToDropBox(java.lang.String,com.android.server.am.ProcessRecord,com.android.server.am.ActivityRecord,com.android.server.am.ActivityRecord,java.lang.String,java.lang.String,java.io.File,android.app.ApplicationErrorReport.CrashInfo)|
+    CHANGED: |java+class:///com/android/server/wm/WindowManagerService| DUE TO:
+            |java+method:///com/android/server/wm/WindowManagerService/relayoutWindow(com.android.server.wm.Session,com.android.layoutlib.bridge.android.IWindow,int,android.view.WindowManager.LayoutParams,int,int,int,boolean,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.content.res.Configuration,android.view.Surface)|
+    CHANGED: |java+class:///com/android/systemui/statusbar/phone/IconMerger| DUE TO:
+            |java+method:///com/android/systemui/statusbar/phone/IconMerger/addView(com.android.systemui.statusbar.StatusBarIconView,int)|
+            |java+method:///com/android/systemui/statusbar/phone/IconMerger/addView(com.android.systemui.statusbar.StatusBarIconView,int,android.widget.LinearLayout.LayoutParams)|
+    CHANGED: |java+class:///com/android/systemui/statusbar/phone/PhoneStatusBar| DUE TO:
+            |java+method:///com/android/systemui/statusbar/phone/PhoneStatusBar/viewInfo(android.view.View)|
+    CHANGED: |java+class:///com/android/systemui/statusbar/policy/NetworkController| DUE TO:
+            |java+method:///com/android/systemui/statusbar/policy/NetworkController/addLabelView(android.widget.TextView)|
+    DELETED: |java+class:///android/support/v13/dreams/BasicDream|
+    DELETED: |java+class:///android/support/v13/dreams/BasicDream/BasicDreamView|
+    DELETED: |java+class:///android/support/v4/android/accessibilityservice/AccessibilityServiceInfoCompat|
+    DELETED: |java+class:///android/support/v4/app/HCSparseArray|
+    DELETED: |java+class:///android/support/v4/app/NoSaveStateFrameLayout|
+    DELETED: |java+class:///android/support/v4/content/ModernAsyncTask|
+    DELETED: |java+class:///android/support/v4/view/ViewCompatGingerbread|
+    DELETED: |java+class:///com/android/common/ArrayListCursor|
+-------In total 71 classes have changed somehow, 90 classes have been added and 8 classes have been deleted.-------
+2014-12-30 23:06:05 :: Showing changes in table format
+                                classes         methods         fields
+from                to              ^   +   -   ^   +   -   ^   +   -   
+android4sdk         android4sdk         71  90  8   16  2   73  1   127 7   
+ok
+
+rascal>

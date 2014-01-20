@@ -1,0 +1,1670 @@
+rascal>import diff::Core;
+ok
+
+rascal>runDOC(8,9,".*:///(?:android|org|java|dalvik)/[^apache/].*")
+2014-01-06 18:09:40 :: Getting m3 models...
+2014-01-06 18:09:40 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/doc/1.m3
+2014-01-06 18:09:40 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/doc/2.m3
+2014-01-06 18:09:40 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/doc/3.m3
+2014-01-06 18:09:40 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/doc/5.m3
+2014-01-06 18:09:40 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/doc/6.m3
+2014-01-06 18:09:40 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/doc/11.m3
+2014-01-06 18:09:40 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/doc/13.m3
+|rascal://diff::Core|(3670,5,<119,32>,<119,37>): NoSuchAnnotation("annotations")
+
+
+rascal>runDOC(8,9,".*:///(?:android|org|java|dalvik)/[^apache/].*")
+2014-01-06 18:18:44 :: Getting m3 models...
+|project://Android1/src|:   #annotations    46 class        1 interfaces        0 methods   0 fields
+|project://Android/src|:    #annotations    38 class        1 interfaces        0 methods   0 fields
+2014-01-06 18:18:45 :: Comparing m3 models... 
+2014-01-06 18:18:45 :: Get method changes...
+2014-01-06 18:18:45 :: Method change: getModelHierarchy
+2014-01-06 18:18:45 ::  Hierarchy: get classes and interfaces
+2014-01-06 18:18:49 ::  Hierarchy: to map
+2014-01-06 18:18:49 ::  Hierarchy: looping (1752)
+2014-01-06 18:18:57 ::  Hierarchy: get classes and interfaces
+2014-01-06 18:18:59 ::  Hierarchy: to map
+2014-01-06 18:18:59 ::  Hierarchy: looping (1848)
+2014-01-06 18:19:08 :: Method change: findDeprecations
+2014-01-06 18:19:10 :: Get field changes...
+2014-01-06 18:19:10 :: Start getFieldChanges() 
+2014-01-06 18:19:10 :: Step 1: Start: getAddedAndRemovedFields
+2014-01-06 18:19:18 :: Step 2: getAddedAndRemovedFields
+2014-01-06 18:19:18 :: Step 3: getAddedAndRemovedFields
+2014-01-06 18:19:18 :: Step 4: getAddedAndRemovedFields
+2014-01-06 18:19:18 :: Step 5: Finished getAddedAndRemovedFields
+2014-01-06 18:19:18 :: getAddedAndRemovedFields is finished
+2014-01-06 18:19:18 :: Step 1: Start: getAllChangedFields
+2014-01-06 18:19:26 :: Get class changes...
+2014-01-06 18:19:26 :: Started getClassChanges()
+2014-01-06 18:19:26 :: Started getChangedAddedRemovedClasses()
+2014-01-06 18:19:30 :: Started getClassesWithContentChanges()
+2014-01-06 18:19:35 :: Started sanitizeClassChanges()
+2014-01-06 18:19:35 :: Print compare results... 
+2014-01-06 18:19:35 :: Writing to cache
+2014-01-06 18:19:37 :: Writing to cache one by one
+2014-01-06 18:19:39 :: Display results
+-------[ Transition from |project://Android1/src| to |project://Android/src| ]-------
+---[FIELDS]---
+    ADDED: |java+field:///android/Manifest/permission/NFC|
+    ADDED: |java+field:///android/Manifest/permission/SET_ALARM|
+    ADDED: |java+field:///android/Manifest/permission/USE_SIP|
+    ADDED: |java+field:///android/R/attr/filterTouchesWhenObscured|
+    ADDED: |java+field:///android/R/attr/overScrollFooter|
+    ADDED: |java+field:///android/R/attr/overScrollHeader|
+    ADDED: |java+field:///android/R/attr/overScrollMode|
+    ADDED: |java+field:///android/R/attr/popupAnimationStyle|
+    ADDED: |java+field:///android/R/attr/screenDensity|
+    ADDED: |java+field:///android/R/attr/screenSize|
+    ADDED: |java+field:///android/R/attr/textSelectHandle|
+    ADDED: |java+field:///android/R/attr/textSelectHandleLeft|
+    ADDED: |java+field:///android/R/attr/textSelectHandleRight|
+    ADDED: |java+field:///android/R/attr/textSelectHandleWindowStyle|
+    ADDED: |java+field:///android/R/attr/xlargeScreens|
+    ADDED: |java+field:///android/R/drawable/presence_audio_away|
+    ADDED: |java+field:///android/R/drawable/presence_audio_busy|
+    ADDED: |java+field:///android/R/drawable/presence_audio_online|
+    ADDED: |java+field:///android/R/drawable/presence_video_away|
+    ADDED: |java+field:///android/R/drawable/presence_video_busy|
+    ADDED: |java+field:///android/R/drawable/presence_video_online|
+    ADDED: |java+field:///android/R/style/TextAppearance_StatusBar_EventContent|
+    ADDED: |java+field:///android/R/style/TextAppearance_StatusBar_EventContent_Title|
+    ADDED: |java+field:///android/R/style/TextAppearance_StatusBar_Icon|
+    ADDED: |java+field:///android/R/style/TextAppearance_StatusBar_Title|
+    ADDED: |java+field:///android/R/styleable/AndroidManifestCompatibleScreensScreen|
+    ADDED: |java+field:///android/R/styleable/AndroidManifestCompatibleScreensScreen_screenDensity|
+    ADDED: |java+field:///android/R/styleable/AndroidManifestCompatibleScreensScreen_screenSize|
+    ADDED: |java+field:///android/R/styleable/AndroidManifestSupportsScreens_xlargeScreens|
+    ADDED: |java+field:///android/R/styleable/ListView_overScrollFooter|
+    ADDED: |java+field:///android/R/styleable/ListView_overScrollHeader|
+    ADDED: |java+field:///android/R/styleable/PopupWindow_popupAnimationStyle|
+    ADDED: |java+field:///android/R/styleable/TextView_textSelectHandle|
+    ADDED: |java+field:///android/R/styleable/TextView_textSelectHandleLeft|
+    ADDED: |java+field:///android/R/styleable/TextView_textSelectHandleRight|
+    ADDED: |java+field:///android/R/styleable/Theme_textSelectHandle|
+    ADDED: |java+field:///android/R/styleable/Theme_textSelectHandleLeft|
+    ADDED: |java+field:///android/R/styleable/Theme_textSelectHandleRight|
+    ADDED: |java+field:///android/R/styleable/Theme_textSelectHandleWindowStyle|
+    ADDED: |java+field:///android/R/styleable/View_filterTouchesWhenObscured|
+    ADDED: |java+field:///android/R/styleable/View_overScrollMode|
+    ADDED: |java+field:///android/graphics/ImageFormat/YV12|
+    ADDED: |java+field:///android/location/Criteria/ACCURACY_HIGH|
+    ADDED: |java+field:///android/location/Criteria/ACCURACY_LOW|
+    ADDED: |java+field:///android/location/Criteria/ACCURACY_MEDIUM|
+    ADDED: |java+field:///android/location/LocationManager/PROVIDERS_CHANGED_ACTION|
+    ADDED: |java+field:///android/media/ExifInterface/TAG_GPS_ALTITUDE|
+    ADDED: |java+field:///android/media/ExifInterface/TAG_GPS_ALTITUDE_REF|
+    ADDED: |java+field:///android/media/MediaPlayer/MEDIA_INFO_BUFFERING_END|
+    ADDED: |java+field:///android/media/MediaPlayer/MEDIA_INFO_BUFFERING_START|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ALREADY_EXISTS|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/CONTENT_TYPE_GAME|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/CONTENT_TYPE_MOVIE|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/CONTENT_TYPE_MUSIC|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/CONTENT_TYPE_VOICE|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/Descriptor/connectMode|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/Descriptor/implementor|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/Descriptor/name|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/Descriptor/type|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/Descriptor/uuid|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/EFFECT_AUXILIARY|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/EFFECT_INSERT|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ERROR|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ERROR_BAD_VALUE|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ERROR_DEAD_OBJECT|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ERROR_INVALID_OPERATION|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ERROR_NO_INIT|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/ERROR_NO_MEMORY|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/EXTRA_AUDIO_SESSION|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/EXTRA_CONTENT_TYPE|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/EXTRA_PACKAGE_NAME|
+    ADDED: |java+field:///android/media/audiofx/AudioEffect/SUCCESS|
+    ADDED: |java+field:///android/media/audiofx/BassBoost/PARAM_STRENGTH|
+    ADDED: |java+field:///android/media/audiofx/BassBoost/PARAM_STRENGTH_SUPPORTED|
+    ADDED: |java+field:///android/media/audiofx/BassBoost/Settings/strength|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_DECAY_HF_RATIO|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_DECAY_TIME|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_DENSITY|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_DIFFUSION|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_REFLECTIONS_DELAY|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_REFLECTIONS_LEVEL|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_REVERB_DELAY|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_REVERB_LEVEL|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_ROOM_HF_LEVEL|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/PARAM_ROOM_LEVEL|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/decayHFRatio|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/decayTime|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/density|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/diffusion|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/reflectionsDelay|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/reflectionsLevel|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/reverbDelay|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/reverbLevel|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/roomHFLevel|
+    ADDED: |java+field:///android/media/audiofx/EnvironmentalReverb/Settings/roomLevel|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_BAND_FREQ_RANGE|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_BAND_LEVEL|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_CENTER_FREQ|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_CURRENT_PRESET|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_GET_BAND|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_GET_NUM_OF_PRESETS|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_GET_PRESET_NAME|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_LEVEL_RANGE|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_NUM_BANDS|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/PARAM_STRING_SIZE_MAX|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/Settings/bandLevels|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/Settings/curPreset|
+    ADDED: |java+field:///android/media/audiofx/Equalizer/Settings/numBands|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/PARAM_PRESET|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/PRESET_LARGEHALL|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/PRESET_LARGEROOM|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/PRESET_MEDIUMHALL|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/PRESET_MEDIUMROOM|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/PRESET_NONE|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/PRESET_PLATE|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/PRESET_SMALLROOM|
+    ADDED: |java+field:///android/media/audiofx/PresetReverb/Settings/preset|
+    ADDED: |java+field:///android/media/audiofx/Virtualizer/PARAM_STRENGTH|
+    ADDED: |java+field:///android/media/audiofx/Virtualizer/PARAM_STRENGTH_SUPPORTED|
+    ADDED: |java+field:///android/media/audiofx/Virtualizer/Settings/strength|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/ALREADY_EXISTS|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/ERROR|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/ERROR_BAD_VALUE|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/ERROR_DEAD_OBJECT|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/ERROR_INVALID_OPERATION|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/ERROR_NO_INIT|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/ERROR_NO_MEMORY|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/STATE_ENABLED|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/STATE_INITIALIZED|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/STATE_UNINITIALIZED|
+    ADDED: |java+field:///android/media/audiofx/Visualizer/SUCCESS|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/CLIENT_ERROR|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/CROSS_DOMAIN_AUTHENTICATION|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/DATA_CONNECTION_LOST|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/INVALID_CREDENTIALS|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/INVALID_REMOTE_URI|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/IN_PROGRESS|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/NO_ERROR|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/PEER_NOT_REACHABLE|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/SERVER_ERROR|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/SERVER_UNREACHABLE|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/SOCKET_ERROR|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/TIME_OUT|
+    ADDED: |java+field:///android/net/sip/SipErrorCode/TRANSACTION_TERMINTED|
+    ADDED: |java+field:///android/net/sip/SipManager/EXTRA_CALL_ID|
+    ADDED: |java+field:///android/net/sip/SipManager/EXTRA_OFFER_SD|
+    ADDED: |java+field:///android/net/sip/SipManager/INCOMING_CALL_RESULT_CODE|
+    ADDED: |java+field:///android/net/sip/SipProfile/CREATOR|
+    ADDED: |java+field:///android/net/sip/SipSession/State/DEREGISTERING|
+    ADDED: |java+field:///android/net/sip/SipSession/State/INCOMING_CALL|
+    ADDED: |java+field:///android/net/sip/SipSession/State/INCOMING_CALL_ANSWERING|
+    ADDED: |java+field:///android/net/sip/SipSession/State/IN_CALL|
+    ADDED: |java+field:///android/net/sip/SipSession/State/NOT_DEFINED|
+    ADDED: |java+field:///android/net/sip/SipSession/State/OUTGOING_CALL|
+    ADDED: |java+field:///android/net/sip/SipSession/State/OUTGOING_CALL_CANCELING|
+    ADDED: |java+field:///android/net/sip/SipSession/State/OUTGOING_CALL_RING_BACK|
+    ADDED: |java+field:///android/net/sip/SipSession/State/PINGING|
+    ADDED: |java+field:///android/net/sip/SipSession/State/READY_TO_CALL|
+    ADDED: |java+field:///android/net/sip/SipSession/State/REGISTERING|
+    ADDED: |java+field:///android/nfc/NdefMessage/CREATOR|
+    ADDED: |java+field:///android/nfc/NdefRecord/CREATOR|
+    ADDED: |java+field:///android/nfc/NdefRecord/RTD_ALTERNATIVE_CARRIER|
+    ADDED: |java+field:///android/nfc/NdefRecord/RTD_HANDOVER_CARRIER|
+    ADDED: |java+field:///android/nfc/NdefRecord/RTD_HANDOVER_REQUEST|
+    ADDED: |java+field:///android/nfc/NdefRecord/RTD_HANDOVER_SELECT|
+    ADDED: |java+field:///android/nfc/NdefRecord/RTD_SMART_POSTER|
+    ADDED: |java+field:///android/nfc/NdefRecord/RTD_TEXT|
+    ADDED: |java+field:///android/nfc/NdefRecord/RTD_URI|
+    ADDED: |java+field:///android/nfc/NdefRecord/TNF_ABSOLUTE_URI|
+    ADDED: |java+field:///android/nfc/NdefRecord/TNF_EMPTY|
+    ADDED: |java+field:///android/nfc/NdefRecord/TNF_EXTERNAL_TYPE|
+    ADDED: |java+field:///android/nfc/NdefRecord/TNF_MIME_MEDIA|
+    ADDED: |java+field:///android/nfc/NdefRecord/TNF_UNCHANGED|
+    ADDED: |java+field:///android/nfc/NdefRecord/TNF_UNKNOWN|
+    ADDED: |java+field:///android/nfc/NdefRecord/TNF_WELL_KNOWN|
+    ADDED: |java+field:///android/nfc/NfcAdapter/ACTION_TAG_DISCOVERED|
+    ADDED: |java+field:///android/nfc/NfcAdapter/EXTRA_ID|
+    ADDED: |java+field:///android/nfc/NfcAdapter/EXTRA_NDEF_MESSAGES|
+    ADDED: |java+field:///android/os/Build/SERIAL|
+    ADDED: |java+field:///android/os/Build/VERSION_CODES/GINGERBREAD|
+    ADDED: |java+field:///android/os/StrictMode/ThreadPolicy/LAX|
+    ADDED: |java+field:///android/os/StrictMode/VmPolicy/LAX|
+    ADDED: |java+field:///android/os/WorkSource/CREATOR|
+    ADDED: |java+field:///android/os/storage/OnObbStateChangeListener/ERROR_ALREADY_MOUNTED|
+    ADDED: |java+field:///android/os/storage/OnObbStateChangeListener/ERROR_COULD_NOT_MOUNT|
+    ADDED: |java+field:///android/os/storage/OnObbStateChangeListener/ERROR_COULD_NOT_UNMOUNT|
+    ADDED: |java+field:///android/os/storage/OnObbStateChangeListener/ERROR_INTERNAL|
+    ADDED: |java+field:///android/os/storage/OnObbStateChangeListener/ERROR_NOT_MOUNTED|
+    ADDED: |java+field:///android/os/storage/OnObbStateChangeListener/ERROR_PERMISSION_DENIED|
+    ADDED: |java+field:///android/os/storage/OnObbStateChangeListener/MOUNTED|
+    ADDED: |java+field:///android/os/storage/OnObbStateChangeListener/UNMOUNTED|
+    ADDED: |java+field:///android/telephony/TelephonyManager/NETWORK_TYPE_EVDO_B|
+    ADDED: |java+field:///android/util/DisplayMetrics/DENSITY_XHIGH|
+    ADDED: |java+field:///android/view/InputDevice/CREATOR|
+    ADDED: |java+field:///android/view/InputDevice/KEYBOARD_TYPE_ALPHABETIC|
+    ADDED: |java+field:///android/view/InputDevice/KEYBOARD_TYPE_NONE|
+    ADDED: |java+field:///android/view/InputDevice/KEYBOARD_TYPE_NON_ALPHABETIC|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_ORIENTATION|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_PRESSURE|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_SIZE|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_TOOL_MAJOR|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_TOOL_MINOR|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_TOUCH_MAJOR|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_TOUCH_MINOR|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_X|
+    ADDED: |java+field:///android/view/InputDevice/MOTION_RANGE_Y|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_ANY|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_CLASS_BUTTON|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_CLASS_MASK|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_CLASS_POINTER|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_CLASS_POSITION|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_CLASS_TRACKBALL|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_DPAD|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_KEYBOARD|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_MOUSE|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_TOUCHPAD|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_TOUCHSCREEN|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_TRACKBALL|
+    ADDED: |java+field:///android/view/InputDevice/SOURCE_UNKNOWN|
+    ADDED: |java+field:///android/view/InputEvent/CREATOR|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_A|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_B|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_C|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_L1|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_L2|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_MODE|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_R1|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_R2|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_SELECT|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_START|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_THUMBL|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_THUMBR|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_X|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_Y|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_Z|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_PAGE_DOWN|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_PAGE_UP|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_PICTSYMBOLS|
+    ADDED: |java+field:///android/view/KeyEvent/KEYCODE_SWITCH_CHARSET|
+    ADDED: |java+field:///android/view/MotionEvent/FLAG_WINDOW_IS_OBSCURED|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/orientation|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/pressure|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/size|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/toolMajor|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/toolMinor|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/touchMajor|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/touchMinor|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/x|
+    ADDED: |java+field:///android/view/MotionEvent/PointerCoords/y|
+    ADDED: |java+field:///android/view/View/OVER_SCROLL_ALWAYS|
+    ADDED: |java+field:///android/view/View/OVER_SCROLL_IF_CONTENT_SCROLLS|
+    ADDED: |java+field:///android/view/View/OVER_SCROLL_NEVER|
+    ADDED: |java+field:///dalvik/bytecode/Opcodes/OP_IGET_WIDE_VOLATILE|
+    ADDED: |java+field:///dalvik/bytecode/Opcodes/OP_IPUT_WIDE_VOLATILE|
+    ADDED: |java+field:///dalvik/bytecode/Opcodes/OP_SGET_WIDE_VOLATILE|
+    ADDED: |java+field:///dalvik/bytecode/Opcodes/OP_SPUT_WIDE_VOLATILE|
+    ADDED: |java+field:///java/lang/Double/MAX_EXPONENT|
+    ADDED: |java+field:///java/lang/Double/MIN_EXPONENT|
+    ADDED: |java+field:///java/lang/Double/MIN_NORMAL|
+    ADDED: |java+field:///java/lang/Float/MAX_EXPONENT|
+    ADDED: |java+field:///java/lang/Float/MIN_EXPONENT|
+    ADDED: |java+field:///java/lang/Float/MIN_NORMAL|
+    ADDED: |java+field:///java/net/CookiePolicy/ACCEPT_ALL|
+    ADDED: |java+field:///java/net/CookiePolicy/ACCEPT_NONE|
+    ADDED: |java+field:///java/net/CookiePolicy/ACCEPT_ORIGINAL_SERVER|
+    ADDED: |java+field:///java/net/IDN/ALLOW_UNASSIGNED|
+    ADDED: |java+field:///java/net/IDN/USE_STD3_ASCII_RULES|
+    ADDED: |java+field:///java/security/Policy/UNSUPPORTED_EMPTY_COLLECTION|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionColumnIn|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionColumnInOut|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionColumnOut|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionColumnResult|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionColumnUnknown|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionNoNulls|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionNoTable|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionNullable|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionNullableUnknown|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionResultUnknown|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionReturn|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/functionReturnsTable|
+    ADDED: |java+field:///java/sql/DatabaseMetaData/sqlStateSQL|
+    ADDED: |java+field:///java/sql/Types/LONGNVARCHAR|
+    ADDED: |java+field:///java/sql/Types/NCHAR|
+    ADDED: |java+field:///java/sql/Types/NCLOB|
+    ADDED: |java+field:///java/sql/Types/NVARCHAR|
+    ADDED: |java+field:///java/sql/Types/ROWID|
+    ADDED: |java+field:///java/sql/Types/SQLXML|
+    ADDED: |java+field:///java/util/Calendar/ALL_STYLES|
+    ADDED: |java+field:///java/util/Calendar/LONG|
+    ADDED: |java+field:///java/util/Calendar/SHORT|
+    ADDED: |java+field:///java/util/Locale/ROOT|
+    ADDED: |java+field:///java/util/ResourceBundle/Control/FORMAT_CLASS|
+    ADDED: |java+field:///java/util/ResourceBundle/Control/FORMAT_DEFAULT|
+    ADDED: |java+field:///java/util/ResourceBundle/Control/FORMAT_PROPERTIES|
+    ADDED: |java+field:///java/util/ResourceBundle/Control/TTL_DONT_CACHE|
+    ADDED: |java+field:///java/util/ResourceBundle/Control/TTL_NO_EXPIRATION_CONTROL|
+    ADDED: |java+field:///java/util/logging/Logger/GLOBAL_LOGGER_NAME|
+    DELETED: |java+field:///android/Manifest/permission/READ_OWNER_DATA|
+    DELETED: |java+field:///android/Manifest/permission/WRITE_OWNER_DATA|
+    DELETED: |java+field:///dalvik/system/VMDebug/DEFAULT_METHOD_TRACE_FILE_NAME|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_ALL_COUNTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_ALLOCATED_BYTES|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_ALLOCATED_OBJECTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_CLASS_INIT_COUNT|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_CLASS_INIT_TIME|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_EXT_ALLOCATED_BYTES|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_EXT_ALLOCATED_OBJECTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_EXT_FREED_BYTES|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_EXT_FREED_OBJECTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_FREED_BYTES|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_FREED_OBJECTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_GLOBAL_GC_INVOCATIONS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_ALLOCATED_BYTES|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_ALLOCATED_OBJECTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_CLASS_INIT_COUNT|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_CLASS_INIT_TIME|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_EXT_ALLOCATED_BYTES|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_EXT_ALLOCATED_OBJECTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_EXT_FREED_BYTES|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_EXT_FREED_OBJECTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_FREED_BYTES|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_FREED_OBJECTS|
+    DELETED: |java+field:///dalvik/system/VMDebug/KIND_THREAD_GC_INVOCATIONS|
+    DELETED: |java+field:///dalvik/system/VMDebug/TRACE_COUNT_ALLOCS|
+    DELETED: |java+field:///dalvik/system/Zygote/DEBUG_ENABLE_ASSERT|
+    DELETED: |java+field:///dalvik/system/Zygote/DEBUG_ENABLE_CHECKJNI|
+    DELETED: |java+field:///dalvik/system/Zygote/DEBUG_ENABLE_DEBUGGER|
+    DELETED: |java+field:///dalvik/system/Zygote/DEBUG_ENABLE_SAFEMODE|
+-------In total 0 fields have changed somehow, 300 fields have been added and 31 fields have been deleted.-------
+
+---[METHODS]---
+    ADDED: |java+constructor:///android/media/AudioTrack/AudioTrack(int,int,int,int,int,int,int)|
+    ADDED: |java+constructor:///android/view/KeyEvent/KeyEvent(long,long,int,int,int,int,int,int,int,int)|
+    ADDED: |java+constructor:///java/io/IOException/IOException(java.lang.String,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|
+    ADDED: |java+constructor:///java/io/PipedInputStream/PipedInputStream(int)|
+    ADDED: |java+constructor:///java/io/PipedInputStream/PipedInputStream(java.io.PipedOutputStream,int)|
+    ADDED: |java+constructor:///java/io/PipedReader/PipedReader(int)|
+    ADDED: |java+constructor:///java/io/PipedReader/PipedReader(java.io.PipedWriter,int)|
+    ADDED: |java+constructor:///java/lang/String/String(byte%5B%5D,int,int,java.nio.charset.Charset)|
+    ADDED: |java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|
+    ADDED: |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(int%5B%5D,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(java.lang.String,int%5B%5D,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(java.lang.String,java.lang.String,int%5B%5D,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(java.lang.String,java.lang.String,int,int%5B%5D,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/DataTruncation/DataTruncation(int,boolean,boolean,int,int,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/SQLException/SQLException(java.lang.String,java.lang.String,int,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/SQLException/SQLException(java.lang.String,java.lang.String,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/SQLException/SQLException(java.lang.String,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/SQLException/SQLException(java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/SQLWarning/SQLWarning(java.lang.String,java.lang.String,int,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/SQLWarning/SQLWarning(java.lang.String,java.lang.String,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/SQLWarning/SQLWarning(java.lang.String,java.lang.Throwable)|
+    ADDED: |java+constructor:///java/sql/SQLWarning/SQLWarning(java.lang.Throwable)|
+    ADDED: |java+constructor:///java/util/PropertyResourceBundle/PropertyResourceBundle(java.io.Reader)|
+    ADDED: |java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap(int,float)|
+    ADDED: |java+method:///android/location/Criteria/getBearingAccuracy()|
+    ADDED: |java+method:///android/location/Criteria/getHorizontalAccuracy()|
+    ADDED: |java+method:///android/location/Criteria/getSpeedAccuracy()|
+    ADDED: |java+method:///android/location/Criteria/getVerticalAccuracy()|
+    ADDED: |java+method:///android/location/Criteria/setBearingAccuracy(int)|
+    ADDED: |java+method:///android/location/Criteria/setHorizontalAccuracy(int)|
+    ADDED: |java+method:///android/location/Criteria/setSpeedAccuracy(int)|
+    ADDED: |java+method:///android/location/Criteria/setVerticalAccuracy(int)|
+    ADDED: |java+method:///android/location/Geocoder/isPresent()|
+    ADDED: |java+method:///android/location/LocationManager/requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)|
+    ADDED: |java+method:///android/location/LocationManager/requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper)|
+    ADDED: |java+method:///android/location/LocationManager/requestSingleUpdate(android.location.Criteria,android.app.PendingIntent)|
+    ADDED: |java+method:///android/location/LocationManager/requestSingleUpdate(android.location.Criteria,android.location.LocationListener,android.os.Looper)|
+    ADDED: |java+method:///android/location/LocationManager/requestSingleUpdate(java.lang.String,android.app.PendingIntent)|
+    ADDED: |java+method:///android/location/LocationManager/requestSingleUpdate(java.lang.String,android.location.LocationListener,android.os.Looper)|
+    ADDED: |java+method:///android/media/AudioTrack/attachAuxEffect(int)|
+    ADDED: |java+method:///android/media/AudioTrack/getAudioSessionId()|
+    ADDED: |java+method:///android/media/AudioTrack/setAuxEffectSendLevel(float)|
+    ADDED: |java+method:///android/media/CamcorderProfile/get(int,int)|
+    ADDED: |java+method:///android/media/CameraProfile/getJpegEncodingQualityParameter(int,int)|
+    ADDED: |java+method:///android/media/ExifInterface/getAltitude(double)|
+    ADDED: |java+method:///android/media/MediaPlayer/attachAuxEffect(int)|
+    ADDED: |java+method:///android/media/MediaPlayer/getAudioSessionId()|
+    ADDED: |java+method:///android/media/MediaPlayer/setAudioSessionId(int)|
+    ADDED: |java+method:///android/media/MediaPlayer/setAuxEffectSendLevel(float)|
+    ADDED: |java+method:///android/media/MediaRecorder/setOrientationHint(int)|
+    ADDED: |java+method:///android/net/wifi/WifiManager/WifiLock/setWorkSource(android.os.WorkSource)|
+    ADDED: |java+method:///android/opengl/GLES20/glDrawElements(int,int,int,int)|
+    ADDED: |java+method:///android/opengl/GLES20/glVertexAttribPointer(int,int,int,boolean,int,int)|
+    ADDED: |java+method:///android/os/Environment/isExternalStorageRemovable()|
+    ADDED: |java+method:///android/os/ParcelFileDescriptor/createPipe()|
+    ADDED: |java+method:///android/os/PowerManager/WakeLock/setWorkSource(android.os.WorkSource)|
+    ADDED: |java+method:///android/service/wallpaper/WallpaperService/Engine/onSurfaceRedrawNeeded(android.view.SurfaceHolder)|
+    ADDED: |java+method:///android/telephony/gsm/GsmCellLocation/getPsc()|
+    ADDED: |java+method:///android/test/mock/MockPackageManager/getActivityLogo(android.content.ComponentName)|
+    ADDED: |java+method:///android/test/mock/MockPackageManager/getActivityLogo(android.content.Intent)|
+    ADDED: |java+method:///android/test/mock/MockPackageManager/getApplicationLogo(android.content.pm.ApplicationInfo)|
+    ADDED: |java+method:///android/test/mock/MockPackageManager/getApplicationLogo(java.lang.String)|
+    ADDED: |java+method:///android/test/mock/MockPackageManager/getProviderInfo(android.content.ComponentName,int)|
+    ADDED: |java+method:///android/test/mock/MockPackageManager/setPackageObbPath(java.lang.String,java.lang.String)|
+    ADDED: |java+method:///android/text/format/DateUtils/formatDateRange(android.content.Context,java.util.Formatter,long,long,int,java.lang.String)|
+    ADDED: |java+method:///android/view/MotionEvent/addBatch(long,android.view.MotionEvent.PointerCoords%5B%5D,int)|
+    ADDED: |java+method:///android/view/MotionEvent/getFlags()|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalOrientation(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalOrientation(int,int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalPointerCoords(int,int,android.view.MotionEvent.PointerCoords)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalToolMajor(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalToolMajor(int,int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalToolMinor(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalToolMinor(int,int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalTouchMajor(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalTouchMajor(int,int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalTouchMinor(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getHistoricalTouchMinor(int,int)|
+    ADDED: |java+method:///android/view/MotionEvent/getOrientation()|
+    ADDED: |java+method:///android/view/MotionEvent/getOrientation(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getPointerCoords(int,android.view.MotionEvent.PointerCoords)|
+    ADDED: |java+method:///android/view/MotionEvent/getToolMajor()|
+    ADDED: |java+method:///android/view/MotionEvent/getToolMajor(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getToolMinor()|
+    ADDED: |java+method:///android/view/MotionEvent/getToolMinor(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getTouchMajor()|
+    ADDED: |java+method:///android/view/MotionEvent/getTouchMajor(int)|
+    ADDED: |java+method:///android/view/MotionEvent/getTouchMinor()|
+    ADDED: |java+method:///android/view/MotionEvent/getTouchMinor(int)|
+    ADDED: |java+method:///android/view/MotionEvent/obtain(long,long,int,int,int%5B%5D,android.view.MotionEvent.PointerCoords%5B%5D,int,float,float,int,int,int,int)|
+    ADDED: |java+method:///android/view/View/getFilterTouchesWhenObscured()|
+    ADDED: |java+method:///android/view/View/getOverScrollMode()|
+    ADDED: |java+method:///android/view/View/onFilterTouchEventForSecurity(android.view.MotionEvent)|
+    ADDED: |java+method:///android/view/View/setFilterTouchesWhenObscured(boolean)|
+    ADDED: |java+method:///android/view/View/setOverScrollMode(int)|
+    ADDED: |java+method:///android/view/ViewConfiguration/getScaledOverflingDistance()|
+    ADDED: |java+method:///android/view/ViewConfiguration/getScaledOverscrollDistance()|
+    ADDED: |java+method:///android/view/Window/takeInputQueue(android.view.InputQueue.Callback)|
+    ADDED: |java+method:///android/view/Window/takeSurface(android.view.SurfaceHolder.Callback2)|
+    ADDED: |java+method:///android/view/inputmethod/BaseInputConnection/getSelectedText(int)|
+    ADDED: |java+method:///android/view/inputmethod/BaseInputConnection/setComposingRegion(int,int)|
+    ADDED: |java+method:///android/view/inputmethod/InputConnection/getSelectedText(int)|
+    ADDED: |java+method:///android/view/inputmethod/InputConnection/setComposingRegion(int,int)|
+    ADDED: |java+method:///android/view/inputmethod/InputConnectionWrapper/getSelectedText(int)|
+    ADDED: |java+method:///android/view/inputmethod/InputConnectionWrapper/setComposingRegion(int,int)|
+    ADDED: |java+method:///android/webkit/WebSettings/getUseWebViewBackgroundForOverscrollBackground()|
+    ADDED: |java+method:///android/webkit/WebSettings/setUseWebViewBackgroundForOverscrollBackground(boolean)|
+    ADDED: |java+method:///android/webkit/WebView/draw(android.graphics.Canvas)|
+    ADDED: |java+method:///android/webkit/WebView/onKeyMultiple(int,int,android.view.KeyEvent)|
+    ADDED: |java+method:///android/webkit/WebView/setOverScrollMode(int)|
+    ADDED: |java+method:///android/widget/AbsListView/setOverScrollMode(int)|
+    ADDED: |java+method:///android/widget/HorizontalScrollView/draw(android.graphics.Canvas)|
+    ADDED: |java+method:///android/widget/HorizontalScrollView/setOverScrollMode(int)|
+    ADDED: |java+method:///android/widget/ListView/getOverscrollFooter()|
+    ADDED: |java+method:///android/widget/ListView/getOverscrollHeader()|
+    ADDED: |java+method:///android/widget/ListView/setOverscrollFooter(android.graphics.drawable.Drawable)|
+    ADDED: |java+method:///android/widget/ListView/setOverscrollHeader(android.graphics.drawable.Drawable)|
+    ADDED: |java+method:///android/widget/RemoteViews/clone()|
+    ADDED: |java+method:///android/widget/ScrollView/draw(android.graphics.Canvas)|
+    ADDED: |java+method:///android/widget/ScrollView/setOverScrollMode(int)|
+    ADDED: |java+method:///dalvik/system/PathClassLoader/findLibrary(java.lang.String)|
+    ADDED: |java+method:///java/io/File/canExecute()|
+    ADDED: |java+method:///java/io/File/getFreeSpace()|
+    ADDED: |java+method:///java/io/File/getTotalSpace()|
+    ADDED: |java+method:///java/io/File/getUsableSpace()|
+    ADDED: |java+method:///java/io/File/setExecutable(boolean)|
+    ADDED: |java+method:///java/io/File/setExecutable(boolean,boolean)|
+    ADDED: |java+method:///java/io/File/setReadable(boolean)|
+    ADDED: |java+method:///java/io/File/setReadable(boolean,boolean)|
+    ADDED: |java+method:///java/io/File/setWritable(boolean)|
+    ADDED: |java+method:///java/io/File/setWritable(boolean,boolean)|
+    ADDED: |java+method:///java/io/FileDescriptor/toString()|
+    ADDED: |java+method:///java/io/ObjectStreamClass/lookupAny(java.lang.Class)|
+    ADDED: |java+method:///java/lang/Class/getConstructor()|
+    ADDED: |java+method:///java/lang/Class/getDeclaredConstructor()|
+    ADDED: |java+method:///java/lang/Class/getDeclaredMethod(java.lang.String)|
+    ADDED: |java+method:///java/lang/Class/getMethod(java.lang.String)|
+    ADDED: |java+method:///java/lang/Math/copySign(double,double)|
+    ADDED: |java+method:///java/lang/Math/copySign(float,float)|
+    ADDED: |java+method:///java/lang/Math/getExponent(double)|
+    ADDED: |java+method:///java/lang/Math/getExponent(float)|
+    ADDED: |java+method:///java/lang/Math/nextAfter(double,double)|
+    ADDED: |java+method:///java/lang/Math/nextAfter(float,double)|
+    ADDED: |java+method:///java/lang/Math/nextUp(double)|
+    ADDED: |java+method:///java/lang/Math/nextUp(float)|
+    ADDED: |java+method:///java/lang/Math/scalb(double,int)|
+    ADDED: |java+method:///java/lang/Math/scalb(float,int)|
+    ADDED: |java+method:///java/lang/StrictMath/copySign(double,double)|
+    ADDED: |java+method:///java/lang/StrictMath/copySign(float,float)|
+    ADDED: |java+method:///java/lang/StrictMath/getExponent(double)|
+    ADDED: |java+method:///java/lang/StrictMath/getExponent(float)|
+    ADDED: |java+method:///java/lang/StrictMath/nextAfter(double,double)|
+    ADDED: |java+method:///java/lang/StrictMath/nextAfter(float,double)|
+    ADDED: |java+method:///java/lang/StrictMath/nextUp(double)|
+    ADDED: |java+method:///java/lang/StrictMath/nextUp(float)|
+    ADDED: |java+method:///java/lang/StrictMath/scalb(double,int)|
+    ADDED: |java+method:///java/lang/StrictMath/scalb(float,int)|
+    ADDED: |java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|
+    ADDED: |java+method:///java/lang/String/isEmpty()|
+    ADDED: |java+method:///java/lang/StringBuffer/trimToSize()|
+    ADDED: |java+method:///java/lang/StringBuilder/setLength(int)|
+    ADDED: |java+method:///java/lang/StringBuilder/subSequence(int,int)|
+    ADDED: |java+method:///java/lang/System/console()|
+    ADDED: |java+method:///java/net/HttpURLConnection/getContentEncoding()|
+    ADDED: |java+method:///java/net/NetworkInterface/getHardwareAddress()|
+    ADDED: |java+method:///java/net/NetworkInterface/getInterfaceAddresses()|
+    ADDED: |java+method:///java/net/NetworkInterface/getMTU()|
+    ADDED: |java+method:///java/net/NetworkInterface/getParent()|
+    ADDED: |java+method:///java/net/NetworkInterface/getSubInterfaces()|
+    ADDED: |java+method:///java/net/NetworkInterface/isLoopback()|
+    ADDED: |java+method:///java/net/NetworkInterface/isPointToPoint()|
+    ADDED: |java+method:///java/net/NetworkInterface/isUp()|
+    ADDED: |java+method:///java/net/NetworkInterface/isVirtual()|
+    ADDED: |java+method:///java/net/NetworkInterface/supportsMulticast()|
+    ADDED: |java+method:///java/nio/Buffer/array()|
+    ADDED: |java+method:///java/nio/Buffer/arrayOffset()|
+    ADDED: |java+method:///java/nio/Buffer/hasArray()|
+    ADDED: |java+method:///java/nio/Buffer/isDirect()|
+    ADDED: |java+method:///java/security/Policy/getInstance(java.lang.String,java.security.Policy.Parameters)|
+    ADDED: |java+method:///java/security/Policy/getInstance(java.lang.String,java.security.Policy.Parameters,java.lang.String)|
+    ADDED: |java+method:///java/security/Policy/getInstance(java.lang.String,java.security.Policy.Parameters,java.security.Provider)|
+    ADDED: |java+method:///java/security/Policy/getParameters()|
+    ADDED: |java+method:///java/security/Policy/getProvider()|
+    ADDED: |java+method:///java/security/Policy/getType()|
+    ADDED: |java+method:///java/sql/Array/free()|
+    ADDED: |java+method:///java/sql/Blob/free()|
+    ADDED: |java+method:///java/sql/Blob/getBinaryStream(long,long)|
+    ADDED: |java+method:///java/sql/CallableStatement/getCharacterStream(int)|
+    ADDED: |java+method:///java/sql/CallableStatement/getCharacterStream(java.lang.String)|
+    ADDED: |java+method:///java/sql/CallableStatement/getNCharacterStream(int)|
+    ADDED: |java+method:///java/sql/CallableStatement/getNCharacterStream(java.lang.String)|
+    ADDED: |java+method:///java/sql/CallableStatement/getNClob(int)|
+    ADDED: |java+method:///java/sql/CallableStatement/getNClob(java.lang.String)|
+    ADDED: |java+method:///java/sql/CallableStatement/getNString(int)|
+    ADDED: |java+method:///java/sql/CallableStatement/getNString(java.lang.String)|
+    ADDED: |java+method:///java/sql/CallableStatement/getRowId(int)|
+    ADDED: |java+method:///java/sql/CallableStatement/getRowId(java.lang.String)|
+    ADDED: |java+method:///java/sql/CallableStatement/getSQLXML(int)|
+    ADDED: |java+method:///java/sql/CallableStatement/getSQLXML(java.lang.String)|
+    ADDED: |java+method:///java/sql/CallableStatement/setAsciiStream(java.lang.String,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/CallableStatement/setAsciiStream(java.lang.String,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/CallableStatement/setBinaryStream(java.lang.String,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/CallableStatement/setBinaryStream(java.lang.String,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/CallableStatement/setBlob(java.lang.String,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/CallableStatement/setBlob(java.lang.String,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/CallableStatement/setBlob(java.lang.String,java.sql.Blob)|
+    ADDED: |java+method:///java/sql/CallableStatement/setCharacterStream(java.lang.String,java.io.Reader)|
+    ADDED: |java+method:///java/sql/CallableStatement/setCharacterStream(java.lang.String,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/CallableStatement/setClob(java.lang.String,java.io.Reader)|
+    ADDED: |java+method:///java/sql/CallableStatement/setClob(java.lang.String,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/CallableStatement/setClob(java.lang.String,java.sql.Clob)|
+    ADDED: |java+method:///java/sql/CallableStatement/setNCharacterStream(java.lang.String,java.io.Reader)|
+    ADDED: |java+method:///java/sql/CallableStatement/setNCharacterStream(java.lang.String,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/CallableStatement/setNClob(java.lang.String,java.io.Reader)|
+    ADDED: |java+method:///java/sql/CallableStatement/setNClob(java.lang.String,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/CallableStatement/setNClob(java.lang.String,java.sql.NClob)|
+    ADDED: |java+method:///java/sql/CallableStatement/setNString(java.lang.String,java.lang.String)|
+    ADDED: |java+method:///java/sql/CallableStatement/setRowId(java.lang.String,java.sql.RowId)|
+    ADDED: |java+method:///java/sql/CallableStatement/setSQLXML(java.lang.String,java.sql.SQLXML)|
+    ADDED: |java+method:///java/sql/Clob/free()|
+    ADDED: |java+method:///java/sql/Clob/getCharacterStream(long,long)|
+    ADDED: |java+method:///java/sql/Connection/createArrayOf(java.lang.String,java.lang.Object%5B%5D)|
+    ADDED: |java+method:///java/sql/Connection/createBlob()|
+    ADDED: |java+method:///java/sql/Connection/createClob()|
+    ADDED: |java+method:///java/sql/Connection/createNClob()|
+    ADDED: |java+method:///java/sql/Connection/createSQLXML()|
+    ADDED: |java+method:///java/sql/Connection/createStruct(java.lang.String,java.lang.Object%5B%5D)|
+    ADDED: |java+method:///java/sql/Connection/getClientInfo()|
+    ADDED: |java+method:///java/sql/Connection/getClientInfo(java.lang.String)|
+    ADDED: |java+method:///java/sql/Connection/isValid(int)|
+    ADDED: |java+method:///java/sql/Connection/setClientInfo(java.lang.String,java.lang.String)|
+    ADDED: |java+method:///java/sql/Connection/setClientInfo(java.util.Properties)|
+    ADDED: |java+method:///java/sql/DatabaseMetaData/autoCommitFailureClosesAllResultSets()|
+    ADDED: |java+method:///java/sql/DatabaseMetaData/getClientInfoProperties()|
+    ADDED: |java+method:///java/sql/DatabaseMetaData/getFunctionColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|
+    ADDED: |java+method:///java/sql/DatabaseMetaData/getFunctions(java.lang.String,java.lang.String,java.lang.String)|
+    ADDED: |java+method:///java/sql/DatabaseMetaData/getRowIdLifetime()|
+    ADDED: |java+method:///java/sql/DatabaseMetaData/getSchemas(java.lang.String,java.lang.String)|
+    ADDED: |java+method:///java/sql/DatabaseMetaData/supportsStoredFunctionsUsingCallSyntax()|
+    ADDED: |java+method:///java/sql/PreparedStatement/setAsciiStream(int,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setAsciiStream(int,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setBinaryStream(int,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setBinaryStream(int,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setBlob(int,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setBlob(int,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setCharacterStream(int,java.io.Reader)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setCharacterStream(int,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setClob(int,java.io.Reader)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setClob(int,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setNCharacterStream(int,java.io.Reader)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setNCharacterStream(int,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setNClob(int,java.io.Reader)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setNClob(int,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setNClob(int,java.sql.NClob)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setNString(int,java.lang.String)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setRowId(int,java.sql.RowId)|
+    ADDED: |java+method:///java/sql/PreparedStatement/setSQLXML(int,java.sql.SQLXML)|
+    ADDED: |java+method:///java/sql/ResultSet/getHoldability()|
+    ADDED: |java+method:///java/sql/ResultSet/getNCharacterStream(int)|
+    ADDED: |java+method:///java/sql/ResultSet/getNCharacterStream(java.lang.String)|
+    ADDED: |java+method:///java/sql/ResultSet/getNClob(int)|
+    ADDED: |java+method:///java/sql/ResultSet/getNClob(java.lang.String)|
+    ADDED: |java+method:///java/sql/ResultSet/getNString(int)|
+    ADDED: |java+method:///java/sql/ResultSet/getNString(java.lang.String)|
+    ADDED: |java+method:///java/sql/ResultSet/getRowId(int)|
+    ADDED: |java+method:///java/sql/ResultSet/getRowId(java.lang.String)|
+    ADDED: |java+method:///java/sql/ResultSet/getSQLXML(int)|
+    ADDED: |java+method:///java/sql/ResultSet/getSQLXML(java.lang.String)|
+    ADDED: |java+method:///java/sql/ResultSet/isClosed()|
+    ADDED: |java+method:///java/sql/ResultSet/updateAsciiStream(int,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/ResultSet/updateAsciiStream(int,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateAsciiStream(java.lang.String,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/ResultSet/updateAsciiStream(java.lang.String,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateBinaryStream(int,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/ResultSet/updateBinaryStream(int,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateBinaryStream(java.lang.String,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/ResultSet/updateBinaryStream(java.lang.String,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateBlob(int,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/ResultSet/updateBlob(int,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateBlob(java.lang.String,java.io.InputStream)|
+    ADDED: |java+method:///java/sql/ResultSet/updateBlob(java.lang.String,java.io.InputStream,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateCharacterStream(int,java.io.Reader)|
+    ADDED: |java+method:///java/sql/ResultSet/updateCharacterStream(int,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateCharacterStream(java.lang.String,java.io.Reader)|
+    ADDED: |java+method:///java/sql/ResultSet/updateCharacterStream(java.lang.String,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateClob(int,java.io.Reader)|
+    ADDED: |java+method:///java/sql/ResultSet/updateClob(int,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateClob(java.lang.String,java.io.Reader)|
+    ADDED: |java+method:///java/sql/ResultSet/updateClob(java.lang.String,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNCharacterStream(int,java.io.Reader)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNCharacterStream(int,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNCharacterStream(java.lang.String,java.io.Reader)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNCharacterStream(java.lang.String,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNClob(int,java.io.Reader)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNClob(int,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNClob(int,java.sql.NClob)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNClob(java.lang.String,java.io.Reader)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNClob(java.lang.String,java.io.Reader,long)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNClob(java.lang.String,java.sql.NClob)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNString(int,java.lang.String)|
+    ADDED: |java+method:///java/sql/ResultSet/updateNString(java.lang.String,java.lang.String)|
+    ADDED: |java+method:///java/sql/ResultSet/updateRowId(int,java.sql.RowId)|
+    ADDED: |java+method:///java/sql/ResultSet/updateRowId(java.lang.String,java.sql.RowId)|
+    ADDED: |java+method:///java/sql/ResultSet/updateSQLXML(int,java.sql.SQLXML)|
+    ADDED: |java+method:///java/sql/ResultSet/updateSQLXML(java.lang.String,java.sql.SQLXML)|
+    ADDED: |java+method:///java/sql/SQLException/iterator()|
+    ADDED: |java+method:///java/sql/SQLInput/readNClob()|
+    ADDED: |java+method:///java/sql/SQLInput/readNString()|
+    ADDED: |java+method:///java/sql/SQLInput/readRowId()|
+    ADDED: |java+method:///java/sql/SQLInput/readSQLXML()|
+    ADDED: |java+method:///java/sql/SQLOutput/writeNClob(java.sql.NClob)|
+    ADDED: |java+method:///java/sql/SQLOutput/writeNString(java.lang.String)|
+    ADDED: |java+method:///java/sql/SQLOutput/writeRowId(java.sql.RowId)|
+    ADDED: |java+method:///java/sql/SQLOutput/writeSQLXML(java.sql.SQLXML)|
+    ADDED: |java+method:///java/sql/Statement/isClosed()|
+    ADDED: |java+method:///java/sql/Statement/isPoolable()|
+    ADDED: |java+method:///java/sql/Statement/setPoolable(boolean)|
+    ADDED: |java+method:///java/text/DateFormatSymbols/getAvailableLocales()|
+    ADDED: |java+method:///java/text/DateFormatSymbols/getInstance()|
+    ADDED: |java+method:///java/text/DateFormatSymbols/getInstance(java.util.Locale)|
+    ADDED: |java+method:///java/text/DateFormatSymbols/toString()|
+    ADDED: |java+method:///java/text/DecimalFormat/getRoundingMode()|
+    ADDED: |java+method:///java/text/DecimalFormat/setRoundingMode(java.math.RoundingMode)|
+    ADDED: |java+method:///java/text/DecimalFormatSymbols/getAvailableLocales()|
+    ADDED: |java+method:///java/text/DecimalFormatSymbols/getExponentSeparator()|
+    ADDED: |java+method:///java/text/DecimalFormatSymbols/getInstance()|
+    ADDED: |java+method:///java/text/DecimalFormatSymbols/getInstance(java.util.Locale)|
+    ADDED: |java+method:///java/text/DecimalFormatSymbols/setExponentSeparator(java.lang.String)|
+    ADDED: |java+method:///java/text/DecimalFormatSymbols/toString()|
+    ADDED: |java+method:///java/text/NumberFormat/getRoundingMode()|
+    ADDED: |java+method:///java/text/NumberFormat/setRoundingMode(java.math.RoundingMode)|
+    ADDED: |java+method:///java/util/Arrays/binarySearch(byte%5B%5D,int,int,byte)|
+    ADDED: |java+method:///java/util/Arrays/binarySearch(char%5B%5D,int,int,char)|
+    ADDED: |java+method:///java/util/Arrays/binarySearch(double%5B%5D,int,int,double)|
+    ADDED: |java+method:///java/util/Arrays/binarySearch(float%5B%5D,int,int,float)|
+    ADDED: |java+method:///java/util/Arrays/binarySearch(int%5B%5D,int,int,int)|
+    ADDED: |java+method:///java/util/Arrays/binarySearch(java.lang.Object%5B%5D,int,int,java.lang.Object)|
+    ADDED: |java+method:///java/util/Arrays/binarySearch(long%5B%5D,int,int,long)|
+    ADDED: |java+method:///java/util/Arrays/binarySearch(short%5B%5D,int,int,short)|
+    ADDED: |java+method:///java/util/Arrays/copyOf(boolean%5B%5D,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOf(byte%5B%5D,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOf(char%5B%5D,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOf(double%5B%5D,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOf(float%5B%5D,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOf(int%5B%5D,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOf(long%5B%5D,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOf(short%5B%5D,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOfRange(boolean%5B%5D,int,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOfRange(byte%5B%5D,int,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOfRange(char%5B%5D,int,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOfRange(double%5B%5D,int,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOfRange(float%5B%5D,int,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOfRange(int%5B%5D,int,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOfRange(long%5B%5D,int,int)|
+    ADDED: |java+method:///java/util/Arrays/copyOfRange(short%5B%5D,int,int)|
+    ADDED: |java+method:///java/util/Calendar/getDisplayName(int,int,java.util.Locale)|
+    ADDED: |java+method:///java/util/Calendar/getDisplayNames(int,int,java.util.Locale)|
+    ADDED: |java+method:///java/util/LinkedList/descendingIterator()|
+    ADDED: |java+method:///java/util/LinkedList/offerFirst(E)|
+    ADDED: |java+method:///java/util/LinkedList/offerLast(E)|
+    ADDED: |java+method:///java/util/LinkedList/peekFirst()|
+    ADDED: |java+method:///java/util/LinkedList/peekLast()|
+    ADDED: |java+method:///java/util/LinkedList/pollFirst()|
+    ADDED: |java+method:///java/util/LinkedList/pollLast()|
+    ADDED: |java+method:///java/util/LinkedList/pop()|
+    ADDED: |java+method:///java/util/LinkedList/push(E)|
+    ADDED: |java+method:///java/util/LinkedList/removeFirstOccurrence(java.lang.Object)|
+    ADDED: |java+method:///java/util/LinkedList/removeLastOccurrence(java.lang.Object)|
+    ADDED: |java+method:///java/util/Properties/load(java.io.Reader)|
+    ADDED: |java+method:///java/util/Properties/store(java.io.Writer,java.lang.String)|
+    ADDED: |java+method:///java/util/Properties/stringPropertyNames()|
+    ADDED: |java+method:///java/util/ResourceBundle/clearCache()|
+    ADDED: |java+method:///java/util/ResourceBundle/clearCache(java.lang.ClassLoader)|
+    ADDED: |java+method:///java/util/ResourceBundle/containsKey(java.lang.String)|
+    ADDED: |java+method:///java/util/ResourceBundle/getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader,java.util.ResourceBundle.Control)|
+    ADDED: |java+method:///java/util/ResourceBundle/getBundle(java.lang.String,java.util.Locale,java.util.ResourceBundle.Control)|
+    ADDED: |java+method:///java/util/ResourceBundle/getBundle(java.lang.String,java.util.ResourceBundle.Control)|
+    ADDED: |java+method:///java/util/ResourceBundle/keySet()|
+    ADDED: |java+method:///java/util/Scanner/reset()|
+    ADDED: |java+method:///java/util/TreeMap/ceilingEntry(K)|
+    ADDED: |java+method:///java/util/TreeMap/ceilingKey(K)|
+    ADDED: |java+method:///java/util/TreeMap/descendingKeySet()|
+    ADDED: |java+method:///java/util/TreeMap/descendingMap()|
+    ADDED: |java+method:///java/util/TreeMap/firstEntry()|
+    ADDED: |java+method:///java/util/TreeMap/floorEntry(K)|
+    ADDED: |java+method:///java/util/TreeMap/floorKey(K)|
+    ADDED: |java+method:///java/util/TreeMap/headMap(K,boolean)|
+    ADDED: |java+method:///java/util/TreeMap/higherEntry(K)|
+    ADDED: |java+method:///java/util/TreeMap/higherKey(K)|
+    ADDED: |java+method:///java/util/TreeMap/isEmpty()|
+    ADDED: |java+method:///java/util/TreeMap/lastEntry()|
+    ADDED: |java+method:///java/util/TreeMap/lowerEntry(K)|
+    ADDED: |java+method:///java/util/TreeMap/lowerKey(K)|
+    ADDED: |java+method:///java/util/TreeMap/navigableKeySet()|
+    ADDED: |java+method:///java/util/TreeMap/pollFirstEntry()|
+    ADDED: |java+method:///java/util/TreeMap/pollLastEntry()|
+    ADDED: |java+method:///java/util/TreeMap/subMap(K,boolean,K,boolean)|
+    ADDED: |java+method:///java/util/TreeMap/tailMap(K,boolean)|
+    ADDED: |java+method:///java/util/TreeSet/ceiling(E)|
+    ADDED: |java+method:///java/util/TreeSet/descendingIterator()|
+    ADDED: |java+method:///java/util/TreeSet/descendingSet()|
+    ADDED: |java+method:///java/util/TreeSet/floor(E)|
+    ADDED: |java+method:///java/util/TreeSet/headSet(E,boolean)|
+    ADDED: |java+method:///java/util/TreeSet/higher(E)|
+    ADDED: |java+method:///java/util/TreeSet/lower(E)|
+    ADDED: |java+method:///java/util/TreeSet/pollFirst()|
+    ADDED: |java+method:///java/util/TreeSet/pollLast()|
+    ADDED: |java+method:///java/util/TreeSet/subSet(E,boolean,E,boolean)|
+    ADDED: |java+method:///java/util/TreeSet/tailSet(E,boolean)|
+    ADDED: |java+method:///java/util/concurrent/ThreadPoolExecutor/allowCoreThreadTimeOut(boolean)|
+    ADDED: |java+method:///java/util/concurrent/ThreadPoolExecutor/allowsCoreThreadTimeOut()|
+    ADDED: |java+method:///java/util/concurrent/TimeUnit/toDays(long)|
+    ADDED: |java+method:///java/util/concurrent/TimeUnit/toHours(long)|
+    ADDED: |java+method:///java/util/concurrent/TimeUnit/toMinutes(long)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicBoolean/lazySet(boolean)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicInteger/lazySet(int)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicIntegerArray/lazySet(int,int)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicIntegerFieldUpdater/lazySet(T,int)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicLong/lazySet(long)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicLongArray/lazySet(int,long)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicLongFieldUpdater/lazySet(T,long)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicReference/lazySet(V)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicReferenceArray/lazySet(int,E)|
+    ADDED: |java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/lazySet(T,V)|
+    ADDED: |java+method:///java/util/concurrent/locks/LockSupport/getBlocker(java.lang.Thread)|
+    ADDED: |java+method:///java/util/concurrent/locks/LockSupport/park(java.lang.Object)|
+    ADDED: |java+method:///java/util/concurrent/locks/LockSupport/parkNanos(java.lang.Object,long)|
+    ADDED: |java+method:///java/util/concurrent/locks/LockSupport/parkUntil(java.lang.Object,long)|
+    ADDED: |java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/WriteLock/getHoldCount()|
+    ADDED: |java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/WriteLock/isHeldByCurrentThread()|
+    ADDED: |java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/getReadHoldCount()|
+    DELETED: |java+constructor:///java/text/Format/Format()|
+    DELETED: |java+constructor:///java/text/NumberFormat/NumberFormat()|
+    DELETED: |java+method:///android/view/KeyEvent/describeContents()|
+    DELETED: |java+method:///android/view/KeyEvent/getDeviceId()|
+    DELETED: |java+method:///android/view/MotionEvent/describeContents()|
+    DELETED: |java+method:///android/view/MotionEvent/getDeviceId()|
+    DELETED: |java+method:///java/lang/Class/getClasses()|
+    DELETED: |java+method:///java/lang/Class/getConstructors()|
+    DELETED: |java+method:///java/lang/Class/getDeclaredClasses()|
+    DELETED: |java+method:///java/lang/Class/getDeclaredConstructors()|
+    DELETED: |java+method:///java/lang/Class/getInterfaces()|
+    DELETED: |java+method:///java/net/SocketImpl/getOption(int)|
+    DELETED: |java+method:///java/net/SocketImpl/setOption(int,java.lang.Object)|
+    DELETED: |java+method:///java/text/CollationKey/equals(java.lang.Object)|
+    DELETED: |java+method:///java/text/CollationKey/hashCode()|
+    DELETED: |java+method:///java/util/TreeMap/containsValue(java.lang.Object)|
+    DELETED: |java+method:///java/util/TreeMap/putAll(java.util.Map)|
+    DELETED: |java+method:///java/util/TreeMap/values()|
+    METHOD MODIFIER CHANGE OF |java+method:///android/view/MotionEvent/recycle()|. OLD: {public()}. NEW: {final(),public()}
+    METHOD MODIFIER CHANGE OF |java+method:///java/lang/Math/random()|. OLD: {public(),static()}. NEW: {public(),static(),synchronized()}
+    METHOD MODIFIER CHANGE OF |java+method:///java/nio/charset/Charset/isSupported(java.lang.String)|. OLD: {public(),static(),synchronized()}. NEW: {public(),static()}
+    METHOD MODIFIER CHANGE OF |java+method:///java/security/Policy/getPermissions(java.security.CodeSource)|. OLD: {public(),abstract()}. NEW: {public()}
+    METHOD MODIFIER CHANGE OF |java+method:///java/security/Policy/refresh()|. OLD: {public(),abstract()}. NEW: {public()}
+    METHOD MODIFIER CHANGE OF |java+method:///java/text/CollationKey/compareTo(java.text.CollationKey)|. OLD: {public()}. NEW: {public(),abstract()}
+    METHOD MODIFIER CHANGE OF |java+method:///java/text/CollationKey/toByteArray()|. OLD: {public()}. NEW: {public(),abstract()}
+    RETURN TYPE CHANGE OF |java+method:///java/lang/Package/getAnnotation(java.lang.Class)|: typeParameter(|java+typeVariable:///T|,unbounded()) is now typeParameter(|java+typeVariable:///A|,unbounded())
+    RETURN TYPE CHANGE OF |java+method:///java/lang/reflect/Member/getDeclaringClass()|: class(|java+class:///java/lang/Class|,[]) is now class(|java+class:///java/lang/Class|,[wildcard(unbounded())])
+    SIGNATURE CHANGE: |java+method:///java/lang/Class/getConstructor(java.lang.Class%5B%5D)| IS NOW: |java+method:///java/lang/Class/getConstructor()|
+    SIGNATURE CHANGE: |java+method:///java/lang/Class/getDeclaredConstructor(java.lang.Class%5B%5D)| IS NOW: |java+method:///java/lang/Class/getDeclaredConstructor()|
+    SIGNATURE CHANGE: |java+method:///java/lang/Class/getDeclaredMethod(java.lang.String,java.lang.Class%5B%5D)| IS NOW: |java+method:///java/lang/Class/getDeclaredMethod(java.lang.String)|
+    SIGNATURE CHANGE: |java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)| IS NOW: |java+method:///java/lang/Class/getMethod(java.lang.String)|
+-------In total 16141 methods are unchanged, 13 methods have changed somehow, 433 methods have been added and 18 methods have been deleted.-------
+-------Changes in methods: 0 deprecated, 0 undeprecated, 4 signature change, 2 return type changes and 7 method modifier changes. -------
+
+---[CLASSES]---
+    ADDED: |java+class:///android/media/audiofx/AudioEffect|
+    ADDED: |java+class:///android/media/audiofx/AudioEffect/Descriptor|
+    ADDED: |java+class:///android/media/audiofx/BassBoost|
+    ADDED: |java+class:///android/media/audiofx/BassBoost/Settings|
+    ADDED: |java+class:///android/media/audiofx/EnvironmentalReverb|
+    ADDED: |java+class:///android/media/audiofx/EnvironmentalReverb/Settings|
+    ADDED: |java+class:///android/media/audiofx/Equalizer|
+    ADDED: |java+class:///android/media/audiofx/Equalizer/Settings|
+    ADDED: |java+class:///android/media/audiofx/PresetReverb|
+    ADDED: |java+class:///android/media/audiofx/PresetReverb/Settings|
+    ADDED: |java+class:///android/media/audiofx/Virtualizer|
+    ADDED: |java+class:///android/media/audiofx/Virtualizer/Settings|
+    ADDED: |java+class:///android/media/audiofx/Visualizer|
+    ADDED: |java+class:///android/net/sip/SipAudioCall|
+    ADDED: |java+class:///android/net/sip/SipAudioCall/Listener|
+    ADDED: |java+class:///android/net/sip/SipErrorCode|
+    ADDED: |java+class:///android/net/sip/SipException|
+    ADDED: |java+class:///android/net/sip/SipManager|
+    ADDED: |java+class:///android/net/sip/SipProfile|
+    ADDED: |java+class:///android/net/sip/SipProfile/Builder|
+    ADDED: |java+class:///android/net/sip/SipSession|
+    ADDED: |java+class:///android/net/sip/SipSession/Listener|
+    ADDED: |java+class:///android/net/sip/SipSession/State|
+    ADDED: |java+class:///android/nfc/FormatException|
+    ADDED: |java+class:///android/nfc/NdefMessage|
+    ADDED: |java+class:///android/nfc/NdefRecord|
+    ADDED: |java+class:///android/nfc/NfcAdapter|
+    ADDED: |java+class:///android/os/StrictMode|
+    ADDED: |java+class:///android/os/StrictMode/ThreadPolicy|
+    ADDED: |java+class:///android/os/StrictMode/ThreadPolicy/Builder|
+    ADDED: |java+class:///android/os/StrictMode/VmPolicy|
+    ADDED: |java+class:///android/os/StrictMode/VmPolicy/Builder|
+    ADDED: |java+class:///android/os/WorkSource|
+    ADDED: |java+class:///android/os/storage/OnObbStateChangeListener|
+    ADDED: |java+class:///android/os/storage/StorageManager|
+    ADDED: |java+class:///android/view/InputDevice|
+    ADDED: |java+class:///android/view/InputDevice/MotionRange|
+    ADDED: |java+class:///android/view/InputEvent|
+    ADDED: |java+class:///android/view/InputQueue|
+    ADDED: |java+class:///android/view/MotionEvent/PointerCoords|
+    ADDED: |java+class:///android/widget/OverScroller|
+    ADDED: |java+class:///java/io/Console|
+    ADDED: |java+class:///java/io/IOError|
+    ADDED: |java+class:///java/net/CookieManager|
+    ADDED: |java+class:///java/net/HttpCookie|
+    ADDED: |java+class:///java/net/IDN|
+    ADDED: |java+class:///java/net/InterfaceAddress|
+    ADDED: |java+class:///java/security/PolicySpi|
+    ADDED: |java+class:///java/sql/SQLClientInfoException|
+    ADDED: |java+class:///java/sql/SQLDataException|
+    ADDED: |java+class:///java/sql/SQLFeatureNotSupportedException|
+    ADDED: |java+class:///java/sql/SQLIntegrityConstraintViolationException|
+    ADDED: |java+class:///java/sql/SQLInvalidAuthorizationSpecException|
+    ADDED: |java+class:///java/sql/SQLNonTransientConnectionException|
+    ADDED: |java+class:///java/sql/SQLNonTransientException|
+    ADDED: |java+class:///java/sql/SQLRecoverableException|
+    ADDED: |java+class:///java/sql/SQLSyntaxErrorException|
+    ADDED: |java+class:///java/sql/SQLTimeoutException|
+    ADDED: |java+class:///java/sql/SQLTransactionRollbackException|
+    ADDED: |java+class:///java/sql/SQLTransientConnectionException|
+    ADDED: |java+class:///java/sql/SQLTransientException|
+    ADDED: |java+class:///java/text/Normalizer|
+    ADDED: |java+class:///java/util/AbstractMap/SimpleEntry|
+    ADDED: |java+class:///java/util/AbstractMap/SimpleImmutableEntry|
+    ADDED: |java+class:///java/util/ArrayDeque|
+    ADDED: |java+class:///java/util/ResourceBundle/Control|
+    ADDED: |java+class:///java/util/ServiceConfigurationError|
+    ADDED: |java+class:///java/util/ServiceLoader|
+    ADDED: |java+class:///java/util/concurrent/ConcurrentSkipListMap|
+    ADDED: |java+class:///java/util/concurrent/ConcurrentSkipListSet|
+    ADDED: |java+class:///java/util/concurrent/LinkedBlockingDeque|
+    ADDED: |java+class:///java/util/concurrent/locks/AbstractOwnableSynchronizer|
+    ADDED: |java+class:///java/util/concurrent/locks/AbstractQueuedLongSynchronizer|
+    ADDED: |java+class:///java/util/concurrent/locks/AbstractQueuedLongSynchronizer/ConditionObject|
+    ADDED: |java+class:///java/util/zip/DeflaterInputStream|
+    ADDED: |java+class:///java/util/zip/InflaterOutputStream|
+    ADDED: |java+class:///java/util/zip/ZipError|
+    ADDED: |java+enum:///java/sql/ClientInfoStatus|
+    ADDED: |java+enum:///java/sql/RowIdLifetime|
+    ADDED: |java+enum:///java/text/Normalizer/Form|
+    ADDED: |java+interface:///android/media/audiofx/AudioEffect/OnControlStatusChangeListener|
+    ADDED: |java+interface:///android/media/audiofx/AudioEffect/OnEnableStatusChangeListener|
+    ADDED: |java+interface:///android/media/audiofx/BassBoost/OnParameterChangeListener|
+    ADDED: |java+interface:///android/media/audiofx/EnvironmentalReverb/OnParameterChangeListener|
+    ADDED: |java+interface:///android/media/audiofx/Equalizer/OnParameterChangeListener|
+    ADDED: |java+interface:///android/media/audiofx/PresetReverb/OnParameterChangeListener|
+    ADDED: |java+interface:///android/media/audiofx/Virtualizer/OnParameterChangeListener|
+    ADDED: |java+interface:///android/media/audiofx/Visualizer/OnDataCaptureListener|
+    ADDED: |java+interface:///android/net/sip/SipRegistrationListener|
+    ADDED: |java+interface:///android/view/InputQueue/Callback|
+    ADDED: |java+interface:///android/view/SurfaceHolder/Callback2|
+    ADDED: |java+interface:///java/net/CookiePolicy|
+    ADDED: |java+interface:///java/net/CookieStore|
+    ADDED: |java+interface:///java/security/Policy/Parameters|
+    ADDED: |java+interface:///java/sql/NClob|
+    ADDED: |java+interface:///java/sql/RowId|
+    ADDED: |java+interface:///java/sql/SQLXML|
+    ADDED: |java+interface:///java/sql/Wrapper|
+    ADDED: |java+interface:///java/util/Deque|
+    ADDED: |java+interface:///java/util/NavigableMap|
+    ADDED: |java+interface:///java/util/NavigableSet|
+    ADDED: |java+interface:///java/util/concurrent/BlockingDeque|
+    ADDED: |java+interface:///java/util/concurrent/ConcurrentNavigableMap|
+    ADDED: |java+interface:///java/util/concurrent/RunnableFuture|
+    ADDED: |java+interface:///java/util/concurrent/RunnableScheduledFuture|
+    CHANGED: |java+class:///android/Manifest/permission| DUE TO:
+            |java+field:///android/Manifest/permission/NFC|
+            |java+field:///android/Manifest/permission/WRITE_OWNER_DATA|
+            |java+field:///android/Manifest/permission/SET_ALARM|
+            |java+field:///android/Manifest/permission/USE_SIP|
+            |java+field:///android/Manifest/permission/READ_OWNER_DATA|
+    CHANGED: |java+class:///android/R/attr| DUE TO:
+            |java+field:///android/R/attr/overScrollFooter|
+            |java+field:///android/R/attr/textSelectHandleWindowStyle|
+            |java+field:///android/R/attr/filterTouchesWhenObscured|
+            |java+field:///android/R/attr/textSelectHandleLeft|
+            |java+field:///android/R/attr/screenDensity|
+            |java+field:///android/R/attr/textSelectHandleRight|
+            |java+field:///android/R/attr/popupAnimationStyle|
+            |java+field:///android/R/attr/overScrollMode|
+            |java+field:///android/R/attr/textSelectHandle|
+            |java+field:///android/R/attr/xlargeScreens|
+            |java+field:///android/R/attr/overScrollHeader|
+            |java+field:///android/R/attr/screenSize|
+    CHANGED: |java+class:///android/R/drawable| DUE TO:
+            |java+field:///android/R/drawable/presence_video_busy|
+            |java+field:///android/R/drawable/presence_audio_online|
+            |java+field:///android/R/drawable/presence_audio_away|
+            |java+field:///android/R/drawable/presence_video_online|
+            |java+field:///android/R/drawable/presence_video_away|
+            |java+field:///android/R/drawable/presence_audio_busy|
+    CHANGED: |java+class:///android/R/style| DUE TO:
+            |java+field:///android/R/style/TextAppearance_StatusBar_Icon|
+            |java+field:///android/R/style/TextAppearance_StatusBar_EventContent_Title|
+            |java+field:///android/R/style/TextAppearance_StatusBar_Title|
+            |java+field:///android/R/style/TextAppearance_StatusBar_EventContent|
+    CHANGED: |java+class:///android/R/styleable| DUE TO:
+            |java+field:///android/R/styleable/Theme_textSelectHandleLeft|
+            |java+field:///android/R/styleable/TextView_textSelectHandle|
+            |java+field:///android/R/styleable/View_overScrollMode|
+            |java+field:///android/R/styleable/TextView_textSelectHandleRight|
+            |java+field:///android/R/styleable/AndroidManifestCompatibleScreensScreen_screenDensity|
+            |java+field:///android/R/styleable/AndroidManifestCompatibleScreensScreen_screenSize|
+            |java+field:///android/R/styleable/ListView_overScrollHeader|
+            |java+field:///android/R/styleable/Theme_textSelectHandleWindowStyle|
+            |java+field:///android/R/styleable/AndroidManifestSupportsScreens_xlargeScreens|
+            |java+field:///android/R/styleable/ListView_overScrollFooter|
+            |java+field:///android/R/styleable/Theme_textSelectHandle|
+            |java+field:///android/R/styleable/PopupWindow_popupAnimationStyle|
+            |java+field:///android/R/styleable/Theme_textSelectHandleRight|
+            |java+field:///android/R/styleable/TextView_textSelectHandleLeft|
+            |java+field:///android/R/styleable/View_filterTouchesWhenObscured|
+            |java+field:///android/R/styleable/AndroidManifestCompatibleScreensScreen|
+    CHANGED: |java+class:///android/graphics/ImageFormat| DUE TO:
+            |java+field:///android/graphics/ImageFormat/YV12|
+    CHANGED: |java+class:///android/location/Criteria| DUE TO:
+            |java+method:///android/location/Criteria/getVerticalAccuracy()|
+            |java+method:///android/location/Criteria/getSpeedAccuracy()|
+            |java+method:///android/location/Criteria/setSpeedAccuracy(int)|
+            |java+method:///android/location/Criteria/getHorizontalAccuracy()|
+            |java+field:///android/location/Criteria/ACCURACY_MEDIUM|
+            |java+field:///android/location/Criteria/ACCURACY_LOW|
+            |java+field:///android/location/Criteria/ACCURACY_HIGH|
+            |java+method:///android/location/Criteria/setBearingAccuracy(int)|
+            |java+method:///android/location/Criteria/setHorizontalAccuracy(int)|
+            |java+method:///android/location/Criteria/getBearingAccuracy()|
+            |java+method:///android/location/Criteria/setVerticalAccuracy(int)|
+    CHANGED: |java+class:///android/location/Geocoder| DUE TO:
+            |java+method:///android/location/Geocoder/isPresent()|
+    CHANGED: |java+class:///android/location/LocationManager| DUE TO:
+            |java+method:///android/location/LocationManager/requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)|
+            |java+method:///android/location/LocationManager/requestSingleUpdate(java.lang.String,android.location.LocationListener,android.os.Looper)|
+            |java+method:///android/location/LocationManager/requestSingleUpdate(android.location.Criteria,android.location.LocationListener,android.os.Looper)|
+            |java+method:///android/location/LocationManager/requestSingleUpdate(android.location.Criteria,android.app.PendingIntent)|
+            |java+method:///android/location/LocationManager/requestSingleUpdate(java.lang.String,android.app.PendingIntent)|
+            |java+method:///android/location/LocationManager/requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper)|
+            |java+field:///android/location/LocationManager/PROVIDERS_CHANGED_ACTION|
+    CHANGED: |java+class:///android/media/AudioTrack| DUE TO:
+            |java+method:///android/media/AudioTrack/getAudioSessionId()|
+            |java+constructor:///android/media/AudioTrack/AudioTrack(int,int,int,int,int,int,int)|
+            |java+method:///android/media/AudioTrack/attachAuxEffect(int)|
+            |java+method:///android/media/AudioTrack/setAuxEffectSendLevel(float)|
+    CHANGED: |java+class:///android/media/CamcorderProfile| DUE TO:
+            |java+method:///android/media/CamcorderProfile/get(int,int)|
+    CHANGED: |java+class:///android/media/CameraProfile| DUE TO:
+            |java+method:///android/media/CameraProfile/getJpegEncodingQualityParameter(int,int)|
+    CHANGED: |java+class:///android/media/ExifInterface| DUE TO:
+            |java+field:///android/media/ExifInterface/TAG_GPS_ALTITUDE|
+            |java+method:///android/media/ExifInterface/getAltitude(double)|
+            |java+field:///android/media/ExifInterface/TAG_GPS_ALTITUDE_REF|
+    CHANGED: |java+class:///android/media/MediaPlayer| DUE TO:
+            |java+field:///android/media/MediaPlayer/MEDIA_INFO_BUFFERING_END|
+            |java+method:///android/media/MediaPlayer/setAuxEffectSendLevel(float)|
+            |java+method:///android/media/MediaPlayer/getAudioSessionId()|
+            |java+field:///android/media/MediaPlayer/MEDIA_INFO_BUFFERING_START|
+            |java+method:///android/media/MediaPlayer/setAudioSessionId(int)|
+            |java+method:///android/media/MediaPlayer/attachAuxEffect(int)|
+    CHANGED: |java+class:///android/media/MediaRecorder| DUE TO:
+            |java+method:///android/media/MediaRecorder/setOrientationHint(int)|
+    CHANGED: |java+class:///android/net/wifi/WifiManager/WifiLock| DUE TO:
+            |java+method:///android/net/wifi/WifiManager/WifiLock/setWorkSource(android.os.WorkSource)|
+    CHANGED: |java+class:///android/opengl/GLES20| DUE TO:
+            |java+method:///android/opengl/GLES20/glVertexAttribPointer(int,int,int,boolean,int,int)|
+            |java+method:///android/opengl/GLES20/glDrawElements(int,int,int,int)|
+    CHANGED: |java+class:///android/os/Build| DUE TO:
+            |java+field:///android/os/Build/SERIAL|
+    CHANGED: |java+class:///android/os/Build/VERSION_CODES| DUE TO:
+            |java+field:///android/os/Build/VERSION_CODES/GINGERBREAD|
+    CHANGED: |java+class:///android/os/Environment| DUE TO:
+            |java+method:///android/os/Environment/isExternalStorageRemovable()|
+    CHANGED: |java+class:///android/os/ParcelFileDescriptor| DUE TO:
+            |java+method:///android/os/ParcelFileDescriptor/createPipe()|
+    CHANGED: |java+class:///android/os/PowerManager/WakeLock| DUE TO:
+            |java+method:///android/os/PowerManager/WakeLock/setWorkSource(android.os.WorkSource)|
+    CHANGED: |java+class:///android/service/wallpaper/WallpaperService/Engine| DUE TO:
+            |java+method:///android/service/wallpaper/WallpaperService/Engine/onSurfaceRedrawNeeded(android.view.SurfaceHolder)|
+    CHANGED: |java+class:///android/telephony/TelephonyManager| DUE TO:
+            |java+field:///android/telephony/TelephonyManager/NETWORK_TYPE_EVDO_B|
+    CHANGED: |java+class:///android/telephony/gsm/GsmCellLocation| DUE TO:
+            |java+method:///android/telephony/gsm/GsmCellLocation/getPsc()|
+    CHANGED: |java+class:///android/test/mock/MockPackageManager| DUE TO:
+            |java+method:///android/test/mock/MockPackageManager/getActivityLogo(android.content.ComponentName)|
+            |java+method:///android/test/mock/MockPackageManager/setPackageObbPath(java.lang.String,java.lang.String)|
+            |java+method:///android/test/mock/MockPackageManager/getApplicationLogo(android.content.pm.ApplicationInfo)|
+            |java+method:///android/test/mock/MockPackageManager/getProviderInfo(android.content.ComponentName,int)|
+            |java+method:///android/test/mock/MockPackageManager/getActivityLogo(android.content.Intent)|
+            |java+method:///android/test/mock/MockPackageManager/getApplicationLogo(java.lang.String)|
+    CHANGED: |java+class:///android/text/format/DateUtils| DUE TO:
+            |java+method:///android/text/format/DateUtils/formatDateRange(android.content.Context,java.util.Formatter,long,long,int,java.lang.String)|
+    CHANGED: |java+class:///android/util/DisplayMetrics| DUE TO:
+            |java+field:///android/util/DisplayMetrics/DENSITY_XHIGH|
+    CHANGED: |java+class:///android/view/KeyEvent| DUE TO:
+            |java+field:///android/view/KeyEvent/KEYCODE_SWITCH_CHARSET|
+            |java+method:///android/view/KeyEvent/getDeviceId()|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_L2|
+            |java+field:///android/view/KeyEvent/KEYCODE_PAGE_DOWN|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_L1|
+            |java+field:///android/view/KeyEvent/KEYCODE_PICTSYMBOLS|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_MODE|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_C|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_B|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_R2|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_START|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_A|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_R1|
+            |java+field:///android/view/KeyEvent/KEYCODE_PAGE_UP|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_THUMBR|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_SELECT|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_Z|
+            |java+constructor:///android/view/KeyEvent/KeyEvent(long,long,int,int,int,int,int,int,int,int)|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_Y|
+            |java+method:///android/view/KeyEvent/describeContents()|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_X|
+            |java+field:///android/view/KeyEvent/KEYCODE_BUTTON_THUMBL|
+    CHANGED: |java+class:///android/view/MotionEvent| DUE TO:
+            |java+method:///android/view/MotionEvent/getToolMinor(int)|
+            |java+method:///android/view/MotionEvent/getToolMajor()|
+            |java+method:///android/view/MotionEvent/getHistoricalTouchMinor(int)|
+            |java+method:///android/view/MotionEvent/getToolMajor(int)|
+            |java+method:///android/view/MotionEvent/getHistoricalTouchMinor(int,int)|
+            |java+method:///android/view/MotionEvent/recycle()|
+            |java+method:///android/view/MotionEvent/getHistoricalTouchMajor(int)|
+            |java+method:///android/view/MotionEvent/getToolMinor()|
+            |java+method:///android/view/MotionEvent/getHistoricalOrientation(int)|
+            |java+method:///android/view/MotionEvent/describeContents()|
+            |java+method:///android/view/MotionEvent/getHistoricalTouchMajor(int,int)|
+            |java+method:///android/view/MotionEvent/getTouchMajor()|
+            |java+method:///android/view/MotionEvent/getHistoricalOrientation(int,int)|
+            |java+method:///android/view/MotionEvent/getPointerCoords(int,android.view.MotionEvent.PointerCoords)|
+            |java+method:///android/view/MotionEvent/getTouchMinor()|
+            |java+method:///android/view/MotionEvent/getDeviceId()|
+            |java+method:///android/view/MotionEvent/getOrientation(int)|
+            |java+method:///android/view/MotionEvent/getHistoricalPointerCoords(int,int,android.view.MotionEvent.PointerCoords)|
+            |java+method:///android/view/MotionEvent/getOrientation()|
+            |java+method:///android/view/MotionEvent/obtain(long,long,int,int,int%5B%5D,android.view.MotionEvent.PointerCoords%5B%5D,int,float,float,int,int,int,int)|
+            |java+method:///android/view/MotionEvent/getHistoricalToolMinor(int)|
+            |java+method:///android/view/MotionEvent/getTouchMinor(int)|
+            |java+method:///android/view/MotionEvent/getHistoricalToolMinor(int,int)|
+            |java+method:///android/view/MotionEvent/getHistoricalToolMajor(int)|
+            |java+field:///android/view/MotionEvent/FLAG_WINDOW_IS_OBSCURED|
+            |java+method:///android/view/MotionEvent/getFlags()|
+            |java+method:///android/view/MotionEvent/getTouchMajor(int)|
+            |java+method:///android/view/MotionEvent/getHistoricalToolMajor(int,int)|
+            |java+method:///android/view/MotionEvent/addBatch(long,android.view.MotionEvent.PointerCoords%5B%5D,int)|
+    CHANGED: |java+class:///android/view/View| DUE TO:
+            |java+method:///android/view/View/onFilterTouchEventForSecurity(android.view.MotionEvent)|
+            |java+method:///android/view/View/setFilterTouchesWhenObscured(boolean)|
+            |java+field:///android/view/View/OVER_SCROLL_NEVER|
+            |java+field:///android/view/View/OVER_SCROLL_ALWAYS|
+            |java+method:///android/view/View/getOverScrollMode()|
+            |java+field:///android/view/View/OVER_SCROLL_IF_CONTENT_SCROLLS|
+            |java+method:///android/view/View/setOverScrollMode(int)|
+            |java+method:///android/view/View/getFilterTouchesWhenObscured()|
+    CHANGED: |java+class:///android/view/ViewConfiguration| DUE TO:
+            |java+method:///android/view/ViewConfiguration/getScaledOverscrollDistance()|
+            |java+method:///android/view/ViewConfiguration/getScaledOverflingDistance()|
+    CHANGED: |java+class:///android/view/Window| DUE TO:
+            |java+method:///android/view/Window/takeSurface(android.view.SurfaceHolder.Callback2)|
+            |java+method:///android/view/Window/takeInputQueue(android.view.InputQueue.Callback)|
+    CHANGED: |java+class:///android/view/inputmethod/BaseInputConnection| DUE TO:
+            |java+method:///android/view/inputmethod/BaseInputConnection/getSelectedText(int)|
+            |java+method:///android/view/inputmethod/BaseInputConnection/setComposingRegion(int,int)|
+    CHANGED: |java+class:///android/view/inputmethod/InputConnectionWrapper| DUE TO:
+            |java+method:///android/view/inputmethod/InputConnectionWrapper/setComposingRegion(int,int)|
+            |java+method:///android/view/inputmethod/InputConnectionWrapper/getSelectedText(int)|
+    CHANGED: |java+class:///android/webkit/WebSettings| DUE TO:
+            |java+method:///android/webkit/WebSettings/setUseWebViewBackgroundForOverscrollBackground(boolean)|
+            |java+method:///android/webkit/WebSettings/getUseWebViewBackgroundForOverscrollBackground()|
+    CHANGED: |java+class:///android/webkit/WebView| DUE TO:
+            |java+method:///android/webkit/WebView/setOverScrollMode(int)|
+            |java+method:///android/webkit/WebView/draw(android.graphics.Canvas)|
+            |java+method:///android/webkit/WebView/onKeyMultiple(int,int,android.view.KeyEvent)|
+    CHANGED: |java+class:///android/widget/AbsListView| DUE TO:
+            |java+method:///android/widget/AbsListView/setOverScrollMode(int)|
+    CHANGED: |java+class:///android/widget/HorizontalScrollView| DUE TO:
+            |java+method:///android/widget/HorizontalScrollView/draw(android.graphics.Canvas)|
+            |java+method:///android/widget/HorizontalScrollView/setOverScrollMode(int)|
+    CHANGED: |java+class:///android/widget/ListView| DUE TO:
+            |java+method:///android/widget/ListView/setOverscrollFooter(android.graphics.drawable.Drawable)|
+            |java+method:///android/widget/ListView/getOverscrollHeader()|
+            |java+method:///android/widget/ListView/getOverscrollFooter()|
+            |java+method:///android/widget/ListView/setOverscrollHeader(android.graphics.drawable.Drawable)|
+    CHANGED: |java+class:///android/widget/RemoteViews| DUE TO:
+            |java+method:///android/widget/RemoteViews/clone()|
+    CHANGED: |java+class:///android/widget/ScrollView| DUE TO:
+            |java+method:///android/widget/ScrollView/draw(android.graphics.Canvas)|
+            |java+method:///android/widget/ScrollView/setOverScrollMode(int)|
+    CHANGED: |java+class:///dalvik/system/PathClassLoader| DUE TO:
+            |java+method:///dalvik/system/PathClassLoader/findLibrary(java.lang.String)|
+    CHANGED: |java+class:///java/io/File| DUE TO:
+            |java+method:///java/io/File/setExecutable(boolean)|
+            |java+method:///java/io/File/setWritable(boolean,boolean)|
+            |java+method:///java/io/File/setReadable(boolean,boolean)|
+            |java+method:///java/io/File/getTotalSpace()|
+            |java+method:///java/io/File/getUsableSpace()|
+            |java+method:///java/io/File/setWritable(boolean)|
+            |java+method:///java/io/File/setReadable(boolean)|
+            |java+method:///java/io/File/canExecute()|
+            |java+method:///java/io/File/getFreeSpace()|
+            |java+method:///java/io/File/setExecutable(boolean,boolean)|
+    CHANGED: |java+class:///java/io/FileDescriptor| DUE TO:
+            |java+method:///java/io/FileDescriptor/toString()|
+    CHANGED: |java+class:///java/io/IOException| DUE TO:
+            |java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|
+            |java+constructor:///java/io/IOException/IOException(java.lang.String,java.lang.Throwable)|
+    CHANGED: |java+class:///java/io/ObjectStreamClass| DUE TO:
+            |java+method:///java/io/ObjectStreamClass/lookupAny(java.lang.Class)|
+    CHANGED: |java+class:///java/io/PipedInputStream| DUE TO:
+            |java+constructor:///java/io/PipedInputStream/PipedInputStream(int)|
+            |java+constructor:///java/io/PipedInputStream/PipedInputStream(java.io.PipedOutputStream,int)|
+    CHANGED: |java+class:///java/io/PipedReader| DUE TO:
+            |java+constructor:///java/io/PipedReader/PipedReader(int)|
+            |java+constructor:///java/io/PipedReader/PipedReader(java.io.PipedWriter,int)|
+    CHANGED: |java+class:///java/lang/Class| DUE TO:
+            |java+method:///java/lang/Class/getDeclaredConstructor()|
+            |java+method:///java/lang/Class/getDeclaredMethod(java.lang.String)|
+            |java+method:///java/lang/Class/getDeclaredClasses()|
+            |java+method:///java/lang/Class/getDeclaredConstructors()|
+            |java+method:///java/lang/Class/getConstructor()|
+            |java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|
+            |java+method:///java/lang/Class/getConstructor(java.lang.Class%5B%5D)|
+            |java+method:///java/lang/Class/getClasses()|
+            |java+method:///java/lang/Class/getMethod(java.lang.String)|
+            |java+method:///java/lang/Class/getDeclaredMethod(java.lang.String,java.lang.Class%5B%5D)|
+            |java+method:///java/lang/Class/getDeclaredConstructor(java.lang.Class%5B%5D)|
+            |java+method:///java/lang/Class/getInterfaces()|
+            |java+method:///java/lang/Class/getConstructors()|
+    CHANGED: |java+class:///java/lang/Double| DUE TO:
+            |java+field:///java/lang/Double/MIN_EXPONENT|
+            |java+field:///java/lang/Double/MAX_EXPONENT|
+            |java+field:///java/lang/Double/MIN_NORMAL|
+    CHANGED: |java+class:///java/lang/Float| DUE TO:
+            |java+field:///java/lang/Float/MIN_NORMAL|
+            |java+field:///java/lang/Float/MIN_EXPONENT|
+            |java+field:///java/lang/Float/MAX_EXPONENT|
+    CHANGED: |java+class:///java/lang/Math| DUE TO:
+            |java+method:///java/lang/Math/nextAfter(float,double)|
+            |java+method:///java/lang/Math/getExponent(float)|
+            |java+method:///java/lang/Math/nextUp(float)|
+            |java+method:///java/lang/Math/nextUp(double)|
+            |java+method:///java/lang/Math/getExponent(double)|
+            |java+method:///java/lang/Math/scalb(double,int)|
+            |java+method:///java/lang/Math/nextAfter(double,double)|
+            |java+method:///java/lang/Math/scalb(float,int)|
+            |java+method:///java/lang/Math/copySign(float,float)|
+            |java+method:///java/lang/Math/copySign(double,double)|
+            |java+method:///java/lang/Math/random()|
+    CHANGED: |java+class:///java/lang/Package| DUE TO:
+            |java+method:///java/lang/Package/getAnnotation(java.lang.Class)|
+    CHANGED: |java+class:///java/lang/StrictMath| DUE TO:
+            |java+method:///java/lang/StrictMath/nextAfter(float,double)|
+            |java+method:///java/lang/StrictMath/nextUp(float)|
+            |java+method:///java/lang/StrictMath/getExponent(float)|
+            |java+method:///java/lang/StrictMath/getExponent(double)|
+            |java+method:///java/lang/StrictMath/nextUp(double)|
+            |java+method:///java/lang/StrictMath/scalb(double,int)|
+            |java+method:///java/lang/StrictMath/copySign(double,double)|
+            |java+method:///java/lang/StrictMath/copySign(float,float)|
+            |java+method:///java/lang/StrictMath/nextAfter(double,double)|
+            |java+method:///java/lang/StrictMath/scalb(float,int)|
+    CHANGED: |java+class:///java/lang/String| DUE TO:
+            |java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|
+            |java+constructor:///java/lang/String/String(byte%5B%5D,int,int,java.nio.charset.Charset)|
+            |java+method:///java/lang/String/isEmpty()|
+            |java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|
+    CHANGED: |java+class:///java/lang/StringBuffer| DUE TO:
+            |java+method:///java/lang/StringBuffer/trimToSize()|
+    CHANGED: |java+class:///java/lang/StringBuilder| DUE TO:
+            |java+method:///java/lang/StringBuilder/setLength(int)|
+            |java+method:///java/lang/StringBuilder/subSequence(int,int)|
+    CHANGED: |java+class:///java/lang/System| DUE TO:
+            |java+method:///java/lang/System/console()|
+    CHANGED: |java+class:///java/net/HttpURLConnection| DUE TO:
+            |java+method:///java/net/HttpURLConnection/getContentEncoding()|
+    CHANGED: |java+class:///java/net/NetworkInterface| DUE TO:
+            |java+method:///java/net/NetworkInterface/isPointToPoint()|
+            |java+method:///java/net/NetworkInterface/supportsMulticast()|
+            |java+method:///java/net/NetworkInterface/isVirtual()|
+            |java+method:///java/net/NetworkInterface/getParent()|
+            |java+method:///java/net/NetworkInterface/getMTU()|
+            |java+method:///java/net/NetworkInterface/getInterfaceAddresses()|
+            |java+method:///java/net/NetworkInterface/getHardwareAddress()|
+            |java+method:///java/net/NetworkInterface/isUp()|
+            |java+method:///java/net/NetworkInterface/isLoopback()|
+            |java+method:///java/net/NetworkInterface/getSubInterfaces()|
+    CHANGED: |java+class:///java/net/SocketImpl| DUE TO:
+            |java+method:///java/net/SocketImpl/getOption(int)|
+            |java+method:///java/net/SocketImpl/setOption(int,java.lang.Object)|
+    CHANGED: |java+class:///java/nio/Buffer| DUE TO:
+            |java+method:///java/nio/Buffer/array()|
+            |java+method:///java/nio/Buffer/isDirect()|
+            |java+method:///java/nio/Buffer/arrayOffset()|
+            |java+method:///java/nio/Buffer/hasArray()|
+    CHANGED: |java+class:///java/nio/charset/Charset| DUE TO:
+            |java+method:///java/nio/charset/Charset/isSupported(java.lang.String)|
+    CHANGED: |java+class:///java/security/Policy| DUE TO:
+            |java+method:///java/security/Policy/getParameters()|
+            |java+method:///java/security/Policy/getType()|
+            |java+method:///java/security/Policy/getInstance(java.lang.String,java.security.Policy.Parameters)|
+            |java+method:///java/security/Policy/getPermissions(java.security.CodeSource)|
+            |java+method:///java/security/Policy/refresh()|
+            |java+method:///java/security/Policy/getInstance(java.lang.String,java.security.Policy.Parameters,java.security.Provider)|
+            |java+method:///java/security/Policy/getInstance(java.lang.String,java.security.Policy.Parameters,java.lang.String)|
+            |java+field:///java/security/Policy/UNSUPPORTED_EMPTY_COLLECTION|
+            |java+method:///java/security/Policy/getProvider()|
+    CHANGED: |java+class:///java/sql/BatchUpdateException| DUE TO:
+            |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(java.lang.String,java.lang.String,int,int%5B%5D,java.lang.Throwable)|
+            |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(java.lang.String,int%5B%5D,java.lang.Throwable)|
+            |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(java.lang.Throwable)|
+            |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(int%5B%5D,java.lang.Throwable)|
+            |java+constructor:///java/sql/BatchUpdateException/BatchUpdateException(java.lang.String,java.lang.String,int%5B%5D,java.lang.Throwable)|
+    CHANGED: |java+class:///java/sql/DataTruncation| DUE TO:
+            |java+constructor:///java/sql/DataTruncation/DataTruncation(int,boolean,boolean,int,int,java.lang.Throwable)|
+    CHANGED: |java+class:///java/sql/SQLException| DUE TO:
+            |java+constructor:///java/sql/SQLException/SQLException(java.lang.String,java.lang.Throwable)|
+            |java+method:///java/sql/SQLException/iterator()|
+            |java+constructor:///java/sql/SQLException/SQLException(java.lang.Throwable)|
+            |java+constructor:///java/sql/SQLException/SQLException(java.lang.String,java.lang.String,java.lang.Throwable)|
+            |java+constructor:///java/sql/SQLException/SQLException(java.lang.String,java.lang.String,int,java.lang.Throwable)|
+    CHANGED: |java+class:///java/sql/SQLWarning| DUE TO:
+            |java+constructor:///java/sql/SQLWarning/SQLWarning(java.lang.String,java.lang.Throwable)|
+            |java+constructor:///java/sql/SQLWarning/SQLWarning(java.lang.String,java.lang.String,java.lang.Throwable)|
+            |java+constructor:///java/sql/SQLWarning/SQLWarning(java.lang.Throwable)|
+            |java+constructor:///java/sql/SQLWarning/SQLWarning(java.lang.String,java.lang.String,int,java.lang.Throwable)|
+    CHANGED: |java+class:///java/sql/Types| DUE TO:
+            |java+field:///java/sql/Types/SQLXML|
+            |java+field:///java/sql/Types/NCLOB|
+            |java+field:///java/sql/Types/NVARCHAR|
+            |java+field:///java/sql/Types/LONGNVARCHAR|
+            |java+field:///java/sql/Types/ROWID|
+            |java+field:///java/sql/Types/NCHAR|
+    CHANGED: |java+class:///java/text/CollationKey| DUE TO:
+            |java+method:///java/text/CollationKey/toByteArray()|
+            |java+method:///java/text/CollationKey/equals(java.lang.Object)|
+            |java+method:///java/text/CollationKey/hashCode()|
+            |java+method:///java/text/CollationKey/compareTo(java.text.CollationKey)|
+    CHANGED: |java+class:///java/text/DateFormatSymbols| DUE TO:
+            |java+method:///java/text/DateFormatSymbols/getInstance(java.util.Locale)|
+            |java+method:///java/text/DateFormatSymbols/getInstance()|
+            |java+method:///java/text/DateFormatSymbols/toString()|
+            |java+method:///java/text/DateFormatSymbols/getAvailableLocales()|
+    CHANGED: |java+class:///java/text/DecimalFormat| DUE TO:
+            |java+method:///java/text/DecimalFormat/getRoundingMode()|
+            |java+method:///java/text/DecimalFormat/setRoundingMode(java.math.RoundingMode)|
+    CHANGED: |java+class:///java/text/DecimalFormatSymbols| DUE TO:
+            |java+method:///java/text/DecimalFormatSymbols/toString()|
+            |java+method:///java/text/DecimalFormatSymbols/getInstance()|
+            |java+method:///java/text/DecimalFormatSymbols/getAvailableLocales()|
+            |java+method:///java/text/DecimalFormatSymbols/getInstance(java.util.Locale)|
+            |java+method:///java/text/DecimalFormatSymbols/getExponentSeparator()|
+            |java+method:///java/text/DecimalFormatSymbols/setExponentSeparator(java.lang.String)|
+    CHANGED: |java+class:///java/text/Format| DUE TO:
+            |java+constructor:///java/text/Format/Format()|
+    CHANGED: |java+class:///java/text/NumberFormat| DUE TO:
+            |java+method:///java/text/NumberFormat/getRoundingMode()|
+            |java+constructor:///java/text/NumberFormat/NumberFormat()|
+            |java+method:///java/text/NumberFormat/setRoundingMode(java.math.RoundingMode)|
+    CHANGED: |java+class:///java/util/Arrays| DUE TO:
+            |java+method:///java/util/Arrays/copyOfRange(double%5B%5D,int,int)|
+            |java+method:///java/util/Arrays/copyOf(boolean%5B%5D,int)|
+            |java+method:///java/util/Arrays/copyOf(long%5B%5D,int)|
+            |java+method:///java/util/Arrays/copyOfRange(int%5B%5D,int,int)|
+            |java+method:///java/util/Arrays/binarySearch(short%5B%5D,int,int,short)|
+            |java+method:///java/util/Arrays/binarySearch(float%5B%5D,int,int,float)|
+            |java+method:///java/util/Arrays/copyOfRange(char%5B%5D,int,int)|
+            |java+method:///java/util/Arrays/copyOf(int%5B%5D,int)|
+            |java+method:///java/util/Arrays/binarySearch(int%5B%5D,int,int,int)|
+            |java+method:///java/util/Arrays/copyOfRange(long%5B%5D,int,int)|
+            |java+method:///java/util/Arrays/copyOf(byte%5B%5D,int)|
+            |java+method:///java/util/Arrays/copyOfRange(float%5B%5D,int,int)|
+            |java+method:///java/util/Arrays/copyOfRange(short%5B%5D,int,int)|
+            |java+method:///java/util/Arrays/binarySearch(char%5B%5D,int,int,char)|
+            |java+method:///java/util/Arrays/binarySearch(double%5B%5D,int,int,double)|
+            |java+method:///java/util/Arrays/binarySearch(long%5B%5D,int,int,long)|
+            |java+method:///java/util/Arrays/binarySearch(byte%5B%5D,int,int,byte)|
+            |java+method:///java/util/Arrays/copyOf(float%5B%5D,int)|
+            |java+method:///java/util/Arrays/copyOf(short%5B%5D,int)|
+            |java+method:///java/util/Arrays/binarySearch(java.lang.Object%5B%5D,int,int,java.lang.Object)|
+            |java+method:///java/util/Arrays/copyOf(double%5B%5D,int)|
+            |java+method:///java/util/Arrays/copyOfRange(byte%5B%5D,int,int)|
+            |java+method:///java/util/Arrays/copyOf(char%5B%5D,int)|
+            |java+method:///java/util/Arrays/copyOfRange(boolean%5B%5D,int,int)|
+    CHANGED: |java+class:///java/util/Calendar| DUE TO:
+            |java+field:///java/util/Calendar/LONG|
+            |java+field:///java/util/Calendar/SHORT|
+            |java+field:///java/util/Calendar/ALL_STYLES|
+            |java+method:///java/util/Calendar/getDisplayNames(int,int,java.util.Locale)|
+            |java+method:///java/util/Calendar/getDisplayName(int,int,java.util.Locale)|
+    CHANGED: |java+class:///java/util/LinkedList| DUE TO:
+            |java+method:///java/util/LinkedList/offerLast(E)|
+            |java+method:///java/util/LinkedList/removeFirstOccurrence(java.lang.Object)|
+            |java+method:///java/util/LinkedList/removeLastOccurrence(java.lang.Object)|
+            |java+method:///java/util/LinkedList/descendingIterator()|
+            |java+method:///java/util/LinkedList/offerFirst(E)|
+            |java+method:///java/util/LinkedList/pollLast()|
+            |java+method:///java/util/LinkedList/peekFirst()|
+            |java+method:///java/util/LinkedList/peekLast()|
+            |java+method:///java/util/LinkedList/pop()|
+            |java+method:///java/util/LinkedList/pollFirst()|
+            |java+method:///java/util/LinkedList/push(E)|
+    CHANGED: |java+class:///java/util/Locale| DUE TO:
+            |java+field:///java/util/Locale/ROOT|
+    CHANGED: |java+class:///java/util/Properties| DUE TO:
+            |java+method:///java/util/Properties/load(java.io.Reader)|
+            |java+method:///java/util/Properties/store(java.io.Writer,java.lang.String)|
+            |java+method:///java/util/Properties/stringPropertyNames()|
+    CHANGED: |java+class:///java/util/PropertyResourceBundle| DUE TO:
+            |java+constructor:///java/util/PropertyResourceBundle/PropertyResourceBundle(java.io.Reader)|
+    CHANGED: |java+class:///java/util/ResourceBundle| DUE TO:
+            |java+method:///java/util/ResourceBundle/clearCache(java.lang.ClassLoader)|
+            |java+method:///java/util/ResourceBundle/keySet()|
+            |java+method:///java/util/ResourceBundle/getBundle(java.lang.String,java.util.ResourceBundle.Control)|
+            |java+method:///java/util/ResourceBundle/getBundle(java.lang.String,java.util.Locale,java.util.ResourceBundle.Control)|
+            |java+method:///java/util/ResourceBundle/containsKey(java.lang.String)|
+            |java+method:///java/util/ResourceBundle/getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader,java.util.ResourceBundle.Control)|
+            |java+method:///java/util/ResourceBundle/clearCache()|
+    CHANGED: |java+class:///java/util/Scanner| DUE TO:
+            |java+method:///java/util/Scanner/reset()|
+    CHANGED: |java+class:///java/util/TreeMap| DUE TO:
+            |java+method:///java/util/TreeMap/lowerEntry(K)|
+            |java+method:///java/util/TreeMap/floorKey(K)|
+            |java+method:///java/util/TreeMap/subMap(K,boolean,K,boolean)|
+            |java+method:///java/util/TreeMap/ceilingEntry(K)|
+            |java+method:///java/util/TreeMap/headMap(K,boolean)|
+            |java+method:///java/util/TreeMap/lowerKey(K)|
+            |java+method:///java/util/TreeMap/descendingMap()|
+            |java+method:///java/util/TreeMap/isEmpty()|
+            |java+method:///java/util/TreeMap/ceilingKey(K)|
+            |java+method:///java/util/TreeMap/higherEntry(K)|
+            |java+method:///java/util/TreeMap/values()|
+            |java+method:///java/util/TreeMap/putAll(java.util.Map)|
+            |java+method:///java/util/TreeMap/firstEntry()|
+            |java+method:///java/util/TreeMap/pollFirstEntry()|
+            |java+method:///java/util/TreeMap/floorEntry(K)|
+            |java+method:///java/util/TreeMap/containsValue(java.lang.Object)|
+            |java+method:///java/util/TreeMap/navigableKeySet()|
+            |java+method:///java/util/TreeMap/tailMap(K,boolean)|
+            |java+method:///java/util/TreeMap/pollLastEntry()|
+            |java+method:///java/util/TreeMap/lastEntry()|
+            |java+method:///java/util/TreeMap/descendingKeySet()|
+            |java+method:///java/util/TreeMap/higherKey(K)|
+    CHANGED: |java+class:///java/util/TreeSet| DUE TO:
+            |java+method:///java/util/TreeSet/lower(E)|
+            |java+method:///java/util/TreeSet/higher(E)|
+            |java+method:///java/util/TreeSet/descendingSet()|
+            |java+method:///java/util/TreeSet/descendingIterator()|
+            |java+method:///java/util/TreeSet/pollLast()|
+            |java+method:///java/util/TreeSet/subSet(E,boolean,E,boolean)|
+            |java+method:///java/util/TreeSet/floor(E)|
+            |java+method:///java/util/TreeSet/ceiling(E)|
+            |java+method:///java/util/TreeSet/tailSet(E,boolean)|
+            |java+method:///java/util/TreeSet/headSet(E,boolean)|
+            |java+method:///java/util/TreeSet/pollFirst()|
+    CHANGED: |java+class:///java/util/concurrent/ConcurrentHashMap| DUE TO:
+            |java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap(int,float)|
+    CHANGED: |java+class:///java/util/concurrent/ThreadPoolExecutor| DUE TO:
+            |java+method:///java/util/concurrent/ThreadPoolExecutor/allowsCoreThreadTimeOut()|
+            |java+method:///java/util/concurrent/ThreadPoolExecutor/allowCoreThreadTimeOut(boolean)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicBoolean| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicBoolean/lazySet(boolean)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicInteger| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicInteger/lazySet(int)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicIntegerArray| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicIntegerArray/lazySet(int,int)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicIntegerFieldUpdater| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicIntegerFieldUpdater/lazySet(T,int)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicLong| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicLong/lazySet(long)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicLongArray| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicLongArray/lazySet(int,long)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicLongFieldUpdater| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicLongFieldUpdater/lazySet(T,long)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicReference| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicReference/lazySet(V)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicReferenceArray| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicReferenceArray/lazySet(int,E)|
+    CHANGED: |java+class:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater| DUE TO:
+            |java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/lazySet(T,V)|
+    CHANGED: |java+class:///java/util/concurrent/locks/LockSupport| DUE TO:
+            |java+method:///java/util/concurrent/locks/LockSupport/parkUntil(java.lang.Object,long)|
+            |java+method:///java/util/concurrent/locks/LockSupport/park(java.lang.Object)|
+            |java+method:///java/util/concurrent/locks/LockSupport/getBlocker(java.lang.Thread)|
+            |java+method:///java/util/concurrent/locks/LockSupport/parkNanos(java.lang.Object,long)|
+    CHANGED: |java+class:///java/util/concurrent/locks/ReentrantReadWriteLock| DUE TO:
+            |java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/getReadHoldCount()|
+    CHANGED: |java+class:///java/util/concurrent/locks/ReentrantReadWriteLock/WriteLock| DUE TO:
+            |java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/WriteLock/isHeldByCurrentThread()|
+            |java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/WriteLock/getHoldCount()|
+    CHANGED: |java+class:///java/util/logging/Logger| DUE TO:
+            |java+field:///java/util/logging/Logger/GLOBAL_LOGGER_NAME|
+    CHANGED: |java+enum:///java/util/concurrent/TimeUnit| DUE TO:
+            |java+method:///java/util/concurrent/TimeUnit/toHours(long)|
+            |java+method:///java/util/concurrent/TimeUnit/toMinutes(long)|
+            |java+method:///java/util/concurrent/TimeUnit/toDays(long)|
+    CHANGED: |java+interface:///android/view/inputmethod/InputConnection| DUE TO:
+            |java+method:///android/view/inputmethod/InputConnection/getSelectedText(int)|
+            |java+method:///android/view/inputmethod/InputConnection/setComposingRegion(int,int)|
+    CHANGED: |java+interface:///dalvik/bytecode/Opcodes| DUE TO:
+            |java+field:///dalvik/bytecode/Opcodes/OP_SGET_WIDE_VOLATILE|
+            |java+field:///dalvik/bytecode/Opcodes/OP_IGET_WIDE_VOLATILE|
+            |java+field:///dalvik/bytecode/Opcodes/OP_SPUT_WIDE_VOLATILE|
+            |java+field:///dalvik/bytecode/Opcodes/OP_IPUT_WIDE_VOLATILE|
+    CHANGED: |java+interface:///java/lang/reflect/Member| DUE TO:
+            |java+method:///java/lang/reflect/Member/getDeclaringClass()|
+    CHANGED: |java+interface:///java/sql/Array| DUE TO:
+            |java+method:///java/sql/Array/free()|
+    CHANGED: |java+interface:///java/sql/Blob| DUE TO:
+            |java+method:///java/sql/Blob/getBinaryStream(long,long)|
+            |java+method:///java/sql/Blob/free()|
+    CHANGED: |java+interface:///java/sql/CallableStatement| DUE TO:
+            |java+method:///java/sql/CallableStatement/getRowId(java.lang.String)|
+            |java+method:///java/sql/CallableStatement/setNString(java.lang.String,java.lang.String)|
+            |java+method:///java/sql/CallableStatement/setCharacterStream(java.lang.String,java.io.Reader)|
+            |java+method:///java/sql/CallableStatement/setNClob(java.lang.String,java.sql.NClob)|
+            |java+method:///java/sql/CallableStatement/setNClob(java.lang.String,java.io.Reader)|
+            |java+method:///java/sql/CallableStatement/getRowId(int)|
+            |java+method:///java/sql/CallableStatement/setAsciiStream(java.lang.String,java.io.InputStream,long)|
+            |java+method:///java/sql/CallableStatement/setBlob(java.lang.String,java.io.InputStream,long)|
+            |java+method:///java/sql/CallableStatement/getNCharacterStream(int)|
+            |java+method:///java/sql/CallableStatement/getNClob(java.lang.String)|
+            |java+method:///java/sql/CallableStatement/setBlob(java.lang.String,java.sql.Blob)|
+            |java+method:///java/sql/CallableStatement/setClob(java.lang.String,java.sql.Clob)|
+            |java+method:///java/sql/CallableStatement/setSQLXML(java.lang.String,java.sql.SQLXML)|
+            |java+method:///java/sql/CallableStatement/getCharacterStream(java.lang.String)|
+            |java+method:///java/sql/CallableStatement/setClob(java.lang.String,java.io.Reader,long)|
+            |java+method:///java/sql/CallableStatement/setBinaryStream(java.lang.String,java.io.InputStream)|
+            |java+method:///java/sql/CallableStatement/setNCharacterStream(java.lang.String,java.io.Reader)|
+            |java+method:///java/sql/CallableStatement/setNCharacterStream(java.lang.String,java.io.Reader,long)|
+            |java+method:///java/sql/CallableStatement/setBinaryStream(java.lang.String,java.io.InputStream,long)|
+            |java+method:///java/sql/CallableStatement/setClob(java.lang.String,java.io.Reader)|
+            |java+method:///java/sql/CallableStatement/getSQLXML(java.lang.String)|
+            |java+method:///java/sql/CallableStatement/setBlob(java.lang.String,java.io.InputStream)|
+            |java+method:///java/sql/CallableStatement/getNString(int)|
+            |java+method:///java/sql/CallableStatement/setAsciiStream(java.lang.String,java.io.InputStream)|
+            |java+method:///java/sql/CallableStatement/setNClob(java.lang.String,java.io.Reader,long)|
+            |java+method:///java/sql/CallableStatement/setCharacterStream(java.lang.String,java.io.Reader,long)|
+            |java+method:///java/sql/CallableStatement/getNString(java.lang.String)|
+            |java+method:///java/sql/CallableStatement/getSQLXML(int)|
+            |java+method:///java/sql/CallableStatement/getCharacterStream(int)|
+            |java+method:///java/sql/CallableStatement/getNClob(int)|
+            |java+method:///java/sql/CallableStatement/setRowId(java.lang.String,java.sql.RowId)|
+            |java+method:///java/sql/CallableStatement/getNCharacterStream(java.lang.String)|
+    CHANGED: |java+interface:///java/sql/Clob| DUE TO:
+            |java+method:///java/sql/Clob/free()|
+            |java+method:///java/sql/Clob/getCharacterStream(long,long)|
+    CHANGED: |java+interface:///java/sql/Connection| DUE TO:
+            |java+method:///java/sql/Connection/createArrayOf(java.lang.String,java.lang.Object%5B%5D)|
+            |java+method:///java/sql/Connection/isValid(int)|
+            |java+method:///java/sql/Connection/createStruct(java.lang.String,java.lang.Object%5B%5D)|
+            |java+method:///java/sql/Connection/getClientInfo()|
+            |java+method:///java/sql/Connection/createNClob()|
+            |java+method:///java/sql/Connection/createBlob()|
+            |java+method:///java/sql/Connection/setClientInfo(java.lang.String,java.lang.String)|
+            |java+method:///java/sql/Connection/createClob()|
+            |java+method:///java/sql/Connection/getClientInfo(java.lang.String)|
+            |java+method:///java/sql/Connection/createSQLXML()|
+            |java+method:///java/sql/Connection/setClientInfo(java.util.Properties)|
+    CHANGED: |java+interface:///java/sql/DatabaseMetaData| DUE TO:
+            |java+field:///java/sql/DatabaseMetaData/functionReturn|
+            |java+field:///java/sql/DatabaseMetaData/functionNoNulls|
+            |java+field:///java/sql/DatabaseMetaData/functionNullableUnknown|
+            |java+method:///java/sql/DatabaseMetaData/getFunctionColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|
+            |java+field:///java/sql/DatabaseMetaData/functionReturnsTable|
+            |java+method:///java/sql/DatabaseMetaData/getRowIdLifetime()|
+            |java+field:///java/sql/DatabaseMetaData/sqlStateSQL|
+            |java+method:///java/sql/DatabaseMetaData/getFunctions(java.lang.String,java.lang.String,java.lang.String)|
+            |java+field:///java/sql/DatabaseMetaData/functionNullable|
+            |java+method:///java/sql/DatabaseMetaData/getSchemas(java.lang.String,java.lang.String)|
+            |java+field:///java/sql/DatabaseMetaData/functionColumnOut|
+            |java+field:///java/sql/DatabaseMetaData/functionColumnIn|
+            |java+field:///java/sql/DatabaseMetaData/functionColumnUnknown|
+            |java+method:///java/sql/DatabaseMetaData/getClientInfoProperties()|
+            |java+field:///java/sql/DatabaseMetaData/functionColumnInOut|
+            |java+field:///java/sql/DatabaseMetaData/functionColumnResult|
+            |java+method:///java/sql/DatabaseMetaData/supportsStoredFunctionsUsingCallSyntax()|
+            |java+method:///java/sql/DatabaseMetaData/autoCommitFailureClosesAllResultSets()|
+            |java+field:///java/sql/DatabaseMetaData/functionNoTable|
+            |java+field:///java/sql/DatabaseMetaData/functionResultUnknown|
+    CHANGED: |java+interface:///java/sql/PreparedStatement| DUE TO:
+            |java+method:///java/sql/PreparedStatement/setAsciiStream(int,java.io.InputStream)|
+            |java+method:///java/sql/PreparedStatement/setAsciiStream(int,java.io.InputStream,long)|
+            |java+method:///java/sql/PreparedStatement/setBinaryStream(int,java.io.InputStream,long)|
+            |java+method:///java/sql/PreparedStatement/setBlob(int,java.io.InputStream,long)|
+            |java+method:///java/sql/PreparedStatement/setNClob(int,java.sql.NClob)|
+            |java+method:///java/sql/PreparedStatement/setRowId(int,java.sql.RowId)|
+            |java+method:///java/sql/PreparedStatement/setSQLXML(int,java.sql.SQLXML)|
+            |java+method:///java/sql/PreparedStatement/setNClob(int,java.io.Reader)|
+            |java+method:///java/sql/PreparedStatement/setCharacterStream(int,java.io.Reader)|
+            |java+method:///java/sql/PreparedStatement/setClob(int,java.io.Reader)|
+            |java+method:///java/sql/PreparedStatement/setNCharacterStream(int,java.io.Reader)|
+            |java+method:///java/sql/PreparedStatement/setNCharacterStream(int,java.io.Reader,long)|
+            |java+method:///java/sql/PreparedStatement/setClob(int,java.io.Reader,long)|
+            |java+method:///java/sql/PreparedStatement/setCharacterStream(int,java.io.Reader,long)|
+            |java+method:///java/sql/PreparedStatement/setNClob(int,java.io.Reader,long)|
+            |java+method:///java/sql/PreparedStatement/setBlob(int,java.io.InputStream)|
+            |java+method:///java/sql/PreparedStatement/setBinaryStream(int,java.io.InputStream)|
+            |java+method:///java/sql/PreparedStatement/setNString(int,java.lang.String)|
+    CHANGED: |java+interface:///java/sql/ResultSet| DUE TO:
+            |java+method:///java/sql/ResultSet/updateCharacterStream(java.lang.String,java.io.Reader)|
+            |java+method:///java/sql/ResultSet/updateAsciiStream(java.lang.String,java.io.InputStream,long)|
+            |java+method:///java/sql/ResultSet/getNString(int)|
+            |java+method:///java/sql/ResultSet/updateNClob(int,java.io.Reader,long)|
+            |java+method:///java/sql/ResultSet/updateClob(java.lang.String,java.io.Reader,long)|
+            |java+method:///java/sql/ResultSet/getSQLXML(int)|
+            |java+method:///java/sql/ResultSet/updateNCharacterStream(java.lang.String,java.io.Reader,long)|
+            |java+method:///java/sql/ResultSet/getNClob(int)|
+            |java+method:///java/sql/ResultSet/getNCharacterStream(java.lang.String)|
+            |java+method:///java/sql/ResultSet/updateBlob(java.lang.String,java.io.InputStream,long)|
+            |java+method:///java/sql/ResultSet/updateAsciiStream(int,java.io.InputStream)|
+            |java+method:///java/sql/ResultSet/isClosed()|
+            |java+method:///java/sql/ResultSet/updateRowId(int,java.sql.RowId)|
+            |java+method:///java/sql/ResultSet/updateNCharacterStream(java.lang.String,java.io.Reader)|
+            |java+method:///java/sql/ResultSet/updateBinaryStream(java.lang.String,java.io.InputStream,long)|
+            |java+method:///java/sql/ResultSet/updateBinaryStream(int,java.io.InputStream,long)|
+            |java+method:///java/sql/ResultSet/getNCharacterStream(int)|
+            |java+method:///java/sql/ResultSet/updateBlob(int,java.io.InputStream,long)|
+            |java+method:///java/sql/ResultSet/updateNString(java.lang.String,java.lang.String)|
+            |java+method:///java/sql/ResultSet/updateClob(int,java.io.Reader,long)|
+            |java+method:///java/sql/ResultSet/updateNClob(java.lang.String,java.io.Reader,long)|
+            |java+method:///java/sql/ResultSet/updateCharacterStream(java.lang.String,java.io.Reader,long)|
+            |java+method:///java/sql/ResultSet/updateNClob(java.lang.String,java.sql.NClob)|
+            |java+method:///java/sql/ResultSet/updateNClob(java.lang.String,java.io.Reader)|
+            |java+method:///java/sql/ResultSet/updateClob(int,java.io.Reader)|
+            |java+method:///java/sql/ResultSet/updateNCharacterStream(int,java.io.Reader)|
+            |java+method:///java/sql/ResultSet/getSQLXML(java.lang.String)|
+            |java+method:///java/sql/ResultSet/updateBlob(int,java.io.InputStream)|
+            |java+method:///java/sql/ResultSet/getNString(java.lang.String)|
+            |java+method:///java/sql/ResultSet/updateSQLXML(java.lang.String,java.sql.SQLXML)|
+            |java+method:///java/sql/ResultSet/updateCharacterStream(int,java.io.Reader,long)|
+            |java+method:///java/sql/ResultSet/updateBinaryStream(java.lang.String,java.io.InputStream)|
+            |java+method:///java/sql/ResultSet/updateBinaryStream(int,java.io.InputStream)|
+            |java+method:///java/sql/ResultSet/updateNString(int,java.lang.String)|
+            |java+method:///java/sql/ResultSet/updateAsciiStream(int,java.io.InputStream,long)|
+            |java+method:///java/sql/ResultSet/updateBlob(java.lang.String,java.io.InputStream)|
+            |java+method:///java/sql/ResultSet/getRowId(java.lang.String)|
+            |java+method:///java/sql/ResultSet/getHoldability()|
+            |java+method:///java/sql/ResultSet/updateNClob(int,java.sql.NClob)|
+            |java+method:///java/sql/ResultSet/updateRowId(java.lang.String,java.sql.RowId)|
+            |java+method:///java/sql/ResultSet/updateSQLXML(int,java.sql.SQLXML)|
+            |java+method:///java/sql/ResultSet/updateClob(java.lang.String,java.io.Reader)|
+            |java+method:///java/sql/ResultSet/updateNClob(int,java.io.Reader)|
+            |java+method:///java/sql/ResultSet/updateCharacterStream(int,java.io.Reader)|
+            |java+method:///java/sql/ResultSet/getRowId(int)|
+            |java+method:///java/sql/ResultSet/updateAsciiStream(java.lang.String,java.io.InputStream)|
+            |java+method:///java/sql/ResultSet/getNClob(java.lang.String)|
+            |java+method:///java/sql/ResultSet/updateNCharacterStream(int,java.io.Reader,long)|
+    CHANGED: |java+interface:///java/sql/SQLInput| DUE TO:
+            |java+method:///java/sql/SQLInput/readSQLXML()|
+            |java+method:///java/sql/SQLInput/readNClob()|
+            |java+method:///java/sql/SQLInput/readRowId()|
+            |java+method:///java/sql/SQLInput/readNString()|
+    CHANGED: |java+interface:///java/sql/SQLOutput| DUE TO:
+            |java+method:///java/sql/SQLOutput/writeSQLXML(java.sql.SQLXML)|
+            |java+method:///java/sql/SQLOutput/writeRowId(java.sql.RowId)|
+            |java+method:///java/sql/SQLOutput/writeNClob(java.sql.NClob)|
+            |java+method:///java/sql/SQLOutput/writeNString(java.lang.String)|
+    CHANGED: |java+interface:///java/sql/Statement| DUE TO:
+            |java+method:///java/sql/Statement/isPoolable()|
+            |java+method:///java/sql/Statement/setPoolable(boolean)|
+            |java+method:///java/sql/Statement/isClosed()|
+    CHANGED: |java+class:///java/text/CollationKey| DUE TO MODIFIER(S). OLD MODIFIERS: {final(),public()}, NEW MODIFIERS: {public(),abstract()}
+    CHANGED: |java+class:///java/text/DecimalFormatSymbols| DUE TO MODIFIER(S). OLD MODIFIERS: {final(),public()}, NEW MODIFIERS: {public()}
+    DELETED: |java+class:///dalvik/system/AllocationLimitError|
+    DELETED: |java+class:///dalvik/system/PotentialDeadlockError|
+    DELETED: |java+class:///dalvik/system/StaleDexCacheError|
+    DELETED: |java+class:///dalvik/system/TemporaryDirectory|
+    DELETED: |java+class:///dalvik/system/TouchDex|
+    DELETED: |java+class:///dalvik/system/VMDebug|
+    DELETED: |java+class:///dalvik/system/VMRuntime|
+    DELETED: |java+class:///dalvik/system/VMStack|
+    DELETED: |java+class:///dalvik/system/Zygote|
+-------In total 117 classes have changed somehow, 105 classes have been added and 9 classes have been deleted.-------
+2014-01-06 18:19:44 :: Showing changes in table format
+                                classes         methods         fields
+from                to              ^   +   -   ^   +   -   ^   +   -   
+Android1            Android             117 105 9   13  433 18  0   300 31  
+ok
+
+rascal>

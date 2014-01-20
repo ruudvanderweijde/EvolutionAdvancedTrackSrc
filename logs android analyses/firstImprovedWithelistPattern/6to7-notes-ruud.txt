@@ -1,0 +1,236 @@
+rascal>import diff::Core;
+ok
+
+rascal>runSRC(6,7,".*:///(?:android|org|java|dalvik)/.*")
+2014-01-05 17:39:33 :: Getting m3 models...
+2014-01-05 17:39:33 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/1.m3
+2014-01-05 17:39:33 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/2.m3
+2014-01-05 17:39:33 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/3.m3
+2014-01-05 17:39:33 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/5.m3
+2014-01-05 17:39:33 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/11.m3
+2014-01-05 17:39:33 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/12.m3
+2014-01-05 17:39:33 :: Warning: skipping file  (unable to read): project://AdvancedTrack/m3/android/src/13.m3
+|project://android-2.0.1_r1|:   #annotations    99 class        48 interfaces       7228 methods    597 fields
+|project://android-2.1_r2|: #annotations    100 class       48 interfaces       7244 methods    600 fields
+2014-01-05 17:39:41 :: Comparing m3 models... 
+2014-01-05 17:39:42 :: Get method changes...
+2014-01-05 17:39:42 :: Method change: getModelHierarchy
+2014-01-05 17:39:42 ::  Hierarchy: get classes and interfaces
+2014-01-05 17:39:44 ::  Hierarchy: to map
+2014-01-05 17:39:44 ::  Hierarchy: looping (2169)
+2014-01-05 17:40:03 ::  Hierarchy: get classes and interfaces
+2014-01-05 17:40:05 ::  Hierarchy: to map
+2014-01-05 17:40:05 ::  Hierarchy: looping (2176)
+2014-01-05 17:40:19 :: Method change: findDeprecations
+2014-01-05 17:40:20 :: Get field changes...
+2014-01-05 17:40:20 :: Start getFieldChanges() 
+2014-01-05 17:40:20 :: Step 1: Start: getAddedAndRemovedFields
+2014-01-05 17:40:31 :: Step 2: getAddedAndRemovedFields
+2014-01-05 17:40:31 :: Step 3: getAddedAndRemovedFields
+2014-01-05 17:40:31 :: Step 4: getAddedAndRemovedFields
+2014-01-05 17:40:31 :: Step 5: Finished getAddedAndRemovedFields
+2014-01-05 17:40:31 :: getAddedAndRemovedFields is finished
+2014-01-05 17:40:31 :: Step 1: Start: getAllChangedFields
+2014-01-05 17:40:44 :: Get class changes...
+2014-01-05 17:40:44 :: Started getClassChanges()
+2014-01-05 17:40:44 :: Started getChangedAddedRemovedClasses()
+2014-01-05 17:40:48 :: Started getClassesWithContentChanges()
+2014-01-05 17:41:30 :: Started sanitizeClassChanges()
+2014-01-05 17:41:30 :: Print compare results... 
+2014-01-05 17:41:30 :: Writing to cache
+2014-01-05 17:41:32 :: Writing to cache one by one
+2014-01-05 17:41:34 :: Display results
+-------[ Transition from |project://android-2.0.1_r1| to |project://android-2.1_r2| ]-------
+---[FIELDS]---
+    ADDED: |java+field:///android/app/WallpaperManager/COMMAND_DROP|
+    ADDED: |java+field:///android/app/WallpaperManager/COMMAND_TAP|
+    ADDED: |java+field:///android/bluetooth/BluetoothA2dp/PRIORITY_AUTO_CONNECT|
+    ADDED: |java+field:///android/bluetooth/BluetoothA2dp/PRIORITY_ON|
+    ADDED: |java+field:///android/bluetooth/BluetoothA2dp/PRIORITY_UNDEFINED|
+    ADDED: |java+field:///android/bluetooth/BluetoothHeadset/PRIORITY_AUTO_CONNECT|
+    ADDED: |java+field:///android/bluetooth/BluetoothHeadset/PRIORITY_ON|
+    ADDED: |java+field:///android/bluetooth/BluetoothHeadset/PRIORITY_UNDEFINED|
+    ADDED: |java+field:///android/content/Intent/FILL_IN_SOURCE_BOUNDS|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_CAMERA|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_CAMERA_AUTOFOCUS|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_CAMERA_FLASH|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_LIVE_WALLPAPER|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_SENSOR_LIGHT|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_SENSOR_PROXIMITY|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_TELEPHONY|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_TELEPHONY_CDMA|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_TELEPHONY_GSM|
+    ADDED: |java+field:///android/content/pm/PackageManager/FEATURE_TOUCHSCREEN_MULTITOUCH|
+    ADDED: |java+field:///android/media/AudioSystem/FORCE_BT_CAR_DOCK|
+    ADDED: |java+field:///android/media/AudioSystem/FORCE_BT_DESK_DOCK|
+    ADDED: |java+field:///android/media/AudioSystem/FOR_DOCK|
+    ADDED: |java+field:///android/os/Build/VERSION_CODES/ECLAIR_MR1|
+    ADDED: |java+field:///android/provider/Settings/System/NOTIFICATION_LIGHT_PULSE|
+    ADDED: |java+field:///android/view/WindowManagerPolicy/OFF_BECAUSE_OF_PROX_SENSOR|
+    DELETED: |java+field:///android/bluetooth/BluetoothA2dp/PRIORITY_AUTO|
+    DELETED: |java+field:///android/bluetooth/BluetoothHeadset/PRIORITY_AUTO|
+    DEPRECATED: |java+field:///android/content/Intent/EXTRA_CHANGED_COMPONENT_NAME|
+    DEPRECATED: |java+field:///android/telephony/PhoneStateListener/LISTEN_SIGNAL_STRENGTH|
+-------In total 2 fields have changed somehow, 25 fields have been added and 2 fields have been deleted.-------
+
+---[METHODS]---
+    ADDED: |java+constructor:///android/graphics/Bitmap/Bitmap(java.io.InputStream)|
+    ADDED: |java+method:///android/bluetooth/BluetoothA2dp/getNonDisconnectedSinks()|
+    ADDED: |java+method:///android/bluetooth/BluetoothDevice/isBluetoothDock()|
+    ADDED: |java+method:///android/content/Intent/getSourceBounds()|
+    ADDED: |java+method:///android/content/Intent/setSourceBounds(android.graphics.drawable.Rect)|
+    ADDED: |java+method:///android/graphics/DashPathEffect/getIntervals()|
+    ADDED: |java+method:///android/graphics/DashPathEffect/getPhase()|
+    ADDED: |java+method:///android/graphics/Rect/flattenToString()|
+    ADDED: |java+method:///android/graphics/Rect/unflattenFromString(java.lang.String)|
+    ADDED: |java+method:///android/renderscript/RenderScript/contextDump(int)|
+    ADDED: |java+method:///android/renderscript/RenderScript/contextSetPriority(android.renderscript.RenderScript.Priority)|
+    ADDED: |java+method:///android/server/BluetoothA2dpService/getNonDisconnectedSinks()|
+    ADDED: |java+method:///android/server/BluetoothService/isBluetoothDock(java.lang.String)|
+    ADDED: |java+method:///android/server/BluetoothService/readDockBluetoothAddress()|
+    ADDED: |java+method:///android/service/wallpaper/WallpaperService/onCreate()|
+    ADDED: |java+method:///android/service/wallpaper/WallpaperService/onDestroy()|
+    ADDED: |java+method:///android/view/VelocityTracker/getXVelocity(int)|
+    ADDED: |java+method:///android/view/VelocityTracker/getYVelocity(int)|
+    ADDED: |java+method:///android/webkit/WebChromeClient/onConsoleMessage(java.lang.String,int,java.lang.String)|
+    ADDED: |java+method:///android/webkit/WebView/getDragTracker()|
+    ADDED: |java+method:///android/webkit/WebView/setDragTracker(android.webkit.WebView.DragTracker)|
+    ADDED: |java+method:///android/widget/RemoteViews/addView(int,android.widget.RemoteViews)|
+    ADDED: |java+method:///android/widget/RemoteViews/removeAllViews(int)|
+    ADDED: |java+method:///android/widget/ViewFlipper/isAutoStart()|
+    ADDED: |java+method:///android/widget/ViewFlipper/setAutoStart(boolean)|
+    DELETED: |java+method:///android/graphics/LinearGradient/getPaint()|
+    DELETED: |java+method:///android/server/BluetoothService/updateDeviceServiceChannelCache(java.lang.String)|
+    DELETED: |java+method:///android/webkit/WebChromeClient/addMessageToConsole(java.lang.String,int,java.lang.String)|
+    DEPRECATED: |java+method:///android/content/pm/PackageManager/addPackageToPreferred(java.lang.String)|
+    DEPRECATED: |java+method:///android/content/pm/PackageManager/removePackageFromPreferred(java.lang.String)|
+    METHOD MODIFIER CHANGE OF |java+method:///android/os/Power/reboot(java.lang.String)|. OLD: {native(),public(),static()}. NEW: {public(),static()}
+-------In total 17047 methods are unchanged, 3 methods have changed somehow, 25 methods have been added and 3 methods have been deleted.-------
+-------Changes in methods: 2 deprecated, 0 undeprecated, 0 signature change, 0 return type changes and 1 method modifier changes. -------
+
+---[CLASSES]---
+    ADDED: |java+class:///android/graphics/GradientShader|
+    ADDED: |java+class:///android/graphics/utils/BoundaryPatch|
+    ADDED: |java+class:///android/view/ScaleGestureDetector|
+    ADDED: |java+class:///android/view/ScaleGestureDetector/SimpleOnScaleGestureListener|
+    ADDED: |java+class:///android/webkit/WebView/DragTracker|
+    ADDED: |java+enum:///android/renderscript/RenderScript/Priority|
+    ADDED: |java+interface:///android/view/ScaleGestureDetector/OnScaleGestureListener|
+    CHANGED: |java+class:///android/app/WallpaperManager| DUE TO:
+            |java+field:///android/app/WallpaperManager/COMMAND_DROP|
+            |java+field:///android/app/WallpaperManager/COMMAND_TAP|
+Package bluetooth not in jdiff
+    CHANGED: |java+class:///android/bluetooth/BluetoothA2dp| DUE TO:
+            |java+field:///android/bluetooth/BluetoothA2dp/PRIORITY_UNDEFINED|
+            |java+field:///android/bluetooth/BluetoothA2dp/PRIORITY_ON|
+            |java+field:///android/bluetooth/BluetoothA2dp/PRIORITY_AUTO|
+            |java+method:///android/bluetooth/BluetoothA2dp/getNonDisconnectedSinks()|
+            |java+field:///android/bluetooth/BluetoothA2dp/PRIORITY_AUTO_CONNECT|
+Package bluetooth not in jdiff    CHANGED: |java+class:///android/bluetooth/BluetoothDevice| DUE TO:
+            |java+method:///android/bluetooth/BluetoothDevice/isBluetoothDock()|
+Package bluetooth not in jdiff
+Class is added in API level 11
+    CHANGED: |java+class:///android/bluetooth/BluetoothHeadset| DUE TO:
+            |java+field:///android/bluetooth/BluetoothHeadset/PRIORITY_AUTO_CONNECT|
+            |java+field:///android/bluetooth/BluetoothHeadset/PRIORITY_UNDEFINED|
+            |java+field:///android/bluetooth/BluetoothHeadset/PRIORITY_AUTO|
+            |java+field:///android/bluetooth/BluetoothHeadset/PRIORITY_ON|
+Correct, but 2 more added fields in jdiff
+    CHANGED: |java+class:///android/content/Intent| DUE TO:
+            |java+method:///android/content/Intent/setSourceBounds(android.graphics.drawable.Rect)|
+            |java+field:///android/content/Intent/FILL_IN_SOURCE_BOUNDS|
+            |java+field:///android/content/Intent/EXTRA_CHANGED_COMPONENT_NAME|
+            |java+method:///android/content/Intent/getSourceBounds()|
+Correct
+    CHANGED: |java+class:///android/content/pm/PackageManager| DUE TO:
+            |java+field:///android/content/pm/PackageManager/FEATURE_SENSOR_PROXIMITY|
+            |java+field:///android/content/pm/PackageManager/FEATURE_TOUCHSCREEN_MULTITOUCH|
+            |java+method:///android/content/pm/PackageManager/addPackageToPreferred(java.lang.String)|
+            |java+field:///android/content/pm/PackageManager/FEATURE_CAMERA_FLASH|
+            |java+field:///android/content/pm/PackageManager/FEATURE_CAMERA|
+            |java+field:///android/content/pm/PackageManager/FEATURE_TELEPHONY_GSM|
+            |java+field:///android/content/pm/PackageManager/FEATURE_SENSOR_LIGHT|
+            |java+method:///android/content/pm/PackageManager/removePackageFromPreferred(java.lang.String)|
+            |java+field:///android/content/pm/PackageManager/FEATURE_TELEPHONY|
+            |java+field:///android/content/pm/PackageManager/FEATURE_LIVE_WALLPAPER|
+            |java+field:///android/content/pm/PackageManager/FEATURE_CAMERA_AUTOFOCUS|
+            |java+field:///android/content/pm/PackageManager/FEATURE_TELEPHONY_CDMA|
+Undocumented
+    CHANGED: |java+class:///android/graphics/Bitmap| DUE TO:
+            |java+constructor:///android/graphics/Bitmap/Bitmap(java.io.InputStream)|
+Undocumented
+    CHANGED: |java+class:///android/graphics/DashPathEffect| DUE TO:
+            |java+method:///android/graphics/DashPathEffect/getIntervals()|
+            |java+method:///android/graphics/DashPathEffect/getPhase()|
+Undocumented
+    CHANGED: |java+class:///android/graphics/LinearGradient| DUE TO:
+            |java+method:///android/graphics/LinearGradient/getPaint()|
+Correct
+    CHANGED: |java+class:///android/graphics/Rect| DUE TO:
+            |java+method:///android/graphics/Rect/unflattenFromString(java.lang.String)|
+            |java+method:///android/graphics/Rect/flattenToString()|
+NOT IN DOC
+    CHANGED: |java+class:///android/media/AudioSystem| DUE TO:
+            |java+field:///android/media/AudioSystem/FOR_DOCK|
+            |java+field:///android/media/AudioSystem/FORCE_BT_DESK_DOCK|
+            |java+field:///android/media/AudioSystem/FORCE_BT_CAR_DOCK|
+Correct
+    CHANGED: |java+class:///android/os/Build/VERSION_CODES| DUE TO:
+            |java+field:///android/os/Build/VERSION_CODES/ECLAIR_MR1|
+Power does not exists, os/PowerManager does, and has reboot added in api level 8.
+This package changed according to jdiff because isScreenOn method was added.
+    CHANGED: |java+class:///android/os/Power| DUE TO:
+            |java+method:///android/os/Power/reboot(java.lang.String)|
+NOT IN REFERENCE GUIDE, NOT IN JDIFF (THE PACKAGE IS, THE FIELD ISN'T)
+    CHANGED: |java+class:///android/provider/Settings/System| DUE TO:
+            |java+field:///android/provider/Settings/System/NOTIFICATION_LIGHT_PULSE|
+PACKAGE ADDED IN API LEVEL 11 according to http://developer.android.com/reference/android/renderscript/package-summary.html
+     CHANGED: |java+class:///android/renderscript/RenderScript| DUE TO:
+            |java+method:///android/renderscript/RenderScript/contextSetPriority(android.renderscript.RenderScript.Priority)|
+            |java+method:///android/renderscript/RenderScript/contextDump(int)|
+PACKAGE NOT IN DOCUMENTATION
+    CHANGED: |java+class:///android/server/BluetoothA2dpService| DUE TO:
+            |java+method:///android/server/BluetoothA2dpService/getNonDisconnectedSinks()|
+PACKAGE NOT IN DOCUMENTATION
+    CHANGED: |java+class:///android/server/BluetoothService| DUE TO:
+            |java+method:///android/server/BluetoothService/readDockBluetoothAddress()|
+            |java+method:///android/server/BluetoothService/isBluetoothDock(java.lang.String)|
+            |java+method:///android/server/BluetoothService/updateDeviceServiceChannelCache(java.lang.String)|
+Added in 7
+    CHANGED: |java+class:///android/service/wallpaper/WallpaperService| DUE TO:
+            |java+method:///android/service/wallpaper/WallpaperService/onCreate()|
+            |java+method:///android/service/wallpaper/WallpaperService/onDestroy()|
+Correct    CHANGED: |java+class:///android/telephony/PhoneStateListener| DUE TO:
+            |java+field:///android/telephony/PhoneStateListener/LISTEN_SIGNAL_STRENGTH|
+Added in 8 according to developer.android.com
+    CHANGED: |java+class:///android/view/VelocityTracker| DUE TO:
+            |java+method:///android/view/VelocityTracker/getXVelocity(int)|
+            |java+method:///android/view/VelocityTracker/getYVelocity(int)|
+Different change compared to jdiff
+    CHANGED: |java+class:///android/webkit/WebChromeClient| DUE TO:
+            |java+method:///android/webkit/WebChromeClient/onConsoleMessage(java.lang.String,int,java.lang.String)|
+            |java+method:///android/webkit/WebChromeClient/addMessageToConsole(java.lang.String,int,java.lang.String)|
+Mismatch of changed fields
+   CHANGED: |java+class:///android/webkit/WebView| DUE TO:
+            |java+method:///android/webkit/WebView/setDragTracker(android.webkit.WebView.DragTracker)|
+            |java+method:///android/webkit/WebView/getDragTracker()|
+Correct
+    CHANGED: |java+class:///android/widget/RemoteViews| DUE TO:
+            |java+method:///android/widget/RemoteViews/removeAllViews(int)|
+            |java+method:///android/widget/RemoteViews/addView(int,android.widget.RemoteViews)|
+Correct
+    CHANGED: |java+class:///android/widget/ViewFlipper| DUE TO:
+            |java+method:///android/widget/ViewFlipper/isAutoStart()|
+            |java+method:///android/widget/ViewFlipper/setAutoStart(boolean)|
+Not in jdiff
+    CHANGED: |java+interface:///android/view/WindowManagerPolicy| DUE TO:
+            |java+field:///android/view/WindowManagerPolicy/OFF_BECAUSE_OF_PROX_SENSOR|
+Not in jdiff    CHANGED: |java+class:///android/graphics/Shader| DUE TO MODIFIER(S). OLD MODIFIERS: {public()}, NEW MODIFIERS: {public(),abstract()}
+-------In total 26 classes have changed somehow, 7 classes have been added and 0 classes have been deleted.-------
+2014-01-05 17:41:37 :: Showing changes in table format
+                                classes         methods         fields
+from                to              ^   +   -   ^   +   -   ^   +   -   
+android-2.0.1_r1        android-2.1_r2          26  7   0   3   25  3   2   25  2   
+ok
+
+rascal>
